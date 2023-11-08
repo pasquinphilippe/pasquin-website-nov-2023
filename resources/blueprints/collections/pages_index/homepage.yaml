@@ -1,5 +1,7 @@
+title: Homepage
 tabs:
   main:
+    display: Main
     sections:
       -
         fields:
@@ -8,12 +10,19 @@ tabs:
             field:
               type: text
               required: true
-          -
-            handle: content
-            field:
-              type: markdown
               localizable: true
+              validate:
+                - required
+  seo:
+    display: SEO
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_basic'
   sidebar:
+    display: Sidebar
     sections:
       -
         fields:
@@ -22,13 +31,3 @@ tabs:
             field:
               type: slug
               localizable: true
-          -
-            handle: parent
-            field:
-              type: entries
-              collections:
-                - pages
-              max_items: 1
-              listable: false
-              localizable: true
-title: Page

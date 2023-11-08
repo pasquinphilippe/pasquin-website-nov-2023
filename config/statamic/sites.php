@@ -14,12 +14,20 @@ return [
     */
 
     'sites' => [
-
-        'default' => [
-            'name' => config('app.name'),
-            'locale' => 'en_US',
+        'french' => [
+            'name' => 'Français',
+            'locale' => 'fr_CA',
             'url' => '/',
         ],
-
+        'English CA' => [
+            'name' => 'English CA',
+            'locale' => 'en_CA',
+            'url' => '/en/',
+        ],
+        'English US' => [
+            'name' => 'English US',
+            'locale' => 'en_US',
+            'url' => '/en_us/',
+        ],
     ],
 ];

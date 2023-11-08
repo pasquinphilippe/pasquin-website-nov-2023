@@ -34,6 +34,9 @@ editor:
     - 'view contact form submissions'
     - 'delete contact form submissions'
     - 'access default site'
+    - 'access french site'
+    - 'access English CA site'
+    - 'access English US site'
 marketeer:
   title: Marketeer
   permissions:
@@ -41,6 +44,9 @@ marketeer:
     - 'edit redirects globals'
     - 'edit seo globals'
     - 'access default site'
+    - 'access french site'
+    - 'access English CA site'
+    - 'access English US site'
 user_management:
   title: 'User management'
   permissions:
@@ -53,9 +59,15 @@ user_management:
     - 'assign roles'
     - 'assign user groups'
     - 'access default site'
+    - 'access french site'
+    - 'access English CA site'
+    - 'access English US site'
 form_editor:
   title: 'Form editor'
   permissions:
     - 'configure form fields'
     - 'configure forms'
     - 'access default site'
+    - 'access french site'
+    - 'access English CA site'
+    - 'access English US site'
