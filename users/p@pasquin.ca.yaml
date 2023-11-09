@@ -2,3 +2,7 @@ name: 'Philippe Pasquin'
 super: true
 id: cd3700e4-11c6-42b6-8dbb-6134449b1279
 password_hash: $2y$10$S/YovtJVeyYc2dRkHXdkDep/6wXxZnhOeejrlZErkvnr3/IlBKiwG
+preferences:
+  collections:
+    projects:
+      after_save: continue_editing

@@ -2515,9 +2515,28 @@ html {
     display: flex;
   }
   
+  .projectgridimg.featured {
+    width: 100%;
+    border-radius: 8px;
+    position: relative; /* Start as relative */
+    top: initial;
+    left: initial;
+    transition: top 0.3s ease, left 0.3s ease, transform 0.3s ease; /* Transition for top, left, and transform */
+   
+  
+  }
+
   .projectgridimg {
     width: 100%;
     border-radius: 8px;
+  }
+
+  .projectgridimg.featured:hover{
+    position: absolute; /* Change to absolute on hover */
+  top: 0; /* Set top to 0 to move it to the top of the container */
+  left: 0; /* Set left to 0 to move it to the left of the container */
+  transform: scale(1.1); /* Scale the image up */
+
   }
   
   .projectgridimgconstrain {

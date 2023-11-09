@@ -4,5 +4,15 @@ blueprint: project
 title: Waterwaze
 brand_logo: clients_logo/waterwazelogo.webp
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1699488692
+updated_at: 1699564866
+mockups:
+  - projects/milistack_screenshot-2023-11-09-16.18.32.png
+website: 'https://waterwaze.ca'
+color1: '#FFFBE4'
+color2: '#99B3A5'
+color3: '#496B73'
+location: Québec
+tags:
+  - shopify
+  - developpement
 ---

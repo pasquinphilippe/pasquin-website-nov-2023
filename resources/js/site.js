@@ -16,6 +16,27 @@ window.getToken = async () => {
         })
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  const magneticElements = document.querySelectorAll(".magnetic");
+
+  magneticElements.forEach(element => {
+      element.addEventListener("mousemove", function(event) {
+          if (window.innerWidth > 540) {
+              const rect = element.getBoundingClientRect();
+              const strength = element.getAttribute("data-strength") || 20; // Default strength if not set
+              const x = ((event.clientX - rect.left) / element.offsetWidth - 0.5) * strength;
+              const y = ((event.clientY - rect.top) / element.offsetHeight - 0.5) * strength;
+
+              element.style.transform = `translate(${x}px, ${y}px)`;
+          }
+      });
+
+      element.addEventListener("mouseleave", function() {
+          element.style.transform = `translate(0px, 0px)`;
+      });
+  });
+});
+
 // Call Alpine.
 window.Alpine = Alpine
 Alpine.plugin([collapse, focus, morph, persist])

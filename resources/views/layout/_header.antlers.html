@@ -1,25 +1,28 @@
 <div class="line gradient_two"></div>
-<div class="stickyheaderwrap" x-data="{ scrolled: false }" x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 0 })" :class="{ 'scroll': scrolled }">
-    <div id="top" class="header">
-      <div class="gapm"></div>
-      <div class="content headercontent"><a href="/" aria-current="page" class="w-inline-block w--current"><img
-            src="{{ configuration:logo }}"
-            loading="lazy" alt="" class="logo" /></a>
-        <div class="nav mainnav headerhideonmob">
-            {{ nav:main }}
-          <div class="navitem"><a href="{{ url }}" class="navlink {{ if is_current || is_parent }} w--current {{ endif}}">{{ title }}</a></div>
-          {{ /nav:main }}
-         
-        </div>
-        <div class="nav headerrightnav">
-          <div class="headerhideontablet">
-            <div class="availability">
-                {{ svg src='availability'}}
-              <div>3 places disponible pour décembre</div>
-            </div>
+<div class="stickyheaderwrap" x-data="{ scrolled: false }"
+  x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 0 })" :class="{ 'scroll': scrolled }">
+  <div id="top" class="header">
+    <div class="gapm"></div>
+    <div class="content headercontent"><a href="/" aria-current="page" class="w-inline-block w--current"><img
+          src="{{ configuration:logo }}" loading="lazy" alt="" class="logo" /></a>
+      <div class="nav mainnav headerhideonmob">
+        {{ nav:main }}
+        <div class="navitem magnetic"><a href="{{ url }}"
+            class="navlink {{ if is_current || is_parent }} w--current {{ endif}}">{{ title }}</a></div>
+        {{ /nav:main }}
+
+      </div>
+      <div class="nav headerrightnav">
+        <div class="headerhideontablet">
+          <div class="availability">
+            {{ svg src='availability'}}
+            <div>3 places disponible pour décembre</div>
           </div>
-          <div class="headeravailspacer"></div><a href="/contact" class="btn dark headerhideonmob w-button">Travailler avec nous</a><a href="/contact" class="btn dark headershowbtnonmobile w-button">Contact</a>
         </div>
+        <div class="headeravailspacer magnetic"></div><a href="/contact" class="btn magnetic dark headerhideonmob w-button">Travailler
+          avec nous</a
+          ><a href="/contact" class="btn dark headershowbtnonmobile w-button">Contact</a>
       </div>
     </div>
   </div>
+</div>
