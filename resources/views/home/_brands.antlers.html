@@ -1,0 +1,56 @@
+<div>
+    <section x-data="marquee()" x-init="init()" class="section_logo3">
+        <div class="padding-section-medium">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="margin-bottom margin-large">
+                        <div class="text-align-center">
+                            <div class="max-width-large align-center">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo3_component" x-ref="marquee">
+
+                <div role="list" class="logo3_list">
+                    {{ collection:projects limit="8" sort="random" }}
+                    <div role="listitem" class="logo3_wrapper">
+                        <a href="{{ website }}" target="_blank" class="logolink ">
+
+                            <img class="logo3_logo" src="{{ glide:brand_logo width='120' }}" srcset="{{ glide:brand_logo width='80'   }} 80w,
+                                                 {{ glide:brand_logo width='120'   }} 120w,
+                                                 {{ glide:brand_logo width='160'   }} 160w"
+                                sizes="(max-width: 640px) 80px, (max-width: 1024px) 120px, 900px"
+                                alt="{{ title }} logo" />
+
+                        </a>
+                    </div>
+                    {{ /collection:projects }}
+
+
+                </div>
+                <div role="list" class="logo3_list">
+                    {{ collection:projects limit="8" sort="random" }}
+                    <div role="listitem" class="logo3_wrapper">
+                        <a href="{{ website }}" target="_blank" class="logolink ">
+
+                            <img class="logo3_logo" src="{{ glide:brand_logo width='120' }}" srcset="{{ glide:brand_logo width='80'  }} 80w,
+                                                 {{ glide:brand_logo width='120'  }} 120w,
+                                                 {{ glide:brand_logo width='160'  }} 160w"
+                                sizes="(max-width: 640px) 80px, (max-width: 1024px) 120px, 900px"
+                                alt="{{ title }} logo" />
+
+                        </a>
+                    </div>
+                    {{ /collection:projects }}
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+</div>

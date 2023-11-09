@@ -1,0 +1,109 @@
+<div class="projectgridouter" x-data="{ isExpanded: false }">
+    <div class="projectgridexpand" @click="isExpanded = !isExpanded" :class="{ 'hidden': isExpanded }">
+        <button class="btn dark">
+            {{ svg src='expand' class='workexpandicon'}}
+            <div x-text="isExpanded ? 'Cacher les projets' : 'Voir plus de projets'"></div>
+        </button>
+    </div>
+    <div class="projectgridconstrain" :style="isExpanded ? 'height: auto;' : 'height: 980px'">
+        <div class="projectgridcontentheight">
+            <div class="gaps"></div>
+            <div class="gapm"></div>
+            <div class="content">
+                <div class="projectnavwrap">
+                    <div class="t-bold t-small headerhideonmob">Quelques un de nos projets</div>
+
+                </div>
+            </div>
+            <div class="gapm"></div>
+            <div class="content">
+
+                <div role="list" class="projectgridb ">
+                    {{ collection:projects offset="3" }}
+                    <div class="filterableproject ">
+                        <div class="card projectgridcard dark jumboshadow jumboshadowwithborder"
+                            style="background-image: linear-gradient({{color1}} 0%, {{color2}} 51.77%, {{color3}} 100%); background-size: 100% 100%;">
+                            <div class="padds nobottompadding">
+                                <div class="t-large t-bold">{{ title }}</div>
+                                <div class="gapxxs"></div>
+                                <div class="t-lightwhite t-xsmall">{{ short_description }}</div>
+                                <div class="gaps"></div>
+                                <div class="projectattributes">
+                                    <a href="{{ website }}" target="_blank" class="btn announcementbtn ">{{ website |
+                                        replace('https://', '') }}</a>
+                                    {{ if location }}
+                                    <div class="tag white">{{ svg src='location' }}
+                                        <div>{{ location }}</div>
+                                    </div>
+                                    {{ /endif }}
+                                    {{ tags limit='3' sort='random' }}
+                                    <div class="tag white">
+                                        <div>{{ title }}</div>
+                                    </div>
+                                    {{ /tags }}
+                                </div>
+                            </div>
+                            <div class="padds">
+                                <div class="hovergallery" style="position: relative;"><img alt="" loading="lazy"
+                                        src="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c6a9176ae6b7834c1_faithbase-2.png"
+                                        sizes="(max-width: 479px) 82vw, (max-width: 767px) 89vw, (max-width: 991px) 42vw, 40vw"
+                                        srcset="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c6a9176ae6b7834c1_faithbase-2-p-500.png 500w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c6a9176ae6b7834c1_faithbase-2-p-800.png 800w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c6a9176ae6b7834c1_faithbase-2-p-1080.png 1080w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c6a9176ae6b7834c1_faithbase-2.png 1600w"
+                                        class="projectgridimg">
+                                    <div class="hovergalleryimages"
+                                        style="position: absolute; inset: 0px; display: none;">
+                                        <div class="w-dyn-list">
+                                            <div role="list" class="">
+                                                <div role="listitem" class=" w-dyn-repeater-item"><img alt=""
+                                                        loading="lazy"
+                                                        src="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215ce0db5de988d92fb3_faithbase.png"
+                                                        sizes="100vw"
+                                                        srcset="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215ce0db5de988d92fb3_faithbase-p-500.png 500w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215ce0db5de988d92fb3_faithbase-p-800.png 800w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215ce0db5de988d92fb3_faithbase-p-1080.png 1080w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215ce0db5de988d92fb3_faithbase.png 1600w"
+                                                        class="projectgridimg"
+                                                        style="position: absolute; inset: 0px; display: none;"></div>
+                                                <div role="listitem" class=" w-dyn-repeater-item"><img alt=""
+                                                        loading="lazy"
+                                                        src="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c5190e82a7e63fe41_faithbase-1.png"
+                                                        sizes="100vw"
+                                                        srcset="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c5190e82a7e63fe41_faithbase-1-p-500.png 500w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c5190e82a7e63fe41_faithbase-1-p-800.png 800w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c5190e82a7e63fe41_faithbase-1-p-1080.png 1080w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c5190e82a7e63fe41_faithbase-1.png 1600w"
+                                                        class="projectgridimg"
+                                                        style="position: absolute; inset: 0px; display: none;"></div>
+                                                <div role="listitem" class=" w-dyn-repeater-item"><img alt=""
+                                                        loading="lazy"
+                                                        src="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c6a9176ae6b7834c1_faithbase-2.png"
+                                                        sizes="100vw"
+                                                        srcset="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c6a9176ae6b7834c1_faithbase-2-p-500.png 500w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c6a9176ae6b7834c1_faithbase-2-p-800.png 800w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c6a9176ae6b7834c1_faithbase-2-p-1080.png 1080w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c6a9176ae6b7834c1_faithbase-2.png 1600w"
+                                                        class="projectgridimg"
+                                                        style="position: absolute; inset: 0px; display: none;"></div>
+                                                <div role="listitem" class=" w-dyn-repeater-item"><img alt=""
+                                                        loading="lazy"
+                                                        src="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c515cf73360a79e35_faithbase-4.png"
+                                                        sizes="100vw"
+                                                        srcset="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c515cf73360a79e35_faithbase-4-p-500.png 500w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c515cf73360a79e35_faithbase-4.png 1600w"
+                                                        class="projectgridimg"
+                                                        style="position: absolute; inset: 0px; display: none;"></div>
+                                                <div role="listitem" class=" w-dyn-repeater-item"><img alt=""
+                                                        loading="lazy"
+                                                        src="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c6a9176ae6b7834c5_faithbase-3.png"
+                                                        sizes="100vw"
+                                                        srcset="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c6a9176ae6b7834c5_faithbase-3-p-500.png 500w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c6a9176ae6b7834c5_faithbase-3-p-800.png 800w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c6a9176ae6b7834c5_faithbase-3-p-1080.png 1080w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6535215c6a9176ae6b7834c5_faithbase-3.png 1600w"
+                                                        class="projectgridimg" style="position: absolute; inset: 0px;">
+                                                </div>
+                                            </div>
+                                            <div class="w-dyn-hide w-dyn-empty">
+                                                <div>No items found.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{ /collection:projects }}
+                </div>
+
+            </div>
+
+            <div class="gapxl"></div>
+        </div>
+    </div>
+</div>

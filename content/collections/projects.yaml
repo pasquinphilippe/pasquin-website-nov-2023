@@ -1,0 +1,10 @@
+title: Projects
+sites:
+  - french
+propagate: false
+taxonomies:
+  - tags
+revisions: false
+date_behavior:
+  past: public
+  future: private

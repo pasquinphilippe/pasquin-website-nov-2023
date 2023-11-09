@@ -1,4 +1,3 @@
 title: Main
 collections:
-  - pages
-max_depth: 2
+  - pages_index

@@ -1,1 +1,31 @@
-{  }
+social_media:
+  -
+    id: loq23vy5
+    handle: projects@pasquin.ca
+    prefix: 'mailto:'
+    type: email
+    enabled: true
+  -
+    id: loq241m0
+    handle: ppasquin
+    prefix: 'https://www.facebook.com/'
+    type: facebook
+    enabled: true
+  -
+    id: loq24ehw
+    handle: pasquinphilippe
+    prefix: 'https://www.github.com/'
+    type: github
+    enabled: true
+  -
+    id: loq24nma
+    handle: philpasquin
+    prefix: 'https://www.instagram.com/'
+    type: instagram
+    enabled: true
+  -
+    id: loq24skt
+    handle: pasquin
+    prefix: 'https://www.linkedin.com/'
+    type: linkedin
+    enabled: true

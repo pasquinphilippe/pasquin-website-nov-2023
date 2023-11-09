@@ -14,7 +14,7 @@ tabs:
               width: 50
               instructions: 'Show all content of page whenever an URL does not exist.'
               collections:
-                - pages
+                - pages_index
               validate:
                 - required
       -
@@ -33,6 +33,7 @@ tabs:
               width: 50
               listable: hidden
               instructions_position: above
+              localizable: false
           -
             handle: copyright_since
             field:
@@ -51,6 +52,7 @@ tabs:
               instructions_position: above
               validate:
                 - required
+              localizable: false
       -
         display: 'Privacy statement'
         instructions: 'Configure an optional privacy statement.'
@@ -139,3 +141,26 @@ tabs:
                 cookie_notice_type: 'equals entry'
               validate:
                 - 'required_if:cookie_notice_type,entry'
+      -
+        display: 'Company Informations'
+        fields:
+          -
+            handle: logo
+            field:
+              mode: list
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Logo
+              icon: assets
+              localizable: false
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              max_files: 1
+              min_files: 1
+              container: files

@@ -1,0 +1,107 @@
+<div id="work" class="content margin-top">
+    <div id="heroprojects" class="heroprojects">
+        <div class="heroprojectwrapper w-dyn-list">
+            <div role="list" class="heroprojectwrapper ">
+                {{ collection:projects limit='1' }}
+                <div role="listitem" class="heroprojectwrapper ">
+                    <div class="card dark jumboshadow jumboshadowwithborder"
+                        style="background-image: linear-gradient({{color1}} 0%, {{color2}} 51.77%, {{color3}} 100%); background-size: 100% 100%;">
+                        <div class="heroprojectinner">
+                            <div class="padds">
+                                <div class="t-large t-bold">{{ title }}</div>
+                                <div class="gapxxs"></div>
+                                <div class="t-lightwhite t-xsmall">{{ small_description }}</div>
+                                <div class="gaps"></div>
+                                <div class="projectattributes"><a href="{{ website }}" target="_blank"
+                                        class="btn announcementbtn ">{{ website | replace('https://', '') }}</a>
+                                    {{ if location }}
+                                    <div class="tag white">{{ svg src='location' }}
+                                        <div>{{ location }}</div>
+                                    </div>
+                                    {{ /endif }}
+                                    {{ tags limit='3' sort='random' }}
+                                    <div class="tag white">
+                                        <div>{{ title }}</div>
+                                    </div>
+                                    {{ /tags }}
+
+                                </div>
+                            </div>
+                            <div class="projectscroll">
+                                <div class="w-dyn-list">
+                                    <div role="list" class="projectscrollcontent ">
+                                        <div role="listitem" class="collection-item  w-dyn-repeater-item"><img alt=""
+                                                loading="lazy"
+                                                src="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6525416384485157841c7ed9_64946827a60cc404a9919542_1.png"
+                                                sizes="100vw"
+                                                srcset="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6525416384485157841c7ed9_64946827a60cc404a9919542_1-p-500.png 500w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6525416384485157841c7ed9_64946827a60cc404a9919542_1-p-800.png 800w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6525416384485157841c7ed9_64946827a60cc404a9919542_1-p-1080.png 1080w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/6525416384485157841c7ed9_64946827a60cc404a9919542_1.png 1600w"
+                                                class="projectscrollimg" style="height: 561.117px;"></div>
+                                        <div role="listitem" class="collection-item  w-dyn-repeater-item"><img alt=""
+                                                loading="lazy"
+                                                src="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/652541639b84e7fd8756de7f_649468274e82ff02f8576a42_5.png"
+                                                sizes="100vw"
+                                                srcset="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/652541639b84e7fd8756de7f_649468274e82ff02f8576a42_5-p-500.png 500w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/652541639b84e7fd8756de7f_649468274e82ff02f8576a42_5-p-800.png 800w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/652541639b84e7fd8756de7f_649468274e82ff02f8576a42_5-p-1080.png 1080w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/652541639b84e7fd8756de7f_649468274e82ff02f8576a42_5.png 1600w"
+                                                class="projectscrollimg" style="height: 561.117px;"></div>
+                                        <div role="listitem" class="collection-item  w-dyn-repeater-item"><img alt=""
+                                                loading="lazy"
+                                                src="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/65254163c7e5004f1a4c883a_6494682709baad169756a5ab_4.png"
+                                                sizes="100vw"
+                                                srcset="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/65254163c7e5004f1a4c883a_6494682709baad169756a5ab_4-p-500.png 500w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/65254163c7e5004f1a4c883a_6494682709baad169756a5ab_4-p-800.png 800w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/65254163c7e5004f1a4c883a_6494682709baad169756a5ab_4-p-1080.png 1080w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/65254163c7e5004f1a4c883a_6494682709baad169756a5ab_4.png 1600w"
+                                                class="projectscrollimg" style="height: 561.117px;"></div>
+                                        <div role="listitem" class="collection-item  w-dyn-repeater-item"><img alt=""
+                                                loading="lazy"
+                                                src="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/65254163faaa06f071b1d1d6_6494682784167924ecdeca49_3.png"
+                                                sizes="100vw"
+                                                srcset="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/65254163faaa06f071b1d1d6_6494682784167924ecdeca49_3-p-500.png 500w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/65254163faaa06f071b1d1d6_6494682784167924ecdeca49_3-p-800.png 800w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/65254163faaa06f071b1d1d6_6494682784167924ecdeca49_3-p-1080.png 1080w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/65254163faaa06f071b1d1d6_6494682784167924ecdeca49_3.png 1600w"
+                                                class="projectscrollimg" style="height: 561.117px;"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{ /collection:projects }}
+            </div>
+        </div>
+
+        <div role="list" class="projectgridc ">
+            {{ collection:projects limit='2' offset='1' }}
+            <div class="card dark jumboshadow jumboshadowwithborder"
+            style="background-image: linear-gradient({{color1}} 0%, {{color2}} 51.77%, {{color3}} 100%); background-size: 100% 100%;">
+                <div class="padds nobottompadding">
+                    <div class="t-large t-bold">{{ title }}</div>
+                    <div class="gapxxs"></div>
+                    <div class="t-lightwhite t-xsmall">{{ short_description }}</div>
+                    <div class="gaps"></div>
+                    <div class="projectattributes">
+                        <a href="{{ website }}" target="_blank" class="btn announcementbtn ">{{ website |
+                            replace('https://', '') }}</a>
+                        {{ if location }}
+                        <div class="tag white">{{ svg src='location' }}
+                            <div>{{ location }}</div>
+                        </div>
+                        {{ /endif }}
+                        {{ tags limit='3' sort='random' }}
+                        <div class="tag white">
+                            <div>{{ title }}</div>
+                        </div>
+                        {{ /tags }}
+                    </div>
+                </div>
+                <div class="projectgridimgconstrain">
+                    <div class="padds"><img alt="" loading="lazy"
+                            src="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/65253deefaaa06f071acbe09_code%20block%60%60%60%3A%20%27Never%20Before%20Seen.png"
+                            sizes="(max-width: 479px) 92vw, (max-width: 991px) 95vw, 33vw"
+                            srcset="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/65253deefaaa06f071acbe09_code%20block%60%60%60%3A%20%27Never%20Before%20Seen-p-500.png 500w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/65253deefaaa06f071acbe09_code%20block%60%60%60%3A%20%27Never%20Before%20Seen-p-800.png 800w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/65253deefaaa06f071acbe09_code%20block%60%60%60%3A%20%27Never%20Before%20Seen-p-1080.png 1080w, https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/65253deefaaa06f071acbe09_code%20block%60%60%60%3A%20%27Never%20Before%20Seen.png 1600w"
+                            class="projectgridimg"></div>
+                </div>
+            </div>
+
+
+
+            {{ /collection:projects }}
+        </div>
+
+    </div>
+</div>

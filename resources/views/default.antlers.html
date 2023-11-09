@@ -1,12 +1,30 @@
-{{#
-    @name Default
-    @desc The default template with an outer wrapper grid as defined in tailwind.config.js. It makes sure all blocks on a page get evenly spaced without having to worry about margins or paddings.
-#}}
+{{ partial:home/hero }}
+{{ partial:home/brands }}
 
-<!-- /default.antlers.html -->
-<main class="outer-grid" id="content">
-    {{ page_builder scope="block" }}
-        {{ partial src="page_builder/{type}" }}
-    {{ /page_builder }}
-</main>
-<!-- End: /default.antlers.html -->
+{{ partial:home/featured_work }}
+{{ partial:home/projects }}
+
+{{ partial:layout/pricing }}
+<div>
+    <div class="content">
+        <div class="card jumboshadow jumboshadowwithborder">
+            <div class="paddm">
+                <div class="gapm"></div>
+                <div class="ctawrap">
+                    <div class="availability"> {{ svg src='availability'}}
+                        <div>Nous sommes disponibles</div>
+                    </div>
+                    <div class="gaps"></div>
+                    <h2 class="h2">Vous avez une question?</h2>
+                    <div class="gapxs"></div>
+                    <div class="gaps"></div>
+                    <div class="btngrp centeronmob"><a href="/contact?message=true" class="btn big dark ">Envoyer nous
+                            un message</a>
+                            <a href="/contact" class="btn big ">Planifier une rencontre</a></div>
+                </div>
+                <div class="gapm"></div>
+            </div>
+
+        </div>
+    </div>
+</div>

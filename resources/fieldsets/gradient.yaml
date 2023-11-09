@@ -1,0 +1,44 @@
+title: Gradient
+fields:
+  -
+    handle: color1
+    field:
+      allow_any: true
+      type: color
+      display: Color1
+      icon: color
+      localizable: false
+      width: 33
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: color2
+    field:
+      allow_any: true
+      type: color
+      display: Color2
+      icon: color
+      localizable: false
+      width: 33
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: color3
+    field:
+      allow_any: true
+      type: color
+      display: Color3
+      icon: color
+      localizable: false
+      width: 33
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+    <!-- Define the gradient -->
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color: #884d06" />
+        <stop offset="20.58%" style="stop-color: #d4a458" />
+        <stop offset="33.11%" style="stop-color: #ae9ec8" />
+        <stop offset="46.55%" style="stop-color: #5590e3" />
+        <stop offset="53.59%" style="stop-color: #98aae6" />
+        <stop offset="66.89%" style="stop-color: #2a9bee" />
+        <stop offset="83.59%" style="stop-color: #55a2f1" />
+        <stop offset="99.11%" style="stop-color: #b8b2f3" />
+    </linearGradient>
+    
+    <!-- Create a white circle background -->
+    <circle cx="100" cy="100" r="90" fill="#000" />
+    
+    <!-- Create "M" inside the circle with gradient fill (centered) -->
+    <text x="50%" y="55%" font-family="Inter, sans-serif" font-size="120" font-weight="bold" fill="url(#gradient)" text-anchor="middle" dominant-baseline="middle">P</text>
+</svg>

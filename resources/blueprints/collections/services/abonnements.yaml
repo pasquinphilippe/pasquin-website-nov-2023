@@ -1,0 +1,229 @@
+title: abonnements
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              localizable: true
+              validate:
+                - required
+          -
+            handle: pricing
+            field:
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                pricing:
+                  display: Pricing
+                  instructions: null
+                  icon: money-cashier-price-tag
+                  sets:
+                    pricing_monthly:
+                      display: 'Pricing (Monthly)'
+                      instructions: null
+                      icon: money-atm-card
+                      fields:
+                        -
+                          handle: price
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: Price
+                            icon: text
+                            localizable: true
+                            width: 33
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: description
+                          field:
+                            antlers: false
+                            type: textarea
+                            display: Description
+                            icon: textarea
+                            localizable: true
+                            width: 66
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: slots_available
+                          field:
+                            input_type: number
+                            antlers: false
+                            type: text
+                            display: 'Slots available'
+                            icon: text
+                            localizable: false
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: includes
+                          field:
+                            collapse: false
+                            previews: true
+                            fullscreen: true
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                instructions: null
+                                icon: null
+                                sets:
+                                  services:
+                                    display: Services
+                                    instructions: null
+                                    icon: money-cashier-price-tag
+                                    fields:
+                                      -
+                                        handle: title
+                                        field:
+                                          antlers: false
+                                          type: textarea
+                                          display: Title
+                                          icon: textarea
+                                          localizable: true
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          replicator_preview: true
+                                          hide_display: false
+                            type: replicator
+                            display: Includes
+                            icon: replicator
+                            localizable: true
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                    pricing_quartely:
+                      display: 'Pricing (Quarteley)'
+                      instructions: null
+                      icon: money-atm-card
+                      fields:
+                        -
+                          handle: price
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: Price
+                            icon: text
+                            localizable: true
+                            width: 33
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: description
+                          field:
+                            antlers: false
+                            type: textarea
+                            display: Description
+                            icon: textarea
+                            localizable: true
+                            width: 66
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: slots_available
+                          field:
+                            input_type: number
+                            antlers: false
+                            type: text
+                            display: 'Slots available'
+                            icon: text
+                            localizable: false
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: includes
+                          field:
+                            collapse: false
+                            previews: true
+                            fullscreen: true
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                instructions: null
+                                icon: null
+                                sets:
+                                  services:
+                                    display: Services
+                                    instructions: null
+                                    icon: money-cashier-price-tag
+                                    fields:
+                                      -
+                                        handle: title
+                                        field:
+                                          antlers: false
+                                          type: textarea
+                                          display: Title
+                                          icon: textarea
+                                          localizable: true
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          replicator_preview: true
+                                          hide_display: false
+                            type: replicator
+                            display: Includes
+                            icon: replicator
+                            localizable: true
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+              type: replicator
+              display: Pricing
+              icon: replicator
+              localizable: false
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - services
+              max_items: 1
+              listable: false
+              localizable: true

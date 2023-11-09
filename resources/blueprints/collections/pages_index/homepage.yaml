@@ -13,6 +13,11 @@ tabs:
               localizable: true
               validate:
                 - required
+      -
+        display: 'Scrolling Benefits'
+        fields:
+          -
+            import: scrolling_benefits
   seo:
     display: SEO
     sections:
@@ -30,4 +35,13 @@ tabs:
             handle: slug
             field:
               type: slug
+              localizable: true
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages_index
+              max_items: 1
+              listable: false
               localizable: true
