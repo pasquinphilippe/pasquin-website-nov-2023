@@ -14,6 +14,19 @@ tabs:
               validate:
                 - required
           -
+            handle: menu_description
+            field:
+              antlers: false
+              type: textarea
+              display: 'Menu Description'
+              icon: textarea
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
             handle: pricing
             field:
               collapse: false
@@ -227,3 +240,22 @@ tabs:
               max_items: 1
               listable: false
               localizable: true
+          -
+            handle: services_type
+            field:
+              type: terms
+              taxonomies:
+                - services_type
+              display: 'Services Type'
+              mode: default
+              max_items: 1
+              create: true
+              icon: taxonomy
+              localizable: false
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            import: gradient

@@ -7,8 +7,66 @@
           src="{{ configuration:logo }}" loading="lazy" alt="" class="logo" /></a>
       <div class="nav mainnav headerhideonmob">
         {{ nav:main }}
-        <div class="navitem magnetic"><a href="{{ url }}"
-            class="navlink {{ if is_current || is_parent }} w--current {{ endif}}">{{ title }}</a></div>
+        <div class="navitem {{ unless entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" }} magnetic {{ /unless }}" {{ if children || entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" }} @click.prevent="open = !open" x-data="{ open: false }"  @mouseenter="open = true" @mouseleave="open = false" {{ endif }}>
+          <a href="{{ url }}" 
+            class="navlink {{ if is_current || is_parent }} w--current {{ endif}}">
+            {{ title }}
+            {{ if children || entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" }}
+            <i x-show="!open" class="fa fa-caret-down"></i>
+            <i x-show="open" class="fa fa-caret-up"></i>
+            {{ /if }}
+          </a>
+          {{ if children || entry_id == "d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" }}
+          <div class="main_dropdown" x-show="open">
+              <div class="inner_dropdown">
+                  <div class="services-grid-3">
+                      {{ collection:services as="entries" sort="services_type:order" }}
+                      {{ entries group_by="services_type:title" }}
+                      {{ groups }}
+                      <div class="dropdown_column">
+                          <h2 class="services_taxonomy">{{ group }}</h2>
+                          <ul>
+                              {{ items }}
+                              <li class="dropdown_services">
+                                  <a href="{{ url }}">
+                                      <span class="services_icon"
+                                          style="background-image: linear-gradient(141deg,{{ color1 }}, {{ color2}} 50%, {{color3}})">
+                                      </span>
+                                      <div class="services_content">
+                                          <h2 class="services_title">{{ title }}</h2>
+                                          <p class="services_description">{{ menu_description }}</p>
+                                      </div>
+                                  </a>
+                              </li>
+                              {{ /items }}
+                          </ul>
+                      </div>
+                      {{ /groups}}
+                      {{ /entries }}
+                      {{ /collection:services }}
+                  </div>
+                  <div class="services-bottom">
+                    <div class="services-bottom__content">
+
+                        <h2 class="services-bottom__title">Prêt à me parler de votre projet?</h2>
+                        <div class="services-bottom__description"><p>Nous sommes une agence Shopify, qui conçoit, développe, soutient et fait croître les magasins Shopify et Shopify Plus. <a href="#" title="Test">Contactez-nous dès aujourd'hui.</a></p></div>
+
+
+
+
+                    </div>
+                    <a href="/">
+                        <img class="partners_logo" src="/img/containers/images/theme/shopifypartners.png/bd427cb9393221dd2c8ced0caaa625e0.png" srcset="/img/containers/images/theme/shopifypartners.png/f7a999d5904aacee6aff0b5b04a57265.png 250w,
+                /img/containers/images/theme/shopifypartners.png/f3b66500c2468793cc3e883d59f7ed8f.png 300w,
+                /img/containers/images/theme/shopifypartners.png/0d5fadc55247514f062b2f470f54e2b5.png 350w" sizes="(max-width: 640px) 150px, (max-width: 1024px) 350px, 900px" alt="Shopify Partners Logo">
+                    </a>
+                </div>
+              </div>
+
+          </div>
+          {{ /if }}
+     
+        </div>
         {{ /nav:main }}
 
       </div>

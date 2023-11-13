@@ -6,6 +6,8 @@ sites:
 propagate: false
 template: services/layout
 layout: layout
+taxonomies:
+  - services_type
 revisions: false
 route:
   french: '/solutions/{slug}'

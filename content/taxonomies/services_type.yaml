@@ -1,0 +1,10 @@
+title: 'Services Type'
+preview_targets:
+  -
+    label: Term
+    url: '{permalink}'
+    refresh: true
+sites:
+  - french
+  - 'English CA'
+  - 'English US'

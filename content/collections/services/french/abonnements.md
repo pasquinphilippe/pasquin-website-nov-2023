@@ -1,7 +1,7 @@
 ---
 id: e785a253-1496-4e04-84e8-5162700ba43b
 blueprint: abonnements
-title: Abonnements
+title: 'Support et maintenance'
 pricing:
   -
     id: lor8xrel
@@ -98,5 +98,10 @@ pricing:
     type: pricing_monthly
     enabled: true
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1699540032
+updated_at: 1699894650
+services_type: boutique-shopify-existante
+color1: '#00C9FF'
+color2: '#92FE9D'
+color3: '#FFFF1C'
+menu_description: 'Contrat mensuel de support technique.'
 ---
