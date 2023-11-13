@@ -1,0 +1,103 @@
+.cookie-banner {
+    position: fixed;
+    z-index: 50;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 1.5rem;
+    background-color: white;
+    border: 1px solid rgba(107, 114, 128, 0.1);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .cookie-banner h2 {
+    font-size: 1.5rem; /* 24px */
+    font-weight: 700; /* bold */
+  }
+
+  .cookie-banner p {
+    font-size: 0.875rem; /* 14px */
+    font-weight: 700; /* bold */
+    color: #4b5563; /* neutral color */
+  }
+
+  .cookie-banner a {
+    padding: 0 0.25rem;
+    margin: -0.25rem;
+    text-decoration: underline;
+    border-radius: 0.25rem;
+    outline: none;
+  }
+
+  .cookie-banner a:hover {
+    color: #2563eb; /* primary color */
+  }
+
+  .cookie-banner a:focus-visible {
+    ring: 2px solid #2563eb; /* primary focus ring */
+  }
+
+  .cookie-banner label {
+    display: flex;
+    align-items: center;
+  }
+
+  .cookie-banner input[type="checkbox"] {
+    width: 1.25rem; /* 20px */
+    height: 1.25rem; /* 20px */
+    margin-right: 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid #4b5563; /* neutral color */
+    color: #2563eb; /* primary color */
+  }
+
+  .cookie-banner input[type="checkbox"]:focus-visible {
+    outline: none;
+    ring: 2px solid #2563eb; /* primary focus ring */
+  }
+
+  .cookie-banner input[type="checkbox"]:disabled {
+    opacity: 0.5;
+  }
+
+  .cookie-banner .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cookie-banner .space-y-4 > * + * {
+    margin-top: 1rem;
+  }
+
+  .cookie-banner .text-xs {
+    font-size: 0.75rem; /* 12px */
+    color: rgba(107, 114, 128, 0.75); /* text color */
+  }
+
+  .cookie-banner .font-bold {
+    font-weight: 700; /* bold */
+  }
+
+  .cookie-banner .flex {
+    display: flex;
+  }
+
+  .cookie-banner .space-x-4 > * + * {
+    margin-left: 1rem;
+  }
+
+  .cookie-banner .button {
+    padding: 0.5rem 1rem;
+    font-weight: 700; /* bold */
+    color: white;
+    background-color: #2563eb; /* primary color */
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+
+  .cookie-banner .button:hover {
+    background-color: #1d4ed8; /* darker primary color */
+  }

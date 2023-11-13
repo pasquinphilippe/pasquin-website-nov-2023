@@ -2514,6 +2514,7 @@ html {
   
   .h2.bigprice {
     font-size: 44px;
+    text-wrap: nowrap;
   }
   
   .h2.methodsectionheading {
@@ -3549,6 +3550,7 @@ html {
   
     .h2.bigprice {
       font-size: 40px;
+      text-wrap: nowrap;
     }
   
     .testimonial21_component {
@@ -3803,6 +3805,7 @@ html {
   
     .h2.bigprice {
       font-size: 34px;
+      text-wrap: nowrap;
     }
   
     .inlinepricelabelwrap {
