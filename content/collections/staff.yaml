@@ -1,0 +1,8 @@
+title: Staff
+sites:
+  - french
+propagate: false
+revisions: false
+date_behavior:
+  past: public
+  future: private

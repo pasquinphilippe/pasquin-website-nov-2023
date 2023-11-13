@@ -98,8 +98,11 @@
     </div>
     <div class="content medium">
         <div class="gapm"></div>
-        <div class="outlinecard"><img src="/images/staff/philippe_pasquin.png" loading="lazy" sizes="64px"
-                srcset="/images/staff/philippe_pasquin.png" alt="" class="avatar sm" />
+        <div class="outlinecard">
+            {{ collection:staff limit="1" sort="random" }}
+            <img src="{{ glide:avatar_picture }}" loading="lazy" sizes="64px"
+                srcset="{{ glide:avatar_picture }}" alt="" class="avatar sm" />
+            {{ /collection:staff }}
             <div>
                 <div class="t-small t-bold">Questions?</div>
                 <div class="t-light t-xsmall">Organisons un appel de lancement pour discuter de vos besoins

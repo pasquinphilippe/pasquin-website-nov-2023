@@ -2,9 +2,10 @@
     <div class="gapl"></div>
     <div class="content">
         <div class="footermain">
-            <div class="footerleft"><img
-                    src="{{ configuration:logo }}"
-                    loading="lazy" alt="" class="logo" />
+            <div class="footerleft">
+                {{ configuration:logo }}
+                {{ svg src='{url}' class='logo' }}
+              {{ /configuration:logo }}
                 <div class="footergap"></div>
                 <div>Nous sommes spécialisé en développement web, développement eCommerce, développement d'applications, marketing numérique et gestion de communauté.
                 </div>
