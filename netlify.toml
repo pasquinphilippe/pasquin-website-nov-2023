@@ -3,7 +3,7 @@
   command = "npm install && npm run build && (yes | php please ssg:generate)"
 
 [context.production.environment]
-  APP_URL = "https://pasquin.ca"
+  APP_URL = "https://newwebsitepasquin.netlify.app"
   APP_KEY = "base64:BXSkLQWORpUEs88hWptCyKmXXuzUMYLh+9yHtXFhdzQ="
 
 [build.environment]
