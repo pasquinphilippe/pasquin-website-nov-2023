@@ -5,9 +5,9 @@ title: 'Support et maintenance'
 pricing:
   -
     id: lor8xrel
-    price: 435$
-    description: "Jusqu'à 3 heures par mois"
-    slots_available: 43
+    price: 625$
+    description: '5 heures par mois, livré en moins de 72 heures.'
+    slots_available: 18
     includes:
       -
         id: lor8z2tq
@@ -33,8 +33,8 @@ pricing:
     enabled: true
   -
     id: lor96psl
-    price: '1 250$'
-    description: "Jusqu'à 10 heures par mois"
+    price: '1 150$'
+    description: '10 heures par mois, livré en moins de 48 heures.'
     slots_available: 14
     includes:
       -
@@ -67,7 +67,7 @@ pricing:
   -
     id: lor99jcc
     price: '3 800$'
-    description: "Jusqu'à 40 heures par mois"
+    description: '40 heures par mois, livré en moins de 24 heures.'
     slots_available: 4
     includes:
       -
@@ -98,7 +98,7 @@ pricing:
     type: pricing_monthly
     enabled: true
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1699894650
+updated_at: 1699901076
 services_type: boutique-shopify-existante
 color1: '#00C9FF'
 color2: '#92FE9D'

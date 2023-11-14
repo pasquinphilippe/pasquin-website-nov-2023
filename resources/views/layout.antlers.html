@@ -1,61 +1,35 @@
 {{#
-    @name Layout
-    @desc The default layout file.
+@name Layout
+@desc The default layout file.
 #}}
 
 <!-- /layout.antlers.html -->
 <!doctype html>
 <html lang="{{ site:short_locale }}" class="antialiased">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&display=swap');
-          </style>
-        {{ vite src="resources/css/site.css|resources/js/site.js" }}
-        {{ partial:statamic-peak-seo::snippets/seo }}
-        {{ partial:statamic-peak-browser-appearance::snippets/browser_appearance }}
-        {{ partial:statamic-peak-tools::snippets/live_preview }}
-    </head>
-    <body>
-        {{ stack:seo_body }}
-        {{ partial:statamic-peak-tools::snippets/noscript }}
-        
-        {{ partial:layout/header }}
-        {{ template_content }}
-        {{ partial:layout/footer }}
-        <chat-widget
-  location-id="y5N1sB6oK1igvFmEGfUr"
-  style="--chat-widget-primary-color: #61d180; --chat-widget-active-color:#61d180 ;--chat-widget-bubble-color: #61d180 ;"
-  heading="Vous souhaitez commencer un projet?" 
-  sub-heading="Bonjour {{name}}! Comment pouvons-nous vous aider? " 
-  prompt-msg="Nous sommes disponible pour répondre à vos questions" 
-  legal-msg="En soumettant votre demande, vous acceptez de recevoir des SMS ou des courriels par le canal fourni. Des tarifs peuvent être appliqués." 
-  use-email-field="true" 
-  revisit-prompt-msg="Salut {{name}}, cherchez vous de l'information spécifique?" 
-  support-contact="Philippe Pasquin" 
-  success-msg="Nous vous contacterons sous peu." 
-  thank-you-msg="Merci" 
-  prompt-avatar="https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/locationPhotos%2Fy5N1sB6oK1igvFmEGfUr%2Fchat-widget-person?alt=media&token=28b6dc97-6de9-4c8e-a6bf-0220d6f96677" 
-  agency-name="Philippe Pasquin" 
-  agency-website="https://pasquin.ca" 
-  locale="auto" 
-  send-label="Envoyer" 
-  live-chat-intro-msg="Donnez-nous une minute pour vous mettre en contact avec la meilleure personne pour vous aider." 
-  chat-type="liveChat" 
-  live-chat-user-inactive-msg="S'il vous plaît, laissez-nous vos coordonnées et nous vous contacterons sous peu." 
-  live-chat-visitor-inactive-msg="Chat fermé en raison de l'inactivité de l'utilisateur." 
-  live-chat-ack-msg="Votre conversation est terminée" 
-  live-chat-feedback-msg="Veuillez nous fournir vos commentaires" 
-  live-chat-feedback-note="Merci d'avoir pris le temps de remplir votre avis" 
-  live-chat-end-msg="Pour commencer une nouvelle discussion," 
-  primary-color="#61d180">
-</chat-widget>
- <script
-  src="https://widgets.leadconnectorhq.com/loader.js" 
-  data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" >
- </script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&display=swap');
+    </style>
+    {{ vite src="resources/css/site.css|resources/js/site.js" }}
+    {{ partial:statamic-peak-seo::snippets/seo }}
+    {{ partial:statamic-peak-browser-appearance::snippets/browser_appearance }}
+    {{ partial:statamic-peak-tools::snippets/live_preview }}
+</head>
+
+<body x-data="{ modalRefer: false }">
+    {{ stack:seo_body }}
+    {{ partial:statamic-peak-tools::snippets/noscript }}
+    {{ partial:layout/modal }}
+    {{ partial:layout/header }}
+    {{ template_content }}
+    {{ partial:layout/footer }}
+
+
+</body>
+
 </html>
 <!-- End: /layout.antlers.html -->

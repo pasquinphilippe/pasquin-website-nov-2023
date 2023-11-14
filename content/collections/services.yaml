@@ -4,7 +4,7 @@ sites:
   - 'English CA'
   - 'English US'
 propagate: false
-template: services/layout
+template: services/general
 layout: layout
 taxonomies:
   - services_type

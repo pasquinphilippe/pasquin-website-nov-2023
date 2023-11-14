@@ -5,15 +5,24 @@
     <div class="gapm"></div>
     <div class="content headercontent"><a href="/" aria-current="page" class="w-inline-block w--current">
         {{ configuration:logo }}
-          {{ svg src='{url}' class='logo' }}
+        {{ svg src='{url}' class='logo' }}
         {{ /configuration:logo }}
+      </a>
+      {{ if hide_menu }}
+      <div class="breadcrumb"><a href="/" class="breadcrumblink headerhideonmob w-inline-block">
+          <div class="t-small">Philippe Pasquin</div>
         </a>
+        <div class="t-small t-light headerhideonmob">/</div>
+        <div class="t-small t-bold">{{ title }}</div>
+      </div>
+      {{ else }}
       <div class="nav mainnav headerhideonmob">
         {{ nav:main }}
-        <div class="navitem {{ unless entry_id==" d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" }} magnetic {{ /unless }}" {{ if
-          children || entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" }} @click.prevent="open = !open"
+        <div class="navitem {{ unless entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" }} magnetic {{ /unless }}" {{ if
+          children || entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" }} 
           x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false" {{ endif }}>
-          <a href="{{ url }}" class="navlink {{ if is_current || is_parent }} w--current {{ endif}}">
+          <a href="{{ url }}" {{ if
+            children || entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" }}  @click.prevent="open = !open" {{ endif }} class="navlink {{ if is_current || is_parent }} w--current {{ endif}}">
             {{ title }}
             {{ if children || entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" }}
             <i x-show="!open" class="fa fa-caret-down"></i>
@@ -49,27 +58,7 @@
                 {{ /entries }}
                 {{ /collection:services }}
               </div>
-              <div class="services-bottom">
-                <div class="services-bottom__content">
-
-                  <h2 class="services-bottom__title">Prêt à me parler de votre projet?</h2>
-                  <div class="services-bottom__description">
-                    <p>Nous sommes une agence Shopify, qui conçoit, développe, soutient et fait croître les magasins
-                      Shopify et Shopify Plus. <a href="#" title="Test">Contactez-nous dès aujourd'hui.</a></p>
-                  </div>
-
-
-
-
-                </div>
-                <a href="/">
-                  <img class="partners_logo"
-                    src="/img/containers/images/theme/shopifypartners.png/bd427cb9393221dd2c8ced0caaa625e0.png" srcset="/img/containers/images/theme/shopifypartners.png/f7a999d5904aacee6aff0b5b04a57265.png 250w,
-                /img/containers/images/theme/shopifypartners.png/f3b66500c2468793cc3e883d59f7ed8f.png 300w,
-                /img/containers/images/theme/shopifypartners.png/0d5fadc55247514f062b2f470f54e2b5.png 350w"
-                    sizes="(max-width: 640px) 150px, (max-width: 1024px) 350px, 900px" alt="Shopify Partners Logo">
-                </a>
-              </div>
+             
             </div>
 
           </div>
@@ -79,6 +68,7 @@
         {{ /nav:main }}
 
       </div>
+      {{ endif }}
       <div class="nav headerrightnav">
         <div class="headerhideontablet">
           <div class="availability">
@@ -87,8 +77,7 @@
           </div>
         </div>
         <div class="headeravailspacer magnetic"></div><a href="/contact"
-          class="btn magnetic dark headerhideonmob w-button">Travailler
-          avec nous</a><a href="/contact" class="btn dark headershowbtnonmobile w-button">Contact</a>
+          class="btn magnetic dark headerhideonmob w-button">Travailler avec nous</a><a href="/contact" class="btn dark headershowbtnonmobile w-button">Contact</a>
       </div>
     </div>
   </div>

@@ -1,0 +1,35 @@
+<div id="intro" class="content services-bg">
+    <div class="gapl"></div>
+    <div class="services-hero">
+        <h1 style="
+        font-size: 5rem; 
+        line-height: 1.2;
+        background: linear-gradient(90deg, {{color1}} 0%, {{ color2}} 50%, {{ color3 }} 100%);
+        background-size: 300% 100%;
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent; /* Fallback for non-webkit browsers */
+      ">{{ title }}</h1>
+
+        <p class="services-description t-light">{{ menu_description }}</p>
+
+        <div class="similar-services">
+            {{ services_type }}
+            {{ collection:services limit="4" url:not="{ url }" services_type="{services_type}" sort='random' }}
+            <a href="{{ url }}" class="btn magnetic">{{ title }}</a>
+            {{ /collection:services }}
+        </div>
+    </div>
+    <div class="gapxl"></div>
+</div>
+<section class="content">
+<div class="service-explanation">
+    <p>Eu culpa pariatur duis et veniam aliquip exercitation do irure non reprehenderit voluptate. Exercitation magna
+        nulla dolore. Veniam reprehenderit non voluptate dolor nulla esse commodo ad. Labore dolor esse ex ea et veniam
+        ipsum ut est proident consequat voluptate officia aute. Dolor eiusmod veniam sunt non tempor consectetur mollit
+        eu irure dolore officia ad. Dolor elit esse aute dolor officia do veniam irure magna. Id pariatur commodo magna
+        do veniam magna duis irure et sint est. Officia ad fugiat do nostrud sint.</p>
+</div>
+</section>

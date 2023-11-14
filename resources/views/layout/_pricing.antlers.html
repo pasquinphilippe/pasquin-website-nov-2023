@@ -3,12 +3,12 @@
     <div class="content medium">
         <div class="gapxl"></div>
         <div class="ctawrap">
-            <div class="availability"> 
+            <div class="availability">
                 <div>Nos abonnements</div>
             </div>
             <div class="gaps"></div>
 
-            <h2 class="h2">Commençons une relation d'affaires.</h2>
+            <h2 class="h2">Déléguez vos tâches de développement Shopify.</h2>
             <div class="gapxs"></div>
             <div class="t-light">Choisissez un plan qui fonctionne pour vous</div>
             <div class="gapl"></div>
@@ -32,11 +32,11 @@
                         <div class="inlinepricelabelwrap">
                             <div class="h2 bigprice price" data-original-price="1640">{{ price }}</div>
                             <div class="priceperiod">
-                                <div class="t-xsmall t-bold">par mois<br>facturé bi-mensuellement</div>
+                                <div class="t-xsmall t-bold">par mois<br>facturé mensuellement</div>
                             </div>
                         </div>
                         <div class="gaps"></div>
-                        <div class="nav headerrightnav"><a href="/contact" class="btn dark w-button">Commençons!</a>
+                        <div class="nav headerrightnav"><a href="/contact" class="btn dark magnetic">Commençons!</a>
                         </div>
                         <div class="gapm"></div>
                         <div><span class="t-bold">{{ description }}</div>
@@ -84,10 +84,10 @@
                             </div>
                             {{ unless last }}
                             <div class="divider"></div>
-                           {{ /unless }}
-                           {{ /includes}}
+                            {{ /unless }}
+                            {{ /includes}}
                         </div>
-                   
+
                     </div>
                 </div>
                 <div class="gapm"></div>
@@ -100,28 +100,29 @@
         <div class="gapm"></div>
         <div class="outlinecard">
             {{ collection:staff limit="1" sort="random" }}
-            <img src="{{ glide:avatar_picture }}" loading="lazy" sizes="64px"
-                srcset="{{ glide:avatar_picture }}" alt="" class="avatar sm" />
+            <img src="{{ glide:avatar_picture }}" loading="lazy" sizes="64px" srcset="{{ glide:avatar_picture }}" alt=""
+                class="avatar sm" />
             {{ /collection:staff }}
             <div>
                 <div class="t-small t-bold">Questions?</div>
-                <div class="t-light t-xsmall">Organisons un appel de lancement pour discuter de vos besoins
-                    et de la manière dont tout fonctionne.</div>
+                <div class="t-light t-xsmall">Organisons un appel découverte pour discuter de vos besoins
+                    et de nos offres de service.</div>
                 <div class="gapxs"></div>
-                <div class="w-layout-vflex btngrp"><a href="https://www.neverbeforeseen.co/contact" target="_blank"
-                        class="bluelink t-xsmall ">
+                <div class="w-layout-vflex btngrp">
+                    <a href="/contact" target="_blank" class="bluelink t-xsmall ">
                         <div>Réservez un appel explicatif.
-                        </div><img
-                            src="https://assets-global.website-files.com/652484f7d01cda72fe7be6e0/6526b0cb9b5990da12921d1b_externalLink.svg"
-                            loading="lazy" alt="" />
-                    </a></div>
+                        </div> {{ svg src="external_link" }}
+                    </a>
+                </div>
             </div>
         </div>
         <div class="gapm"></div>
         <div class="outlinecard">
             <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M27.7898 9.29323C27.0964 6.74598 24.7669 4.87305 22 4.87305C18.6863 4.87305 16 7.55934 16 10.873C16 14.1868 18.6863 16.873 22 16.873C22.7805 16.873 23.5262 16.724 24.2102 16.4529M27.7898 9.29323C28.4738 9.02207 29.2195 8.87305 30 8.87305C33.3137 8.87305 36 11.5593 36 14.873C36 18.1868 33.3137 20.873 30 20.873C27.2331 20.873 24.9036 19.0001 24.2102 16.4529M27.7898 9.29323C24.9834 10.4058 23.423 13.5611 24.2102 16.4529M14 40.8731H18C18 40.8731 22.7833 42.7199 26 42.8731C33.0926 43.2108 38.7267 39.9112 43.2901 34.8926C44.3322 33.7465 44.3146 32.0163 43.3469 30.8067C42.0994 29.2473 39.7547 29.1211 38.1905 30.3625C36.4671 31.7303 34.1796 33.2688 32 33.8731C28.9894 34.7077 26 34.8731 26 34.8731C42 33.873 36 20.8728 14 29.8732M6 26.873H14V42.8731H6V26.873Z" stroke="#03030D" stroke-width="4"></path>
-                </svg>
+                <path
+                    d="M27.7898 9.29323C27.0964 6.74598 24.7669 4.87305 22 4.87305C18.6863 4.87305 16 7.55934 16 10.873C16 14.1868 18.6863 16.873 22 16.873C22.7805 16.873 23.5262 16.724 24.2102 16.4529M27.7898 9.29323C28.4738 9.02207 29.2195 8.87305 30 8.87305C33.3137 8.87305 36 11.5593 36 14.873C36 18.1868 33.3137 20.873 30 20.873C27.2331 20.873 24.9036 19.0001 24.2102 16.4529M27.7898 9.29323C24.9834 10.4058 23.423 13.5611 24.2102 16.4529M14 40.8731H18C18 40.8731 22.7833 42.7199 26 42.8731C33.0926 43.2108 38.7267 39.9112 43.2901 34.8926C44.3322 33.7465 44.3146 32.0163 43.3469 30.8067C42.0994 29.2473 39.7547 29.1211 38.1905 30.3625C36.4671 31.7303 34.1796 33.2688 32 33.8731C28.9894 34.7077 26 34.8731 26 34.8731C42 33.873 36 20.8728 14 29.8732M6 26.873H14V42.8731H6V26.873Z"
+                    stroke="#03030D" stroke-width="4"></path>
+            </svg>
             <div>
                 <div class="t-small t-bold">Référer un ami et faite vous payer</div>
                 <div class="t-light t-xsmall">Recevez 200$ à la signature et 8% des commissions récurrentes.<sup>*</sup>
@@ -131,59 +132,41 @@
 
                 </div>
                 <div class="gapxs"></div>
-                <div class="w-layout-vflex btngrp"><a href="https://www.neverbeforeseen.co/contact" target="_blank"
-                        class="bluelink t-xsmall ">
+                <div class="w-layout-vflex btngrp">
+                    <a href="#" @click="modalRefer = true" class="bluelink t-xsmall ">
                         <div>Référez un client
-                        </div><img
-                            src="https://assets-global.website-files.com/652484f7d01cda72fe7be6e0/6526b0cb9b5990da12921d1b_externalLink.svg"
-                            loading="lazy" alt="" />
-                    </a></div>
+                        </div>
+                        {{ svg src="external_link" }}
+
+                    </a>
+                </div>
             </div>
         </div>
 
         <div class="gapl"></div>
         <div class="linethroughtitle">
-            <div class="t-bold t-small">Notre expertise</div>
+            <div class="t-bold t-small">Nos services connexes</div>
             <div class="linethroughtitleline"></div>
         </div>
         <div class="gapm"></div>
         <div class="w-layout-grid grid expertise-grid">
-            <div class="card jumboshadow jumboshadowwithborder">
-                <div class="padds">
-                    <div class="t-small t-bold">Développement</div>
-                    <div class="gapxs"></div>
-                    <div class="t-light t-xsmall">Nous offrons une expertise pointue en développement d'applications
-                        Shopify, création de thèmes et solutions personnalisées.
+            {{ collection:services }}
+            <a href="{{ url }}" class="magnetic">
+                <div class="card jumboshadow jumboshadowwithborder">
+                    <div class="padds">
+                        <div class="t-small t-bold">{{ title }}</div>
+                        <div class="gapxs"></div>
+                        <div class="t-light t-xsmall">{{ menu_description }}
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card jumboshadow jumboshadowwithborder">
-                <div class="padds">
-                    <div class="t-small t-bold">Maintenance</div>
-                    <div class="gapxs"></div>
-                    <div class="t-light t-xsmall">Nous proposons un support mensuel rigoureux pour Shopify, assurant
-                        une maintenance proactive et une assistance continue.
-                    </div>
-                </div>
-            </div>
-            <div class="card jumboshadow jumboshadowwithborder">
-                <div class="padds">
-                    <div class="t-small t-bold">Optimisation/Automatisation</div>
-                    <div class="gapxs"></div>
-                    <div class="t-light t-xsmall">Notre service d'optimisation et d'automatisation pour Shopify
-                        rationalise vos opérations e-commerce, améliorant l'efficacité et propulsant la croissance
-                        de votre entreprise.
+            </a>
+            {{ /collection:services }}
 
-
-
-
-                    </div>
-                </div>
-            </div>
         </div>
         <div class="gapxl"></div>
     </div>
 
-   
+
 
 </div>
