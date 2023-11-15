@@ -2,7 +2,7 @@
     <div id="heroprojects" class="heroprojects">
         <div class="heroprojectwrapper w-dyn-list">
             <div role="list" class="heroprojectwrapper ">
-                {{ collection:projects limit='1' }}
+                {{ collection:projects limit='1' sort="updated_at:desc" }}
                 <div role="listitem" class="heroprojectwrapper ">
                     <div class="card dark jumboshadow jumboshadowwithborder"
                         style="background-image: linear-gradient({{color1}} 0%, {{color2}} 51.77%, {{color3}} 100%); background-size: 100% 100%;">
@@ -55,7 +55,7 @@
         </div>
 
         <div role="list" class="projectgridc ">
-            {{ collection:projects limit='2' offset='1' }}
+            {{ collection:projects limit='2' offset='1' sort="updated_at:desc"}}
             <div class="card dark jumboshadow jumboshadowwithborder"
                 style="background-image: linear-gradient({{color1}} 0%, {{color2}} 51.77%, {{color3}} 100%); background-size: 100% 100%;">
                 <div class="padds nobottompadding">

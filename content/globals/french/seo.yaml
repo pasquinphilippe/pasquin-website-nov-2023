@@ -4,15 +4,16 @@ noindex_local: true
 noindex_staging: true
 noindex_production: false
 hreflang_auto: true
-json_ld_type: person
-person_name: 'Philippe Pasquin'
+json_ld_type: organization
+organization_name: 'Philippe Pasquin - Développeur Shopify'
+organization_logo: philippe_pasquin.png
 breadcrumbs: true
 use_social_image_generation: true
 social_images_collections:
   - pages_index
-og_image: untitled-design-(2).png
 sitemap_collections:
-  - pages
+  - services
+  - pages_index
 trackers_local: false
 trackers_staging: false
 trackers_production: true

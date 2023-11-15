@@ -4,7 +4,7 @@ blueprint: project
 title: 'RD Cosmetic'
 brand_logo: clients_logo/rdcosmetic-transparent-logo.webp
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1699564655
+updated_at: 1700000749
 mockups:
   - projects/milistack_screenshot-2023-11-09-16.15.39.png
 website: 'https://rdcosmetic.com'
@@ -17,4 +17,5 @@ tags:
   - developpement
   - migration
   - shopify
+small_description: 'Un projet unique'
 ---
