@@ -4429,7 +4429,7 @@ svg.pulse-svg .fourth-circle {
 }
 
 .request-modal-inner {
-    height: 60vh;
+    height: auto;
 }
 
 .privacy-link {

@@ -15,6 +15,7 @@
     "@alpinejs/persist": "^3.13.0",
     "alpinejs": "^3.13.0",
     "font-awesome": "^4.7.0",
+    "gsap": "^3.12.2",
     "puppeteer": "^21.5.0"
   },
   "devDependencies": {
