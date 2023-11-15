@@ -4511,3 +4511,7 @@ svg.pulse-svg .fourth-circle {
 }
 
 
+.no-decoration{
+    text-decoration: none;
+    color: var(--text1);
+}
