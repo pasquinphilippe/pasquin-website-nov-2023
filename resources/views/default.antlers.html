@@ -12,15 +12,15 @@
                 <div class="gapm"></div>
                 <div class="ctawrap">
                     <div class="availability"> {{ svg src='availability'}}
-                        <div>Nous sommes disponibles</div>
+                        <div>{{ availability }}</div>
                     </div>
                     <div class="gaps"></div>
-                    <h2 class="h2">Vous avez une question?</h2>
+                    <h2 class="h2">{{ contact_heading }}</h2>
                     <div class="gapxs"></div>
                     <div class="gaps"></div>
-                    <div class="btngrp centeronmob"><a href="/contact?message=true" class="btn big dark ">Envoyer nous
-                            un message</a>
-                            <a href="/contact" class="btn big ">Planifier une rencontre</a></div>
+                    <div class="btngrp centeronmob">
+                        <a href="{{ contact_cta_link_1 }}" class="btn big dark ">{{ contact_cta_text_1 }}</a>
+                            <a href="{{ contact_cta_link_2 }}" class="btn big ">{{ contact_cta_text_2 }}</a></div>
                 </div>
                 <div class="gapm"></div>
             </div>

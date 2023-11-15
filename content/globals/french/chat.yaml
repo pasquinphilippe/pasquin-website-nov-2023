@@ -1,0 +1,38 @@
+discutons: Discutons!
+message_book: "Je vais faire suite à votre demande d'ici la prochaine heure."
+ctas:
+  -
+    id: lp05o4w9
+    icon: chat
+    cta_text: 'Envoyez moi un message'
+    modal: false
+    cta_link: 'entry::d9172796-78a7-4e6c-b716-53ba1946125e'
+    type: call_to_action
+    enabled: true
+  -
+    id: lp05opso
+    icon: phone
+    cta_text: 'Planifier un appel'
+    modal: false
+    cta_link: 'entry::d9172796-78a7-4e6c-b716-53ba1946125e'
+    type: call_to_action
+    enabled: true
+  -
+    id: lp05pck0
+    cta_text: 'Référez un client'
+    modal: true
+    alpine_modal_name: modalRefer
+    type: call_to_action
+    enabled: true
+    icon: money-sign
+  -
+    id: lp05qf66
+    icon: book-call
+    cta_text: 'Voir la vidéo explicatrice'
+    modal: true
+    alpine_modal_name: showContent1
+    type: call_to_action
+    enabled: true
+video_salutation: 'Enchanté 👋'
+video_description: 'Vous voulez savoir comment je peux vous aidez avec votre boutique Shopify?'
+video_link: 'https://www.loom.com/embed/df9a4c476e504f85a204c1c04c56fa2d?sid=aea4d45e-ccfb-4ed0-94b3-0e39a018387b'

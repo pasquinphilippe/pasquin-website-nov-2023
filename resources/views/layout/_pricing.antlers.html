@@ -1,16 +1,16 @@
-<div id="pricing" class="pricingsection">
+<div id="pricing" class="pricingsection" x-in-viewport="popupVisible = true">
 
     <div class="content medium">
         <div class="gapxl"></div>
         <div class="ctawrap">
             <div class="availability">
-                <div>Nos abonnements</div>
+                <div>{{ subheading }}</div>
             </div>
             <div class="gaps"></div>
 
-            <h2 class="h2">Déléguez vos tâches de développement Shopify.</h2>
+            <h2 class="h2">{{ support_heading }}</h2>
             <div class="gapxs"></div>
-            <div class="t-light">Choisissez un plan qui fonctionne pour vous</div>
+            <div class="t-light">{{ support_pragraph }}</div>
             <div class="gapl"></div>
         </div>
 
@@ -97,55 +97,36 @@
         </div>
     </div>
     <div class="content medium">
+        {{ ctas }}
         <div class="gapm"></div>
         <div class="outlinecard">
-            {{ collection:staff limit="1" sort="random" }}
-            <img src="{{ glide:avatar_picture }}" loading="lazy" sizes="64px" srcset="{{ glide:avatar_picture }}" alt=""
+           {{ icon }}
+            <img src="{{ glide:url }}" loading="lazy" sizes="64px" srcset="{{ glide:url }}" alt=""
                 class="avatar sm" />
-            {{ /collection:staff }}
+           {{ /icon }}
             <div>
-                <div class="t-small t-bold">Questions?</div>
-                <div class="t-light t-xsmall">Organisons un appel découverte pour discuter de vos besoins
-                    et de nos offres de service.</div>
+                <div class="t-small t-bold">{{ heading }}</div>
+                <div class="t-light t-xsmall">{{ pragraph }}</div>
                 <div class="gapxs"></div>
                 <div class="w-layout-vflex btngrp">
-                    <a href="/contact" target="_blank" class="bluelink t-xsmall ">
-                        <div>Réservez un appel explicatif.
+                    {{ if modal }}
+                    <span class="bluelink t-xsmall" @click="{{ modal_alpine_name }} = true">{{ link_text }}{{ svg src="external_link" }}</span>
+                    
+                    {{ else }}
+                    <a href="{{ link }}" target="_blank" class="bluelink t-xsmall ">
+                        <div>{{ link_text }}
                         </div> {{ svg src="external_link" }}
                     </a>
+                    {{ endif}}
                 </div>
             </div>
         </div>
-        <div class="gapm"></div>
-        <div class="outlinecard">
-            <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M27.7898 9.29323C27.0964 6.74598 24.7669 4.87305 22 4.87305C18.6863 4.87305 16 7.55934 16 10.873C16 14.1868 18.6863 16.873 22 16.873C22.7805 16.873 23.5262 16.724 24.2102 16.4529M27.7898 9.29323C28.4738 9.02207 29.2195 8.87305 30 8.87305C33.3137 8.87305 36 11.5593 36 14.873C36 18.1868 33.3137 20.873 30 20.873C27.2331 20.873 24.9036 19.0001 24.2102 16.4529M27.7898 9.29323C24.9834 10.4058 23.423 13.5611 24.2102 16.4529M14 40.8731H18C18 40.8731 22.7833 42.7199 26 42.8731C33.0926 43.2108 38.7267 39.9112 43.2901 34.8926C44.3322 33.7465 44.3146 32.0163 43.3469 30.8067C42.0994 29.2473 39.7547 29.1211 38.1905 30.3625C36.4671 31.7303 34.1796 33.2688 32 33.8731C28.9894 34.7077 26 34.8731 26 34.8731C42 33.873 36 20.8728 14 29.8732M6 26.873H14V42.8731H6V26.873Z"
-                    stroke="#03030D" stroke-width="4"></path>
-            </svg>
-            <div>
-                <div class="t-small t-bold">Référer un ami et faite vous payer</div>
-                <div class="t-light t-xsmall">Recevez 200$ à la signature et 8% des commissions récurrentes.<sup>*</sup>
-
-
-
-
-                </div>
-                <div class="gapxs"></div>
-                <div class="w-layout-vflex btngrp">
-                    <a href="#" @click="modalRefer = true" class="bluelink t-xsmall ">
-                        <div>Référez un client
-                        </div>
-                        {{ svg src="external_link" }}
-
-                    </a>
-                </div>
-            </div>
-        </div>
+        {{ /ctas }}
+        
 
         <div class="gapl"></div>
         <div class="linethroughtitle">
-            <div class="t-bold t-small">Nos services connexes</div>
+            <div class="t-bold t-small">{{ services_heading }}</div>
             <div class="linethroughtitleline"></div>
         </div>
         <div class="gapm"></div>

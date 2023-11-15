@@ -1,103 +1,133 @@
-.cookie-banner {
-    position: fixed;
-    z-index: 50;
-    left: 1rem;
-    right: 1rem;
-    bottom: 1rem;
-    padding: 1.5rem;
-    background-color: white;
-    border: 1px solid rgba(107, 114, 128, 0.1);
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-                0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  }
+/* CSS for statamic-peak-seo::components/_cookie.antlers.html */
 
-  .cookie-banner h2 {
-    font-size: 1.5rem; /* 24px */
-    font-weight: 700; /* bold */
-  }
+/* Styles for the container div */
+div[data-x-data^="cookieConsent"] {
+  position: fixed;
+  z-index: 50;
+  left: 1rem;
+  bottom: 1rem;
+  width: auto;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-  .cookie-banner p {
-    font-size: 0.875rem; /* 14px */
-    font-weight: 700; /* bold */
-    color: #4b5563; /* neutral color */
-  }
+div[data-x-data^="cookieConsent"].md-right-auto {
+  left: auto;
+  right: 1rem;
+}
 
-  .cookie-banner a {
-    padding: 0 0.25rem;
-    margin: -0.25rem;
-    text-decoration: underline;
-    border-radius: 0.25rem;
-    outline: none;
-  }
+div[data-x-data^="cookieConsent"].md-left-[2rem] {
+  left: 2rem;
+}
 
-  .cookie-banner a:hover {
-    color: #2563eb; /* primary color */
-  }
+div[data-x-data^="cookieConsent"].md-left-auto {
+  right: auto;
+  left: 1rem;
+}
 
-  .cookie-banner a:focus-visible {
-    ring: 2px solid #2563eb; /* primary focus ring */
-  }
+div[data-x-data^="cookieConsent"].md-right-[2rem] {
+  right: 2rem;
+}
 
-  .cookie-banner label {
-    display: flex;
-    align-items: center;
-  }
+/* Styles for headings and text */
+h2.text-2xl {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
-  .cookie-banner input[type="checkbox"] {
-    width: 1.25rem; /* 20px */
-    height: 1.25rem; /* 20px */
-    margin-right: 0.75rem;
-    border-radius: 0.25rem;
-    border: 1px solid #4b5563; /* neutral color */
-    color: #2563eb; /* primary color */
-  }
+p.text-sm {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #333;
+}
 
-  .cookie-banner input[type="checkbox"]:focus-visible {
-    outline: none;
-    ring: 2px solid #2563eb; /* primary focus ring */
-  }
+/* Styles for links within text */
+a {
+  color: #333;
+  text-decoration: underline;
+}
 
-  .cookie-banner input[type="checkbox"]:disabled {
-    opacity: 0.5;
-  }
+a:hover {
+  color: #007acc;
+}
 
-  .cookie-banner .flex-col {
-    display: flex;
-    flex-direction: column;
-  }
+/* Styles for checkboxes and labels */
+label.inline-flex {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
 
-  .cookie-banner .space-y-4 > * + * {
-    margin-top: 1rem;
-  }
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 4px;
+}
 
-  .cookie-banner .text-xs {
-    font-size: 0.75rem; /* 12px */
-    color: rgba(107, 114, 128, 0.75); /* text color */
-  }
+/* Styles for buttons */
+button[type="button"] {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  cursor: pointer;
+}
 
-  .cookie-banner .font-bold {
-    font-weight: 700; /* bold */
-  }
+/* Styles for the reset consent link */
+a[data-x-show^="$store.cookieBanner.consent"] {
+  padding: 0.25rem 0.5rem;
+  margin: 0 -0.25rem;
+  text-decoration: underline;
+  border-radius: 4px;
+}
 
-  .cookie-banner .flex {
-    display: flex;
-  }
+a[data-x-show^="$store.cookieBanner.consent"]:hover {
+  color: #007acc;
+}
 
-  .cookie-banner .space-x-4 > * + * {
-    margin-left: 1rem;
-  }
+/* Additional custom styles can be added as needed */
+/* Styles for the checkbox buttons */
+input[type="checkbox"][disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 
-  .cookie-banner .button {
-    padding: 0.5rem 1rem;
-    font-weight: 700; /* bold */
-    color: white;
-    background-color: #2563eb; /* primary color */
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
-  }
+/* Styles for the "Accept All" and "Accept Selected" buttons */
+button[type="button"].bg-primary {
+  background-color: #007acc;
+  color: #fff;
+}
 
-  .cookie-banner .button:hover {
-    background-color: #1d4ed8; /* darker primary color */
-  }
+button[type="button"].bg-primary:hover {
+  background-color: #005d99;
+}
+
+/* Styles for the disabled state of the checkboxes */
+input[type="checkbox"][disabled] + span {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Styles for the focus and hover states of checkboxes and buttons */
+input[type="checkbox"]:focus,
+button[type="button"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #007acc;
+}
+
+input[type="checkbox"]:hover,
+button[type="button"]:hover {
+  filter: brightness(0.9);
+}
+
+/* Add any additional custom styles here */
+
+/* End of CSS for statamic-peak-seo::components/_cookie.antlers.html */

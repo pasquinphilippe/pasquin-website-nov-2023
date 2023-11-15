@@ -13,43 +13,554 @@ tabs:
               validate:
                 - required
       -
+        display: 'Hero Section'
+        fields:
+          -
+            handle: announcement
+            field:
+              default: false
+              type: toggle
+              display: Announcement
+              icon: toggle
+              localizable: false
+              width: 75
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: related_date
+            field:
+              mode: single
+              inline: false
+              full_width: false
+              columns: 1
+              rows: 1
+              time_enabled: false
+              time_seconds_enabled: false
+              type: date
+              display: 'Related Date'
+              icon: date
+              localizable: false
+              width: 33
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              if:
+                announcement: 'equals true'
+          -
+            handle: announcement_text
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Announcement Text'
+              icon: text
+              localizable: true
+              width: 33
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              if:
+                announcement: 'equals true'
+          -
+            handle: announcement_link
+            field:
+              type: link
+              display: 'Announcement Link'
+              icon: link
+              localizable: true
+              width: 33
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              if:
+                announcement: 'equals true'
+          -
+            handle: content
+            field:
+              type: section
+              display: Content
+              icon: section
+              localizable: false
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: heading
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Heading
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: paragraph
+            field:
+              antlers: false
+              type: textarea
+              display: Paragraph
+              icon: textarea
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: button_link
+            field:
+              type: link
+              display: 'Button Link'
+              icon: link
+              localizable: true
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: button_text
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Button Text'
+              icon: text
+              localizable: true
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
         display: 'Scrolling Benefits'
         fields:
           -
             import: scrolling_benefits
+      -
+        display: 'Projects overveiew'
+        fields:
+          -
+            handle: projects_heading
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Projects heading'
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: btn_cacher
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'BTN Cacher'
+              icon: text
+              localizable: true
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: btn_plus
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'BTN Plus'
+              icon: text
+              localizable: true
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: Abonnements
+        fields:
+          -
+            handle: subheading
+            field:
+              input_type: text
+              default: 'Support mensuel sur Shopify'
+              antlers: false
+              type: text
+              display: Subheading
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: support_heading
+            field:
+              input_type: text
+              default: 'Déléguez vos tâches de développement Shopify.'
+              antlers: false
+              type: text
+              display: 'Support Heading'
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: support_pragraph
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+              smart_typography: false
+              save_html: false
+              inline: false
+              toolbar_mode: fixed
+              reading_time: false
+              word_count: false
+              fullscreen: true
+              allow_source: true
+              enable_input_rules: true
+              enable_paste_rules: true
+              remove_empty_nodes: false
+              antlers: false
+              link_noopener: false
+              link_noreferrer: false
+              target_blank: false
+              always_show_set_button: false
+              collapse: false
+              previews: true
+              type: bard
+              display: 'Support Pragraph'
+              icon: bard
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: ctas_section
+            field:
+              type: section
+              display: "CTA's"
+              icon: section
+              localizable: false
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: ctas
+            field:
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    cta:
+                      display: CTA
+                      instructions: null
+                      icon: alert-help-question
+                      fields:
+                        -
+                          handle: icon
+                          field:
+                            max_files: 1
+                            mode: list
+                            container: images
+                            restrict: false
+                            allow_uploads: true
+                            show_filename: true
+                            show_set_alt: true
+                            type: assets
+                            display: Icon
+                            icon: assets
+                            localizable: false
+                            width: 50
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: heading
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: Heading
+                            icon: text
+                            localizable: true
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: pragraph
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: Pragraph
+                            icon: text
+                            localizable: true
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: link_text
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: 'Link text'
+                            icon: text
+                            localizable: true
+                            width: 33
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: modal
+                          field:
+                            default: false
+                            type: toggle
+                            display: Modal
+                            icon: toggle
+                            localizable: false
+                            width: 25
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: link
+                          field:
+                            type: link
+                            display: Link
+                            icon: link
+                            localizable: false
+                            width: 33
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            if:
+                              modal: 'equals false'
+                        -
+                          handle: modal_alpine_name
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: 'Modal Alpine Name'
+                            icon: text
+                            localizable: false
+                            width: 33
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            if:
+                              modal: 'equals true'
+              type: replicator
+              display: CTAS
+              icon: replicator
+              localizable: false
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: 'Services Section'
+        fields:
+          -
+            handle: services_heading
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Services Heading'
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: 'Contact Section'
+        fields:
+          -
+            handle: availability
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Availability
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: contact_heading
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Contact Heading'
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: contact_cta_text_1
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Contact CTA Text 1'
+              icon: text
+              localizable: true
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: contact_cta_link_1
+            field:
+              type: link
+              display: 'Contact CTA Link 1'
+              icon: link
+              localizable: false
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: contact_cta_text_2
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Contact CTA Text 2'
+              icon: text
+              localizable: true
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: contact_cta_link_2
+            field:
+              type: link
+              display: 'Contact CTA Link 2'
+              icon: link
+              localizable: false
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
   seo:
-      display: SEO
-      sections:
-        -
-          display: Basic
-          instructions: 'Basic SEO settings.'
-          fields:
-            -
-              import: 'statamic-peak-seo::seo_basic'
-        -
-          display: Advanced
-          instructions: 'Advanced SEO settings.'
-          fields:
-            -
-              import: 'statamic-peak-seo::seo_advanced'
-        -
-          display: 'Open Graph'
-          instructions: 'Open Graph meta tags for social sharing.'
-          fields:
-            -
-              import: 'statamic-peak-seo::seo_open_graph'
-        -
-          display: Sitemap
-          instructions: 'Sitemap configuration.'
-          fields:
-            -
-              import: 'statamic-peak-seo::seo_sitemap'
-        -
-          display: 'JSON-ld Schema'
-          instructions: 'Custom JSON-ld schema objects.'
-          fields:
-            -
-              import: 'statamic-peak-seo::seo_jsonld'
+    display: SEO
+    sections:
+      -
+        display: Basic
+        instructions: 'Basic SEO settings.'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_basic'
+      -
+        display: Advanced
+        instructions: 'Advanced SEO settings.'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_advanced'
+      -
+        display: 'Open Graph'
+        instructions: 'Open Graph meta tags for social sharing.'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_open_graph'
+      -
+        display: Sitemap
+        instructions: 'Sitemap configuration.'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_sitemap'
+      -
+        display: 'JSON-ld Schema'
+        instructions: 'Custom JSON-ld schema objects.'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_jsonld'
   sidebar:
     display: Sidebar
     sections:

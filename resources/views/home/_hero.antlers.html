@@ -1,26 +1,29 @@
 <div id="intro" class="content">
     <div class="gapl"></div>
+    {{ if announcement }}
     <div class="announcement">
-        <a href="#" target="_blank" class="btn announcementbtn magnetic ">
+        <a href="{{ announcement_link }}" target="_blank" class="btn announcementbtn magnetic ">
             <div class="t-light">
                 <div class="daysago">
-                    Décembre 2023
+                    {{ related_date format="d F Y"}}
                 </div>
             </div>
-            <div>Il ne nous reste que 3 forfaits de supports</div>{{ svg src='arrow-right' }}
+            <div>{{ announcement_text }}</div>{{ svg src='arrow-right' }}
         </a>
     </div>
+    {{ endif }}
     <div class="gapm"></div>
     <div class="hero">
-        <h1 class="h1 herotitle">Construisez, évoluez, excellez avec notre expertise Shopify
-        </h1>
+        <h1 class="h1 herotitle">{{ heading }}. </h1>
         <div class="herodesc">
             <div class="t-light">
-                En tant que partenaire Shopify et Shopify Plus, nous développons, optimisons et assurons la maintenance
-                de solutions eCommerce sur Shopify. 
+                {{ paragraph }}
             </div>
             <div class="gaps"></div>
-            <a href="#method" class="btn magnetic dark margin-top">Découvrer nos services</a>
+            {{ if button_link }}
+            <a href="{{ button_link }}" class="btn magnetic dark margin-top">{{ if button_text }}{{ button_text }}{{
+                else }}{{ button_link:title }}{{ endif }}</a>
+            {{ endif }}
 
 
         </div>

@@ -1,0 +1,177 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: 'General Popup'
+        fields:
+          -
+            handle: discutons
+            field:
+              input_type: text
+              default: Discutons!
+              antlers: false
+              type: text
+              display: Discutons
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: message_book
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Message Book'
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: ctas
+            field:
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    call_to_action:
+                      display: 'Call To action'
+                      instructions: null
+                      icon: alert-alarm-bell
+                      fields:
+                        -
+                          handle: icon
+                          field:
+                            type: icon
+                            display: Icon
+                            icon: icon_picker
+                            localizable: false
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            directory: resources/svg
+                        -
+                          handle: cta_text
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: 'CTA Text'
+                            icon: text
+                            localizable: true
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: modal
+                          field:
+                            default: false
+                            type: toggle
+                            display: Modal
+                            icon: toggle
+                            localizable: false
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: cta_link
+                          field:
+                            type: link
+                            display: 'CTA Link'
+                            icon: link
+                            localizable: false
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            if:
+                              modal: 'equals false'
+                        -
+                          handle: alpine_modal_name
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: 'Alpine Modal Name'
+                            icon: text
+                            localizable: false
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            if:
+                              modal: 'equals true'
+              type: replicator
+              display: CTAs
+              icon: replicator
+              localizable: false
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: 'Video Popup'
+        fields:
+          -
+            handle: video_salutation
+            field:
+              input_type: text
+              default: 'Enchanté 👋'
+              antlers: false
+              type: text
+              display: 'Video Salutation'
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: video_description
+            field:
+              input_type: text
+              default: 'Vous souhaitez savoir comment je peux vous aidez avec votre boutique Shopify?'
+              antlers: false
+              type: text
+              display: 'Video Description'
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: video_link
+            field:
+              type: link
+              display: 'Video Link'
+              icon: link
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

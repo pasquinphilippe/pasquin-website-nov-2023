@@ -1,8 +1,9 @@
 <div class="projectgridouter" x-data="{ isExpanded: false }">
-    <div class="projectgridexpand" @click="isExpanded = !isExpanded" :class="{ 'hidden': isExpanded }">
+    <div class="projectgridexpand" @click="isExpanded = !isExpanded">
         <button class="btn dark">
-            {{ svg src='expand' class='workexpandicon'}}
-            <div x-text="isExpanded ? 'Cacher les projets' : 'Voir plus de projets'"></div>
+            {{ svg src='expand' class='workexpandicon' x-show='!isExpanded'}}
+            {{ svg src='minimize' class='workexpandicon' x-show='isExpanded'}}
+            <div x-text="isExpanded ? '{{ btn_cacher }}' : '{{ btn_plus }}'"></div>
         </button>
     </div>
     <div class="projectgridconstrain" :style="isExpanded ? 'height: auto;' : 'height: 980px'">
@@ -11,7 +12,7 @@
             <div class="gapm"></div>
             <div class="content">
                 <div class="projectnavwrap">
-                    <div class="t-bold t-small headerhideonmob">Quelques un de nos projets</div>
+                    <div class="t-bold t-small headerhideonmob">{{ projects_heading }}</div>
 
                 </div>
             </div>

@@ -26,3 +26,4 @@ google_tag_manager: GTM-5RPZT3K9
 use_cookie_banner: true
 embeds: false
 display_style: left
+cookie_revoke_before: '2023-11-14'
