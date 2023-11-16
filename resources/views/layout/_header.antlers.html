@@ -4,11 +4,12 @@
   <div id="top" class="header">
     <div class="gapm"></div>
     <div class="content headercontent"><a href="/" aria-current="page" class="w-inline-block w--current">
-        {{ configuration:logo }}
-        {{ svg src='{url}' class='logo' }}
-        {{ /configuration:logo }}
+        {{ header:logo }}
+        <img src="{{ glide:url }}" loading="lazy" width="50px" height="50px" srcset="{{ glide:url }}" alt=""
+        class="avatar" />
+        {{ /header:logo }}
       </a>
-      {{ if hide_menu }}
+      {{ if template != "default" }}
       <div class="breadcrumb"><a href="/" class="breadcrumblink headerhideonmob w-inline-block">
           <div class="t-small">Philippe Pasquin</div>
         </a>
@@ -73,11 +74,13 @@
         <div class="headerhideontablet">
           <div class="availability">
             {{ svg src='availability'}}
-            <div>3 places disponible pour décembre</div>
+            <div>{{ header:availability }}</div>
           </div>
         </div>
-        <div class="headeravailspacer magnetic"></div><a href="/contact"
-          class="btn magnetic dark headerhideonmob w-button">Travailler avec nous</a><a href="/contact" class="btn dark headershowbtnonmobile w-button">Contact</a>
+        <div class="headeravailspacer magnetic"></div>
+        <a href="{{ header:cta_link }}"
+          class="btn magnetic dark headerhideonmob w-button">{{ header:cta_text}}</a>
+          <span class="btn dark headershowbtnonmobile w-button">{{ header:mobile_button_text }}</span>
       </div>
     </div>
   </div>

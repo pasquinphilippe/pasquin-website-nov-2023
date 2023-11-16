@@ -1,0 +1,87 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: 'Header Informations'
+        fields:
+          -
+            handle: logo
+            field:
+              max_files: 1
+              min_files: 1
+              mode: list
+              container: images
+              folder: /
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Logo
+              icon: assets
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: availability
+            field:
+              input_type: text
+              antlers: true
+              type: text
+              display: Availability
+              icon: text
+              localizable: true
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: cta_text
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'CTA Text'
+              icon: text
+              localizable: true
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: cta_link
+            field:
+              type: link
+              display: 'CTA Link'
+              icon: link
+              localizable: false
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: 'Mobile Menu'
+        fields:
+          -
+            handle: mobile_button_text
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Mobile Button Text'
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
