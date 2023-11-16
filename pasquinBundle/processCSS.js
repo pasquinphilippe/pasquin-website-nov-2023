@@ -44,5 +44,5 @@ function processCSSFile(filePath) {
   });
 }
 // Replace with your CSS file path
-const cssFilePath = path.join(__dirname, 'resources/css/style.css');
+const cssFilePath = path.join(__dirname, '../resources/css/style.css');
 processCSSFile(cssFilePath);
