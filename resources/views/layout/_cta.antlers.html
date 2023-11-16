@@ -1,5 +1,9 @@
 <div x-data="{ showContent1: false, showContent2: false }"
-    x-init="setTimeout(() => { if (!showContent2) showContent1 = true; }, 15000)">
+    x-init="setTimeout(() => { 
+        if (!showContent2 && window.innerWidth > 768) { 
+            showContent1 = true; 
+        } 
+    }, 15000)">
     <div class="ctapopup" style="display: block;">
         <div class="ctapopupwrap">
             <div id="cta-content-2" class="ctapopupcontent" x-show="showContent2">
@@ -28,7 +32,7 @@
                 {{ /chat:ctas }}
 
             </div>
-            <div id="cta-content-1" class="ctapopupcontent" x-show="showContent1">
+            <div id="cta-content-1" class="ctapopupcontent" x-show="showContent1"  class="hide-on-mobile">
                 <div class="ctapopupcontentrow vid">
                     <div class="w-embed w-iframe">
                         <div style="position: relative; padding-bottom: 100%; height: 0;"><iframe

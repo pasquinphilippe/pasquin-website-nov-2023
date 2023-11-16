@@ -4293,6 +4293,60 @@ svg.pulse-svg .fourth-circle {
     align-items: center;
 }
 
+@media screen and (max-width: 479px){
+    .request-form-description {
+        max-width: 310px;
+        font-size: 16px;
+    }
+    .request-form-heading {
+        font-size: 32px;
+    }
+    .request-modal-start {
+        padding-right: 20px;
+        padding-left: 20px;}
+.modal-wrap {
+    overflow: auto;
+    padding: 64px 0 0;
+    align-items: flex-start;
+}
+.open .modal {
+    -webkit-animation: modalInMobile 0.4s backwards ease;
+    animation: modalInMobile 0.4s backwards ease;
+}
+
+.request-modal-inner {
+    padding-right: 20px;
+    padding-bottom: 64px;
+    padding-left: 20px;
+}
+
+.modal-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+}
+.request-modal-inner {
+    padding-right: 20px;
+    padding-bottom: 64px;
+    padding-left: 20px;
+}
+}
+@media screen and (max-width: 767px){
+    .request-modal-start {
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+.request-modal-inner {
+    padding-right: 32px;
+    padding-left: 32px;
+}
+}
 .modal-bg {
     position: fixed;
     left: 0;
@@ -4555,4 +4609,10 @@ svg.pulse-svg .fourth-circle {
         bottom: 44px;
     }
 
+}
+
+@media (max-width: 768px) {
+    .hide-on-mobile {
+        display: none;
+    }
 }
