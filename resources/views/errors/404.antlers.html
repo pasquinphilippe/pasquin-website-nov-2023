@@ -1,13 +1,18 @@
 {{#
-    @name Error: 404
-    @desc The 404 error template.
+@name Error: 404
+@desc The 404 error template.
 #}}
 
 {{# Redirect if current_url is in the Redirects global. #}}
 {{ partial:statamic-peak-seo::errors/redirects }}
 
 <!-- /errors/404.antlers.html -->
-<main class="outer-grid" id="content">
-    {{ partial:statamic-peak-seo::errors/entry_content }}
-</main>
+<div class="utility-page-wrap">
+    <div class="utility-page-content content">
+        <h2 class="h3">{{ heading }}</h2>
+        <div class="gapxs"></div>
+        <div class="t-small t-light">{{ description }}</div>
+        <div class="gaps"></div><a href="{{ cta_link }}" class="btn magnetic dark headerhideonmob w-button">{{ cta_text }}</a>
+    </div>
+</div>
 <!-- End: /errors/404.antlers.html -->

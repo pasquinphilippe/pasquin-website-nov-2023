@@ -1,0 +1,49 @@
+<div class="faq-container content" x-data="{ open: null }">
+    <h3>FAQ</h3>
+    <div class="faq-question" @click="open = open === 1 ? null : 1">
+      <h3>Comment migrer ma boutique vers Shopify ?</h3>
+    </div>
+    <div class="faq-answer" x-show="open === 1">
+      <p>La migration de votre boutique vers Shopify est simple et nous pouvons vous guider à chaque étape.
+        Contactez-nous pour en savoir plus sur nos services de migration.</p>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="faq-question" @click="open = open === 2 ? null : 2">
+      <h3>Quelle est la durée d'une migration vers Shopify ?</h3>
+    </div>
+    <div class="faq-answer" x-show="open === 2">
+      <p>La durée de la migration peut varier en fonction de la taille et de la complexité de votre boutique actuelle,
+        mais nous nous efforçons de réaliser les migrations de manière rapide et efficace.</p>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="faq-question" @click="open = open === 3 ? null : 3">
+      <h3>Est-ce que mes données seront sécurisées pendant la migration ?</h3>
+    </div>
+    <div class="faq-answer" x-show="open === 3">
+      <p>Oui, la sécurité de vos données est notre priorité absolue. Nous utilisons des protocoles sécurisés tout au
+        long du processus de migration pour assurer la protection de vos données.</p>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="faq-question" @click="open = open === 4 ? null : 4">
+      <h3>Comment préparer ma boutique pour la migration ?</h3>
+    </div>
+    <div class="faq-answer" x-show="open === 4">
+      <p>Avant la migration, nous vous recommandons de sauvegarder toutes vos données et de faire une révision de
+        votre
+        inventaire pour vous assurer que tout est à jour.</p>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="faq-question" @click="open = open === 5 ? null : 5">
+      <h3>Vais-je perdre le référencement de mon site actuel lors de la migration ?</h3>
+    </div>
+    <div class="faq-answer" x-show="open === 5">
+      <p>Nous prenons des mesures spécifiques pour préserver votre référencement durant la migration, comme la gestion
+        des redirections 301 et le maintien des URL structurées.</p>
+    </div>
+    <!-- Repeat for other FAQs -->
+
+  </div>

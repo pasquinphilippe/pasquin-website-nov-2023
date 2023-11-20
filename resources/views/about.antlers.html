@@ -2,20 +2,17 @@
     <div class="gapl"></div>
     <div class="card jumboshadow jumboshadowwithborder">
         <div class="paddm">
-            <div class="t-small t-bold t-light">Bonjour 👋, heureux de faire votre connaissance!</div>
+            <div class="t-small t-bold t-light">{{ subheading }}</div>
             <div class="gapxs"></div>
-            <h1 class="h3">Dirigeant ma petite agence Shopify depuis deux ans, je mets à profit mes six ans d'expérience
-                en développement pour innover et personnaliser mes services Shopify à mes clients.
+            <h1 class="h3">{{ heading }}
 
             </h1>
             <div class="gapm"></div>
             <div class="divider"></div>
             <div class="gapm"></div>
-            <h2 class="h4">Rencontrer l'équipe</h2>
+            <h2 class="h4">{{ meet_heading }}</h2>
             <div class="gapxs"></div>
-            <div class="t-small t-light">Actuellement, je gère mon entreprise en solo, assurant le développement et la
-                maintenance des services pour mes clients. Je suis honoré de leur confiance quotidienne dans la
-                réalisation de leurs projets.
+            <div class="t-small t-light">{{ meet_description }}
             </div>
             <div class="gapm"></div>
 
@@ -27,9 +24,7 @@
                         src="{{ glide:url }}"
                         alt="" class="teamimg def">
                     {{ /avatar_picture }}
-                    <img loading="lazy" x-show="hover"
-                        src="https://assets-global.website-files.com/65248f8a6b6d9e1cca514f62/652db2a25b332864d8aff505_jb-hov.png"
-                        alt="" class="teamimg alt">
+                   
                   </div>
                   
                 <div class="gapxs"></div>

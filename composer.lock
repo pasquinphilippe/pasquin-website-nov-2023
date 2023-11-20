@@ -5437,16 +5437,16 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v4.34.0",
+            "version": "v4.35.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "24b73ab9a6965e60b7c335b76f95fe57c9dbea67"
+                "reference": "ce8e80987e29c8929364dc8387cd0f2399128202"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/24b73ab9a6965e60b7c335b76f95fe57c9dbea67",
-                "reference": "24b73ab9a6965e60b7c335b76f95fe57c9dbea67",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/ce8e80987e29c8929364dc8387cd0f2399128202",
+                "reference": "ce8e80987e29c8929364dc8387cd0f2399128202",
                 "shasum": ""
             },
             "require": {
@@ -5528,7 +5528,7 @@
             ],
             "support": {
                 "issues": "https://github.com/statamic/cms/issues",
-                "source": "https://github.com/statamic/cms/tree/v4.34.0"
+                "source": "https://github.com/statamic/cms/tree/v4.35.0"
             },
             "funding": [
                 {
@@ -5536,7 +5536,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-11-14T19:44:01+00:00"
+            "time": "2023-11-17T02:55:26+00:00"
         },
         {
             "name": "statamic/ssg",
@@ -5700,16 +5700,16 @@
         },
         {
             "name": "studio1902/statamic-peak-commands",
-            "version": "v2.6.2",
+            "version": "v2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/studio1902/statamic-peak-commands.git",
-                "reference": "7a13c4b624c745a95cabe566d1fd9c89e1c4d511"
+                "reference": "bfe91ad8e63c8d698664a0a5f83cbb58e03ef4e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/studio1902/statamic-peak-commands/zipball/7a13c4b624c745a95cabe566d1fd9c89e1c4d511",
-                "reference": "7a13c4b624c745a95cabe566d1fd9c89e1c4d511",
+                "url": "https://api.github.com/repos/studio1902/statamic-peak-commands/zipball/bfe91ad8e63c8d698664a0a5f83cbb58e03ef4e8",
+                "reference": "bfe91ad8e63c8d698664a0a5f83cbb58e03ef4e8",
                 "shasum": ""
             },
             "require": {
@@ -5735,7 +5735,7 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/studio1902/statamic-peak-commands/issues",
-                "source": "https://github.com/studio1902/statamic-peak-commands/tree/v2.6.2"
+                "source": "https://github.com/studio1902/statamic-peak-commands/tree/v2.7.0"
             },
             "funding": [
                 {
@@ -5743,7 +5743,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-11-06T14:46:06+00:00"
+            "time": "2023-11-17T12:09:54+00:00"
         },
         {
             "name": "studio1902/statamic-peak-seo",
@@ -5791,16 +5791,16 @@
         },
         {
             "name": "studio1902/statamic-peak-tools",
-            "version": "v3.3.0",
+            "version": "v3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/studio1902/statamic-peak-tools.git",
-                "reference": "625b2d28010edd345d2c446aa61923a2f16700cc"
+                "reference": "c723c91b026035ee5d46f769fdb4f2aa98a930c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/studio1902/statamic-peak-tools/zipball/625b2d28010edd345d2c446aa61923a2f16700cc",
-                "reference": "625b2d28010edd345d2c446aa61923a2f16700cc",
+                "url": "https://api.github.com/repos/studio1902/statamic-peak-tools/zipball/c723c91b026035ee5d46f769fdb4f2aa98a930c5",
+                "reference": "c723c91b026035ee5d46f769fdb4f2aa98a930c5",
                 "shasum": ""
             },
             "type": "library",
@@ -5823,7 +5823,7 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/studio1902/statamic-peak-tools/issues",
-                "source": "https://github.com/studio1902/statamic-peak-tools/tree/v3.3.0"
+                "source": "https://github.com/studio1902/statamic-peak-tools/tree/v3.4.1"
             },
             "funding": [
                 {
@@ -5831,7 +5831,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-11-14T09:18:55+00:00"
+            "time": "2023-11-17T09:15:41+00:00"
         },
         {
             "name": "symfony/console",

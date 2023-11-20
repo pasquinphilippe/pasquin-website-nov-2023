@@ -3,31 +3,34 @@
     <div class="content">
         <div class="footermain">
             <div class="footerleft">
-                {{ configuration:logo }}
-                {{ svg src='{url}' class='logo' }}
-              {{ /configuration:logo }}
+                {{ footer:logo }}
+                <img src="{{ glide:url }}" loading="lazy" width="50px" height="50px" srcset="{{ glide:url }}" alt=""
+                class="avatar" />
+                {{ /footer:logo }}
                 <div class="footergap"></div>
-                <div>Nous sommes spécialisé en développement web, développement eCommerce, développement d'applications, marketing numérique et gestion de communauté.
+                <div>{{ footer:description }}
                 </div>
             </div>
             <div class="footerright">
                 <div class="footerrightinner">
-                    <div id="w-node-_188010cf-21a4-55e5-72ac-87a4d81b2ba6-62710574" class="footermenu">
+                    <div class="footermenu">
                         <div class="footertitle">
-                            <div>Philippe Pasquin (Studio)</div>
+                            <div>{{ configuration:copyright_name }}</div>
                         </div>
                         {{ nav:main }}
                         <a href="{{ url }}" class="footerlink">{{ title }}</a>
                         {{ /nav:main }}
                     </div>
-                    <div id="w-node-_188010cf-21a4-55e5-72ac-87a4d81b2bb2-62710574" class="footermenu">
+                    <div class="footermenu">
                         <div class="footertitle">
                             <div>Services</div>
                         </div>
+                        <div class="grid-2">
                         {{ collection:services }}
                         <a href="{{ url }}"
                             class="footerlink">{{ title }}</a>
                             {{ /collection:services }}
+                        </div>
                     </div>
                    
                 </div>

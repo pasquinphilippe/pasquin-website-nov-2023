@@ -8,7 +8,6 @@ tabs:
             handle: title
             field:
               type: text
-              required: true
               localizable: true
               validate:
                 - required
@@ -25,39 +24,147 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
-    seo:
-        display: SEO
-        sections:
+      -
+        display: 'Service Page'
+        fields:
           -
-            display: Basic
-            instructions: 'Basic SEO settings.'
-            fields:
-              -
-                import: 'statamic-peak-seo::seo_basic'
+            handle: turnaround
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Turnaround
+              icon: text
+              instructions: Optional
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
           -
-            display: Advanced
-            instructions: 'Advanced SEO settings.'
-            fields:
-              -
-                import: 'statamic-peak-seo::seo_advanced'
+            handle: left_right
+            field:
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    left_right_block:
+                      display: 'Left Right Block'
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: image
+                          field:
+                            mode: list
+                            restrict: false
+                            allow_uploads: true
+                            show_filename: true
+                            show_set_alt: true
+                            type: assets
+                            display: Image
+                            icon: assets
+                            localizable: true
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            max_files: 1
+                            container: images
+                        -
+                          handle: heading
+                          field:
+                            buttons:
+                              - bold
+                              - italic
+                            smart_typography: false
+                            save_html: false
+                            inline: false
+                            toolbar_mode: fixed
+                            reading_time: false
+                            word_count: false
+                            fullscreen: true
+                            allow_source: true
+                            enable_input_rules: true
+                            enable_paste_rules: true
+                            remove_empty_nodes: false
+                            antlers: false
+                            link_noopener: false
+                            link_noreferrer: false
+                            target_blank: false
+                            always_show_set_button: false
+                            collapse: false
+                            previews: true
+                            type: bard
+                            display: Heading
+                            icon: bard
+                            localizable: true
+                            width: 50
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: paragraph
+                          field:
+                            buttons:
+                              - bold
+                              - italic
+                              - unorderedlist
+                              - orderedlist
+                              - anchor
+                            smart_typography: false
+                            save_html: false
+                            inline: false
+                            toolbar_mode: fixed
+                            reading_time: false
+                            word_count: false
+                            fullscreen: true
+                            allow_source: true
+                            enable_input_rules: true
+                            enable_paste_rules: true
+                            remove_empty_nodes: false
+                            antlers: false
+                            link_noopener: false
+                            link_noreferrer: false
+                            target_blank: false
+                            always_show_set_button: false
+                            collapse: false
+                            previews: true
+                            type: bard
+                            display: Paragraph
+                            icon: bard
+                            localizable: true
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          import: buttons
+              type: replicator
+              display: 'Left Right'
+              icon: replicator
+              localizable: false
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: Pricing
+        fields:
           -
-            display: 'Open Graph'
-            instructions: 'Open Graph meta tags for social sharing.'
-            fields:
-              -
-                import: 'statamic-peak-seo::seo_open_graph'
-          -
-            display: Sitemap
-            instructions: 'Sitemap configuration.'
-            fields:
-              -
-                import: 'statamic-peak-seo::seo_sitemap'
-          -
-            display: 'JSON-ld Schema'
-            instructions: 'Custom JSON-ld schema objects.'
-            fields:
-              -
-                import: 'statamic-peak-seo::seo_jsonld'
+            import: pricings
+            prefix: services
   sidebar:
     display: Sidebar
     sections:

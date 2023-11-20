@@ -164,3 +164,50 @@ tabs:
               max_files: 1
               min_files: 1
               container: files
+      -
+        display: 'Service Page'
+        fields:
+          -
+            handle: voir_le_prix
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Voir le prix'
+              icon: text
+              localizable: true
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: voir_les_prix
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Voir les prix'
+              icon: text
+              localizable: true
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: request_price
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Request price'
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

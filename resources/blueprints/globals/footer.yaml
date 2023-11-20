@@ -1,0 +1,40 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: logo
+            field:
+              max_files: 1
+              min_files: 1
+              mode: list
+              container: images
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Logo
+              icon: assets
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: description
+            field:
+              default: "Nous sommes spécialisé en développement web, développement eCommerce, développement d'applications, marketing numérique et gestion de communauté."
+              antlers: false
+              type: textarea
+              display: Description
+              icon: textarea
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

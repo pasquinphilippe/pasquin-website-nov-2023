@@ -1,0 +1,88 @@
+title: '404'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              localizable: true
+              validate:
+                - required
+          -
+            handle: heading
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Heading
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: description
+            field:
+              antlers: false
+              type: textarea
+              display: Description
+              icon: textarea
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: cta_link
+            field:
+              type: link
+              display: CTA_link
+              icon: link
+              localizable: false
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: cta_text
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'CTA Text'
+              icon: text
+              localizable: true
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages_index
+              max_items: 1
+              listable: false
+              localizable: true

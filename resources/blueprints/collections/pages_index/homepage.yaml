@@ -343,12 +343,34 @@ tabs:
                         -
                           handle: pragraph
                           field:
-                            input_type: text
+                            buttons:
+                              - bold
+                              - italic
+                              - unorderedlist
+                              - orderedlist
+                              - anchor
+                            smart_typography: false
+                            save_html: false
+                            inline: false
+                            toolbar_mode: fixed
+                            reading_time: false
+                            word_count: false
+                            fullscreen: true
+                            allow_source: true
+                            enable_input_rules: true
+                            enable_paste_rules: true
+                            remove_empty_nodes: false
                             antlers: false
-                            type: text
-                            display: Pragraph
-                            icon: text
-                            localizable: true
+                            link_noopener: false
+                            link_noreferrer: false
+                            target_blank: false
+                            always_show_set_button: false
+                            collapse: false
+                            previews: true
+                            type: bard
+                            display: pragraph
+                            icon: bard
+                            localizable: false
                             listable: hidden
                             instructions_position: above
                             visibility: visible

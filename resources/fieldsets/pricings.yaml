@@ -1,0 +1,195 @@
+title: Pricings
+fields:
+  -
+    handle: pricing
+    field:
+      collapse: false
+      previews: true
+      fullscreen: true
+      sets:
+        pricing:
+          display: Pricing
+          instructions: null
+          icon: money-cashier-price-tag
+          sets:
+            pricing_monthly:
+              display: 'Pricing (Monthly)'
+              instructions: null
+              icon: money-atm-card
+              fields:
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: false
+                    type: text
+                    display: Title
+                    icon: text
+                    localizable: true
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                -
+                  handle: hourly
+                  field:
+                    type: integer
+                    display: Hourly
+                    icon: integer
+                    localizable: true
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                -
+                  handle: price
+                  field:
+                    input_type: text
+                    antlers: false
+                    type: text
+                    display: Price
+                    icon: text
+                    localizable: true
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                -
+                  handle: payment_type
+                  field:
+                    buttons:
+                      - bold
+                      - italic
+                      - anchor
+                      - small
+                      - superscript
+                    smart_typography: false
+                    save_html: false
+                    inline: false
+                    toolbar_mode: fixed
+                    reading_time: false
+                    word_count: false
+                    fullscreen: true
+                    allow_source: true
+                    enable_input_rules: true
+                    enable_paste_rules: true
+                    remove_empty_nodes: false
+                    antlers: false
+                    link_noopener: false
+                    link_noreferrer: false
+                    target_blank: false
+                    always_show_set_button: false
+                    collapse: false
+                    previews: true
+                    type: bard
+                    display: 'Type de paiement'
+                    icon: bard
+                    localizable: false
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                -
+                  handle: description
+                  field:
+                    antlers: true
+                    type: textarea
+                    display: Description
+                    icon: textarea
+                    localizable: true
+                    width: 66
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                -
+                  handle: Turnaround
+                  field:
+                    input_type: text
+                    antlers: false
+                    type: text
+                    display: Turnaround
+                    icon: text
+                    localizable: true
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                -
+                  handle: includes
+                  field:
+                    collapse: false
+                    previews: true
+                    fullscreen: true
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        instructions: null
+                        icon: null
+                        sets:
+                          services:
+                            display: Services
+                            instructions: null
+                            icon: money-cashier-price-tag
+                            fields:
+                              -
+                                handle: title
+                                field:
+                                  buttons:
+                                    - bold
+                                    - italic
+                                    - anchor
+                                    - superscript
+                                  smart_typography: false
+                                  save_html: false
+                                  inline: false
+                                  toolbar_mode: fixed
+                                  reading_time: false
+                                  word_count: false
+                                  fullscreen: true
+                                  allow_source: true
+                                  enable_input_rules: true
+                                  enable_paste_rules: true
+                                  remove_empty_nodes: false
+                                  antlers: false
+                                  link_noopener: false
+                                  link_noreferrer: false
+                                  target_blank: false
+                                  always_show_set_button: false
+                                  collapse: false
+                                  previews: true
+                                  type: bard
+                                  display: Title
+                                  icon: bard
+                                  localizable: true
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  replicator_preview: true
+                                  hide_display: false
+                    type: replicator
+                    display: Includes
+                    icon: replicator
+                    localizable: true
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+      type: replicator
+      display: Pricing
+      icon: replicator
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

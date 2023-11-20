@@ -23,7 +23,7 @@
                 <div class="card jumboshadow jumboshadowwithborder" style="height:100%">
                     <div class="paddm">
                         <div class="flexapart">
-                            <div class="t-xsmall t-bold t-light">Abonnement</div>
+                            <div class="t-xsmall t-bold t-light">{{ title }}</div>
                             <div class="availability">{{ svg src='availability' }}
                                 <div>{{ slots_available }} places disponible</div>
                             </div>
@@ -32,7 +32,7 @@
                         <div class="inlinepricelabelwrap">
                             <div class="h2 bigprice price" data-original-price="1640">{{ price }}</div>
                             <div class="priceperiod">
-                                <div class="t-xsmall t-bold">par mois<br>facturé mensuellement</div>
+                                <div class="t-xsmall t-bold">par mois<br>facturé au début du contrat</div>
                             </div>
                         </div>
                         <div class="gaps"></div>
@@ -98,29 +98,7 @@
     </div>
     <div class="content medium">
         {{ ctas }}
-        <div class="gapm"></div>
-        <div class="outlinecard">
-           {{ icon }}
-            <img src="{{ glide:url }}" loading="lazy" sizes="64px" srcset="{{ glide:url }}" alt=""
-                class="avatar sm" />
-           {{ /icon }}
-            <div>
-                <div class="t-small t-bold">{{ heading }}</div>
-                <div class="t-light t-xsmall">{{ pragraph }}</div>
-                <div class="gapxs"></div>
-                <div class="w-layout-vflex btngrp">
-                    {{ if modal }}
-                    <span class="bluelink t-xsmall" @click="{{ modal_alpine_name }} = true">{{ link_text }}{{ svg src="external_link" }}</span>
-                    
-                    {{ else }}
-                    <a href="{{ link }}" target="_blank" class="bluelink t-xsmall ">
-                        <div>{{ link_text }}
-                        </div> {{ svg src="external_link" }}
-                    </a>
-                    {{ endif}}
-                </div>
-            </div>
-        </div>
+       {{ partial:layout/cta_cards }}
         {{ /ctas }}
         
 
@@ -129,23 +107,7 @@
             <div class="t-bold t-small">{{ services_heading }}</div>
             <div class="linethroughtitleline"></div>
         </div>
-        <div class="gapm"></div>
-        <div class="w-layout-grid grid expertise-grid">
-            {{ collection:services }}
-            <a href="{{ url }}" class="magnetic no-decoration">
-                <div class="card jumboshadow jumboshadowwithborder">
-                    <div class="padds">
-                        <div class="t-small t-bold">{{ title }}</div>
-                        <div class="gapxs"></div>
-                        <div class="t-light t-xsmall">{{ menu_description }}
-                        </div>
-                    </div>
-                </div>
-            </a>
-            {{ /collection:services }}
-
-        </div>
-        <div class="gapxl"></div>
+       {{ partial:layout/other_services }}
     </div>
 
 

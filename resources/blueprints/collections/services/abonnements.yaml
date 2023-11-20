@@ -9,7 +9,6 @@ tabs:
             handle: title
             field:
               type: text
-              required: true
               localizable: true
               validate:
                 - required
@@ -43,6 +42,33 @@ tabs:
                       instructions: null
                       icon: money-atm-card
                       fields:
+                        -
+                          handle: title
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: Title
+                            icon: text
+                            localizable: true
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: hourly
+                          field:
+                            type: integer
+                            display: Hourly
+                            icon: integer
+                            localizable: true
+                            width: 33
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
                         -
                           handle: price
                           field:
@@ -221,39 +247,6 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
-    seo:
-        display: SEO
-        sections:
-          -
-            display: Basic
-            instructions: 'Basic SEO settings.'
-            fields:
-              -
-                import: 'statamic-peak-seo::seo_basic'
-          -
-            display: Advanced
-            instructions: 'Advanced SEO settings.'
-            fields:
-              -
-                import: 'statamic-peak-seo::seo_advanced'
-          -
-            display: 'Open Graph'
-            instructions: 'Open Graph meta tags for social sharing.'
-            fields:
-              -
-                import: 'statamic-peak-seo::seo_open_graph'
-          -
-            display: Sitemap
-            instructions: 'Sitemap configuration.'
-            fields:
-              -
-                import: 'statamic-peak-seo::seo_sitemap'
-          -
-            display: 'JSON-ld Schema'
-            instructions: 'Custom JSON-ld schema objects.'
-            fields:
-              -
-                import: 'statamic-peak-seo::seo_jsonld'
   sidebar:
     display: Sidebar
     sections:

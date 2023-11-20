@@ -4,7 +4,7 @@ blueprint: homepage
 title: Accueil
 seo_title: 'Développeur Shopify Montréal | Philippe Pasquin'
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1700142763
+updated_at: 1700521202
 og_image: accueil-og-1700014133.png
 seo_noindex: false
 seo_nofollow: false
@@ -32,9 +32,15 @@ ctas:
   -
     id: lp03aree
     icon: philippe_pasquin.png
-    heading: 'Vous avez des questions?'
-    pragraph: 'Organiser un appel découverte avec moi afin de vous présentez nos abonnements'
-    link_text: 'Réservez une démo'
+    heading: 'Essayer nos services sans obligations'
+    pragraph:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: "Essayez-nous sur un projet unique avant de vous abonner ! C'est le moyen idéal pour nous faire un essai et vous assurer que notre service vous convient avant de vous engager."
+    link_text: Commencer
     modal: false
     link: 'entry::d9172796-78a7-4e6c-b716-53ba1946125e'
     type: cta
@@ -42,8 +48,14 @@ ctas:
   -
     id: lp03c8mw
     icon: refer.svg
-    heading: 'Référez moi un client et recevez 200$'
-    pragraph: 'Recevez 200$ à la signature et 8% de commissions récurrentes.'
+    heading: 'Référez un client et recevez 200$'
+    pragraph:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Recevez 200$ à la signature et 5% de commissions récurrentes sur les 3 premiers mois.'
     link_text: 'Référez un client'
     modal: true
     modal_alpine_name: modalRefer

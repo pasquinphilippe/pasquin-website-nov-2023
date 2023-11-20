@@ -1,0 +1,39 @@
+<div class="content narrow">
+    <div class="gapl"></div>
+    <div class="card jumboshadow jumboshadowwithborder">
+        <div class="paddm">
+            {{ content }}
+           
+       
+          
+           
+            <div class="gapm"></div>
+
+            {{ collection:staff }}
+            <div class="card gray paddxs">
+                <div x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="avatar sm teamavatar">
+                    {{ avatar_picture }}
+                    <img loading="lazy" x-show="!hover"
+                        src="{{ glide:url }}"
+                        alt="" class="teamimg def">
+                    {{ /avatar_picture }}
+                   
+                  </div>
+                  
+                <div class="gapxs"></div>
+                <div class="t-xsmall t-bold">{{ title }}</div>
+                <div class="t-xsmall t-bold t-light">{{ poste }}</div>
+                <div class="gapxxs"></div>
+                <div class="btngrp">{{ svg src='location_black' }}
+                    <div class="t-xsmall t-light t-bold">{{ location }}</div>
+                </div>
+                <div class="gapxs"></div>
+               
+            </div>
+            {{ /collection:staff }}
+
+
+
+        </div>
+    </div>
+</div>

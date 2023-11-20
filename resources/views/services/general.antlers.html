@@ -1,53 +1,272 @@
-{{ partial:services/hero1 }}
-<section class="content narrow">
-<div class="service-explanation">
-    <p>Eu culpa pariatur duis et veniam aliquip exercitation do irure non reprehenderit voluptate. Exercitation magna
-        nulla dolore. Veniam reprehenderit non voluptate dolor nulla esse commodo ad. Labore dolor esse ex ea et veniam
-        ipsum ut est proident consequat voluptate officia aute. Dolor eiusmod veniam sunt non tempor consectetur mollit
-        eu irure dolore officia ad. Dolor elit esse aute dolor officia do veniam irure magna. Id pariatur commodo magna
-        do veniam magna duis irure et sint est. Officia ad fugiat do nostrud sint.</p>
-</div>
-</section>
-<div class="faq-container content narrow" x-data="{ open: null }">
-    <h3>FAQ</h3>
-    <div class="faq-question" @click="open = open === 1 ? null : 1">
-        <h3>Comment migrer ma boutique vers Shopify ?</h3>
+<div class="content">
+  <div class="gapl"></div>
+  <div class="card jumboshadow jumboshadowwithborder">
+    <div class="paddm">
+      <div class="gapm"></div>
+      <div class="ctawrap">
+        
+        {{ if turnaround }}
+        <div class="availability">{{ svg src='availability' }}
+          <div>{{ turnaround }}</div>
+        </div>
+        {{ /endif }}
+        <div class="gaps"></div>
+        <h2 class="h2">{{ title }}</h2>
+        <div class="gapxs"></div>
+        <p class="services-description t-light">{{ menu_description }}</p>
+        <div class="gaps"></div>
+        <div class="btngrp centeronmob">
+          <a href="/contact" class="btn big dark">Prenons contact</a>
+
+          <a href="#pricing" class="btn big">
+            {{ if servicespricing:count > 1 }}
+                {{ configuration:voir_les_prix }}
+            {{ elseif servicespricing:count == 1 }}
+                {{ configuration:voir_le_prix }}
+            {{ else }}
+                {{ configuration:request_price }}
+            {{ /if }}
+        </a>
+        
+        </div>
       </div>
-      <div class="faq-answer" x-show="open === 1">
-        <p>La migration de votre boutique vers Shopify est simple et nous pouvons vous guider à chaque étape. Contactez-nous pour en savoir plus sur nos services de migration.</p>
-      </div>
-    
-      <!-- Question 2 -->
-      <div class="faq-question" @click="open = open === 2 ? null : 2">
-        <h3>Quelle est la durée d'une migration vers Shopify ?</h3>
-      </div>
-      <div class="faq-answer" x-show="open === 2">
-        <p>La durée de la migration peut varier en fonction de la taille et de la complexité de votre boutique actuelle, mais nous nous efforçons de réaliser les migrations de manière rapide et efficace.</p>
-      </div>
-    
-      <!-- Question 3 -->
-      <div class="faq-question" @click="open = open === 3 ? null : 3">
-        <h3>Est-ce que mes données seront sécurisées pendant la migration ?</h3>
-      </div>
-      <div class="faq-answer" x-show="open === 3">
-        <p>Oui, la sécurité de vos données est notre priorité absolue. Nous utilisons des protocoles sécurisés tout au long du processus de migration pour assurer la protection de vos données.</p>
-      </div>
-    
-      <!-- Question 4 -->
-      <div class="faq-question" @click="open = open === 4 ? null : 4">
-        <h3>Comment préparer ma boutique pour la migration ?</h3>
-      </div>
-      <div class="faq-answer" x-show="open === 4">
-        <p>Avant la migration, nous vous recommandons de sauvegarder toutes vos données et de faire une révision de votre inventaire pour vous assurer que tout est à jour.</p>
-      </div>
-    
-      <!-- Question 5 -->
-      <div class="faq-question" @click="open = open === 5 ? null : 5">
-        <h3>Vais-je perdre le référencement de mon site actuel lors de la migration ?</h3>
-      </div>
-      <div class="faq-answer" x-show="open === 5">
-        <p>Nous prenons des mesures spécifiques pour préserver votre référencement durant la migration, comme la gestion des redirections 301 et le maintien des URL structurées.</p>
-      </div>
-    <!-- Repeat for other FAQs -->
-  
+      <div class="gapm"></div>
+    </div>
   </div>
+</div>
+
+<div class="content">
+  <div class="gapxl"></div>
+  {{ left_right }}
+  <div class="left-right {{ switch between=' right|left'}}">
+    {{ image }}
+
+    <img class="" src="{{glide:url }}" srcset="{{glide:url width='80' }} 80w,
+            {{glide:url width='500' }} 500w,
+            {{glide:url width='800' }} 800w,
+            {{glide:url width='1080' }} 1080w,
+            {{glide:url width='1600' }} 1600w" sizes="(max-width: 479px) 92vw, (max-width: 991px) 95vw, 33vw"
+      alt="{{ alt }}" />
+
+    {{ /image }}
+    <div class="content-text">
+      <div class="methodtitlewrap alt">
+        <h2 class="h2 methodsectionheading small">{{ heading }}</h2>
+        <div class="methodsectiondesc">
+          <div class="t-light">{{ paragraph }}</div>
+        </div>
+        {{ buttons }}
+
+        <a href="{{ entry }}" {{ if target_blank }}target="_blank" {{ endif }}
+          class="btn magnetic dark headerhideonmob w-button">{{ label }}</a>
+
+        {{ /buttons }}
+      </div>
+    </div>
+    <div class="gapl"></div>
+  </div>
+  <div class="gapl"></div>
+  {{ /left_right }}
+</div>
+
+{{ if servicespricing | count === 1 }}
+<div class="pricingsection" id="pricing">
+
+  <div class="content card jumboshadow jumboshadowwithborder">
+    <div class="gapxl"></div>
+    <div class="pricingwrap">
+      <div class="pricingleft">
+        <div>
+          <h2 class="h2">Un seul prix.</h2>
+          <div class="gapm"></div>
+
+
+          <div class="gapm"></div>
+        </div>
+        {{ servicespricing }}
+        <div class="mobilepricing">
+          <div class="card jumboshadow jumboshadowwithborder" style="height:100%">
+            <div class="paddm">
+              <div class="flexapart">
+                <div class="t-xsmall t-bold t-light">{{ title }}</div>
+                {{ if turnaround }}
+                <div class="availability">{{ svg src='availability' }}
+                  <div>{{ turnaround }}</div>
+                </div>
+                {{ endif }}
+              </div>
+              <div class="gaps"></div>
+              <div class="inlinepricelabelwrap">
+                <div class="h2 bigprice price">{{ price }}</div>
+                <div class="priceperiod">
+                  <div class="t-xsmall t-bold">{{ payment_type }}</div>
+                </div>
+              </div>
+              <div class="gaps"></div>
+              <div class="nav headerrightnav"><a href="/contact" class="btn dark magnetic">Commençons!</a>
+              </div>
+              <div class="gapm"></div>
+              <div><span class="t-bold">{{ description }}</div>
+              <div class="gapm"></div>
+              <div class="pricefeatures smalltext">
+                {{ includes }}
+                <div class="pricefeat">{{ svg src='check'}}
+                  <div>{{ title }}</div>
+                </div>
+                {{ /includes }}
+
+              </div>
+            </div>
+          </div>
+          <div class="gapm"></div>
+        </div>
+        {{ /servicespricing }}
+        <div>
+          {{ get_content from="79d0b6d3-6fd5-45df-99e3-191e85e8415b" }}
+          {{ ctas }}
+          {{ partial:layout/cta_cards }}
+          {{ /ctas }}
+          {{ /get_content }}
+        </div>
+      </div>
+      {{ servicespricing }}
+      <div class="desktoppricing">
+        <div class="card jumboshadow jumboshadowwithborder" style="height:100%">
+          <div class="paddm">
+            <div class="flexapart">
+              <div class="t-xsmall t-bold t-light">{{ title }}</div>
+              {{ if turnaround }}
+              <div class="availability">{{ svg src='availability' }}
+                <div>{{ turnaround }}</div>
+              </div>
+              {{ endif }}
+            </div>
+            <div class="gaps"></div>
+            <div class="inlinepricelabelwrap">
+              <div class="h2 bigprice price">{{ price }}</div>
+              <div class="priceperiod">
+                <div class="t-xsmall t-bold">{{ payment_type }}</div>
+              </div>
+            </div>
+            <div class="gaps"></div>
+            <div class="nav headerrightnav"><a href="/contact" class="btn dark magnetic">Commençons!</a>
+            </div>
+            <div class="gapm"></div>
+            <div><span class="t-bold">{{ description }}</div>
+            <div class="gapm"></div>
+            <div class="pricefeatures smalltext">
+              {{ includes }}
+              <div class="pricefeat">{{ svg src='check'}}
+                <div>{{ title }}</div>
+              </div>
+              {{ /includes }}
+
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ /servicespricing }}
+
+    </div>
+    <div class="gapxl"></div>
+  </div>
+
+
+</div>
+{{ elseif servicespricing | count > 1 }}
+<div class="pricingsection" id="pricing">
+  <div class="content large">
+    <div class="pricing-grid">
+
+      {{ servicespricing }}
+      <div class="desktoppricing">
+        <div class="card jumboshadow jumboshadowwithborder" style="height:100%">
+          <div class="paddm">
+            <div class="flexapart">
+              <div class="t-xsmall t-bold t-light">{{ title }}</div>
+              {{ if turnaround }}
+              <div class="availability">{{ svg src='availability' }}
+                <div>{{ turnaround }}</div>
+              </div>
+              {{ endif }}
+            </div>
+            <div class="gaps"></div>
+            <div class="inlinepricelabelwrap">
+              <div class="h2 bigprice price">{{ price }}</div>
+              <div class="priceperiod">
+                <div class="t-xsmall t-bold">{{ payment_type }}</div>
+              </div>
+            </div>
+            <div class="gaps"></div>
+            <div class="nav headerrightnav"><a href="/contact" class="btn dark magnetic">Commençons!</a>
+            </div>
+            <div class="gapm"></div>
+            <div><span class="t-bold">{{ description }}</div>
+            <div class="gapm"></div>
+            <div class="pricefeatures smalltext">
+              {{ includes }}
+              <div class="pricefeat">{{ svg src='check'}}
+                <div>{{ title }}</div>
+              </div>
+              {{ /includes }}
+
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ /servicespricing }}
+      {{ servicespricing }}
+      <div class="mobilepricing">
+        <div class="card jumboshadow jumboshadowwithborder" style="height:100%">
+          <div class="paddm">
+            <div class="flexapart">
+              <div class="t-xsmall t-bold t-light">{{ title }}</div>
+              {{ if turnaround }}
+              <div class="availability">{{ svg src='availability' }}
+                <div>{{ turnaround }}</div>
+              </div>
+              {{ endif }}
+            </div>
+            <div class="gaps"></div>
+            <div class="inlinepricelabelwrap">
+              <div class="h2 bigprice price">{{ price }}</div>
+              <div class="priceperiod">
+                <div class="t-xsmall t-bold">{{ payment_type }}</div>
+              </div>
+            </div>
+            <div class="gaps"></div>
+            <div class="nav headerrightnav"><a href="/contact" class="btn dark magnetic">Commençons!</a>
+            </div>
+            <div class="gapm"></div>
+            <div><span class="t-bold">{{ description }}</div>
+            <div class="gapm"></div>
+            <div class="pricefeatures smalltext">
+              {{ includes }}
+              <div class="pricefeat">{{ svg src='check'}}
+                <div>{{ title }}</div>
+              </div>
+              {{ /includes }}
+
+            </div>
+          </div>
+        </div>
+        <div class="gapm"></div>
+      </div>
+      {{ /servicespricing }}
+
+    </div>
+    
+  </div>
+</div>
+<div class="content medium">
+  {{ get_content from="79d0b6d3-6fd5-45df-99e3-191e85e8415b" }}
+  {{ ctas }}
+  {{ partial:layout/cta_cards }}
+  {{ /ctas }}
+  {{ /get_content }}
+</div>
+{{ endif }}
+<div class="content">
+  {{ partial:layout/other_services }}
+</div>
+{{ partial:home/projects }}

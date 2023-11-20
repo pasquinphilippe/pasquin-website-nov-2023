@@ -1,0 +1,25 @@
+<div class="gapm"></div>
+<div class="outlinecard">
+   {{ icon }}
+    <img src="{{ glide:url }}" loading="lazy" sizes="64px" srcset="{{ glide:url }}" alt=""
+        class="avatar sm" />
+   {{ /icon }}
+    <div>
+        <div class="t-small t-bold">{{ heading }}</div>
+        <div class="t-light t-xsmall">{{ pragraph }}
+         
+        </div>
+        <div class="gapxs"></div>
+        <div class="w-layout-vflex btngrp">
+            {{ if modal }}
+            <span class="bluelink t-xsmall" @click="{{ modal_alpine_name }} = true">{{ link_text }}{{ svg src="external_link" }}</span>
+            
+            {{ else }}
+            <a href="{{ link }}" target="_blank" class="bluelink t-xsmall ">
+                <div>{{ link_text }}
+                </div> {{ svg src="external_link" }}
+            </a>
+            {{ endif}}
+        </div>
+    </div>
+</div>

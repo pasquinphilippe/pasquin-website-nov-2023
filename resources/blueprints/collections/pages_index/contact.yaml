@@ -9,43 +9,111 @@ tabs:
             handle: title
             field:
               type: text
-              required: true
               localizable: true
               validate:
                 - required
+      -
+        display: 'Content Page'
+        fields:
+          -
+            handle: subheading
+            field:
+              input_type: text
+              default: 'Bonjour 👋, heureux de faire votre connaissance!'
+              antlers: false
+              type: text
+              display: Subheading
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: heading
+            field:
+              default: |-
+                Dirigeant ma petite agence Shopify depuis deux ans, je mets à profit mes six ans d'expérience
+                                en développement pour innover et personnaliser mes services Shopify à mes clients.
+              antlers: false
+              type: textarea
+              display: Heading
+              icon: textarea
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: 'Meet the team'
+        fields:
+          -
+            handle: meet_heading
+            field:
+              input_type: text
+              default: "Rencontrer l'équipe"
+              antlers: false
+              type: text
+              display: 'Meet Heading'
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: meet_description
+            field:
+              default: |-
+                Actuellement, je gère mon entreprise en solo, assurant le développement et la
+                                maintenance des services pour mes clients. Je suis honoré de leur confiance quotidienne dans la
+                                réalisation de leurs projets.
+              antlers: false
+              type: textarea
+              display: 'Meet Description'
+              icon: textarea
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
   seo:
-        display: SEO
-        sections:
+    display: SEO
+    sections:
+      -
+        display: Basic
+        instructions: 'Basic SEO settings.'
+        fields:
           -
-            display: Basic
-            instructions: 'Basic SEO settings.'
-            fields:
-              -
-                import: 'statamic-peak-seo::seo_basic'
+            import: 'statamic-peak-seo::seo_basic'
+      -
+        display: Advanced
+        instructions: 'Advanced SEO settings.'
+        fields:
           -
-            display: Advanced
-            instructions: 'Advanced SEO settings.'
-            fields:
-              -
-                import: 'statamic-peak-seo::seo_advanced'
+            import: 'statamic-peak-seo::seo_advanced'
+      -
+        display: 'Open Graph'
+        instructions: 'Open Graph meta tags for social sharing.'
+        fields:
           -
-            display: 'Open Graph'
-            instructions: 'Open Graph meta tags for social sharing.'
-            fields:
-              -
-                import: 'statamic-peak-seo::seo_open_graph'
+            import: 'statamic-peak-seo::seo_open_graph'
+      -
+        display: Sitemap
+        instructions: 'Sitemap configuration.'
+        fields:
           -
-            display: Sitemap
-            instructions: 'Sitemap configuration.'
-            fields:
-              -
-                import: 'statamic-peak-seo::seo_sitemap'
+            import: 'statamic-peak-seo::seo_sitemap'
+      -
+        display: 'JSON-ld Schema'
+        instructions: 'Custom JSON-ld schema objects.'
+        fields:
           -
-            display: 'JSON-ld Schema'
-            instructions: 'Custom JSON-ld schema objects.'
-            fields:
-              -
-                import: 'statamic-peak-seo::seo_jsonld'
+            import: 'statamic-peak-seo::seo_jsonld'
   sidebar:
     display: Sidebar
     sections:
