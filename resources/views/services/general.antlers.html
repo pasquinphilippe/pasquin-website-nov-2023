@@ -4,7 +4,7 @@
     <div class="paddm">
       <div class="gapm"></div>
       <div class="ctawrap">
-        
+
         {{ if turnaround }}
         <div class="availability">{{ svg src='availability' }}
           <div>{{ turnaround }}</div>
@@ -20,14 +20,14 @@
 
           <a href="#pricing" class="btn big">
             {{ if servicespricing:count > 1 }}
-                {{ configuration:voir_les_prix }}
+            {{ configuration:voir_les_prix }}
             {{ elseif servicespricing:count == 1 }}
-                {{ configuration:voir_le_prix }}
+            {{ configuration:voir_le_prix }}
             {{ else }}
-                {{ configuration:request_price }}
+            {{ configuration:request_price }}
             {{ /if }}
-        </a>
-        
+          </a>
+
         </div>
       </div>
       <div class="gapm"></div>
@@ -255,7 +255,7 @@
       {{ /servicespricing }}
 
     </div>
-    
+
   </div>
 </div>
 <div class="content medium">
@@ -270,3 +270,10 @@
   {{ partial:layout/other_services }}
 </div>
 {{ partial:home/projects }}
+
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe
+    src="https://www.loom.com/embed/cbbcf8187c954ceb9d67c761315a47c1?sid=77e5686f-055d-4759-930c-ff55a85ba426"
+    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>

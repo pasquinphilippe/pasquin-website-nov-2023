@@ -616,7 +616,7 @@ ol {
 }
 
 .h1.herotitle {
-    font-size: 4.8vw;
+    font-size: clamp(48px, 4.8vw, 68px);
 }
 
 .t-large {
@@ -2863,6 +2863,14 @@ body {
     }
 }
 
+@media screen and (max-width: 991px){
+    .left-right{
+        flex-direction: column;
+    }
+    .left-right.right{
+        flex-direction: column!important;
+    }
+}
 
 .left-right{
     display: flex;
@@ -2887,6 +2895,7 @@ body {
 }
 .left-right img{
    flex-grow: 1;
+   border-radius: 8px;
 }
 .content-text .methodtitlewrap.alt{
     text-align: left;
