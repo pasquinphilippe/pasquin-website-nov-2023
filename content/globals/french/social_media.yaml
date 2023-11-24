@@ -1,7 +1,7 @@
 social_media:
   -
     id: loq23vy5
-    handle: projects@pasquin.ca
+    handle: bonjour@pasquin.ca
     prefix: 'mailto:'
     type: email
     enabled: true
@@ -25,7 +25,7 @@ social_media:
     enabled: true
   -
     id: loq24skt
-    handle: pasquin
+    handle: philippepasquin
     prefix: 'https://www.linkedin.com/'
     type: linkedin
     enabled: true

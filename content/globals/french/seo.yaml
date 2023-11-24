@@ -14,6 +14,7 @@ social_images_collections:
 sitemap_collections:
   - services
   - pages_index
+  - legal
 trackers_local: false
 trackers_staging: false
 trackers_production: true
