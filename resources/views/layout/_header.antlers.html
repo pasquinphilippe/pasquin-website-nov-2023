@@ -9,7 +9,7 @@
         class="avatar" />
         {{ /header:logo }}
       </a>
-      {{ if template != "default" }}
+      {{ if template != "default" || isnt:404 }}
       <div class="breadcrumb"><a href="/" class="breadcrumblink headerhideonmob w-inline-block">
           <div class="t-small">Philippe Pasquin</div>
         </a>
