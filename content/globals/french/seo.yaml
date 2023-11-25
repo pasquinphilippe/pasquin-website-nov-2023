@@ -8,9 +8,7 @@ json_ld_type: organization
 organization_name: 'Philippe Pasquin - Développeur Shopify'
 organization_logo: philippe_pasquin.png
 breadcrumbs: true
-use_social_image_generation: true
-social_images_collections:
-  - pages_index
+use_social_image_generation: false
 sitemap_collections:
   - services
   - pages_index

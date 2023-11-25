@@ -99,101 +99,30 @@ tabs:
                             replicator_preview: true
                             hide_display: false
                         -
-                          handle: slots_available
+                          handle: description_paiement
                           field:
-                            input_type: number
-                            antlers: false
-                            type: text
-                            display: 'Slots available'
-                            icon: text
-                            localizable: false
-                            listable: hidden
-                            instructions_position: above
-                            visibility: visible
-                            replicator_preview: true
-                            hide_display: false
-                        -
-                          handle: includes
-                          field:
-                            collapse: false
-                            previews: true
-                            fullscreen: true
-                            sets:
-                              new_set_group:
-                                display: 'New Set Group'
-                                instructions: null
-                                icon: null
-                                sets:
-                                  services:
-                                    display: Services
-                                    instructions: null
-                                    icon: money-cashier-price-tag
-                                    fields:
-                                      -
-                                        handle: title
-                                        field:
-                                          antlers: false
-                                          type: textarea
-                                          display: Title
-                                          icon: textarea
-                                          localizable: true
-                                          listable: hidden
-                                          instructions_position: above
-                                          visibility: visible
-                                          replicator_preview: true
-                                          hide_display: false
-                            type: replicator
-                            display: Includes
-                            icon: replicator
-                            localizable: true
-                            listable: hidden
-                            instructions_position: above
-                            visibility: visible
-                            replicator_preview: true
-                            hide_display: false
-                    pricing_quartely:
-                      display: 'Pricing (Quarteley)'
-                      instructions: null
-                      icon: money-atm-card
-                      fields:
-                        -
-                          handle: price
-                          field:
-                            input_type: text
-                            antlers: false
-                            type: text
-                            display: Price
-                            icon: text
-                            localizable: true
-                            width: 33
-                            listable: hidden
-                            instructions_position: above
-                            visibility: visible
-                            replicator_preview: true
-                            hide_display: false
-                        -
-                          handle: description
-                          field:
+                            default: |-
+                              paiement unique
+                              valide pour 3 mois.
                             antlers: false
                             type: textarea
-                            display: Description
+                            display: 'Description paiement'
                             icon: textarea
                             localizable: true
-                            width: 66
                             listable: hidden
                             instructions_position: above
                             visibility: visible
                             replicator_preview: true
                             hide_display: false
                         -
-                          handle: slots_available
+                          handle: availability
                           field:
-                            input_type: number
-                            antlers: false
+                            input_type: text
+                            antlers: true
                             type: text
-                            display: 'Slots available'
+                            display: availability
                             icon: text
-                            localizable: false
+                            localizable: true
                             listable: hidden
                             instructions_position: above
                             visibility: visible
@@ -285,3 +214,19 @@ tabs:
               hide_display: false
           -
             import: gradient
+  seo:
+    display: SEO
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_basic'
+          -
+            import: 'statamic-peak-seo::seo_advanced'
+          -
+            import: 'statamic-peak-seo::seo_jsonld'
+          -
+            import: 'statamic-peak-seo::seo_open_graph'
+          -
+            import: 'statamic-peak-seo::seo_sitemap'

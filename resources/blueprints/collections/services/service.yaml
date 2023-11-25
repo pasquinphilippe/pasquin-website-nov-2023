@@ -165,6 +165,22 @@ tabs:
           -
             import: pricings
             prefix: services
+  seo:
+    display: SEO
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_basic'
+          -
+            import: 'statamic-peak-seo::seo_advanced'
+          -
+            import: 'statamic-peak-seo::seo_jsonld'
+          -
+            import: 'statamic-peak-seo::seo_open_graph'
+          -
+            import: 'statamic-peak-seo::seo_sitemap'
   sidebar:
     display: Sidebar
     sections:

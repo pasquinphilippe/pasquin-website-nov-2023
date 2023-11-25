@@ -7,7 +7,7 @@ color1: '#FF6B6B'
 color2: '#FD9668'
 color3: '#FDBE51'
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1700847007
+updated_at: 1700924242
 menu_description: 'Design et développement de thème sur mesure.'
 turnaround: 'Quelques heures... à quelques mois...'
 left_right:
@@ -261,4 +261,11 @@ servicespricing:
         enabled: true
     type: pricing_monthly
     enabled: true
+seo_title: 'Création de Thèmes Shopify Uniques - Design et Développement'
+seo_description: "Transformez votre boutique en ligne avec des thèmes Shopify exclusifs. Nous combinons design créatif et développement technique pour créer des thèmes sur mesure qui captent l'attention."
+seo_noindex: false
+seo_nofollow: false
+seo_canonical_type: entry
+sitemap_change_frequency: weekly
+sitemap_priority: 0.5
 ---
