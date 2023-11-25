@@ -1,1 +1,6 @@
-{  }
+redirects:
+  -
+    id: lpe73y5s
+    url_old: /en
+    external_url: /
+    response: '302'
