@@ -134,7 +134,7 @@ pricing:
       paiement unique
       valide pour 3 mois.
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1700924922
+updated_at: 1700925021
 services_type: boutique-shopify-existante
 color1: '#00C9FF'
 color2: '#92FE9D'
