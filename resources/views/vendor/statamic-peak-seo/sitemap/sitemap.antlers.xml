@@ -8,15 +8,10 @@
                     <lastmod>{{ updated_at format="Y-m-d"}}</lastmod>
                     <changefreq>{{ sitemap_change_frequency ? sitemap_change_frequency : 'weekly' }}</changefreq>
                     <priority>{{ sitemap_priority ? sitemap_priority : '0.5' }}</priority>
-                    {{ if {locales:count} > 1 }}
-                        {{ once }}
-                            {{ section:namespace}}
-                                xmlns:xhtml="http://www.w3.org/1999/xhtml"
-                            {{ /section:namespace}}
-                        {{ /once }}
-                        {{ locales }}
-                            <xhtml:link rel="alternate" hreflang="{{ locale:full }}" href="{{ permalink }}"/>
-                        {{ /locales }}
+                    {{ if {locales:count} > 1 }}{{ once }}{{ section:namespace}} xmlns:xhtml="http://www.w3.org/1999/xhtml"{{ /section:namespace}} {{ /once }}
+                    {{ locales }} 
+                    <xhtml:link rel="alternate" hreflang="{{ locale:full }}" href="{{ permalink }}"/> 
+                    {{ /locales }}
                     {{ /if }}
                 </url>
             {{ /results }}
