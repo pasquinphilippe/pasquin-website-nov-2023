@@ -21,7 +21,7 @@ use_fathom: false
 use_plausible: false
 use_cloudflare_web_analytics: false
 tracker_type: gtm
-google_tag_manager: GTM-5RPZT3K9
+google_tag_manager: GTM-YX3T3C5585
 use_cookie_banner: true
 embeds: false
 display_style: left
