@@ -283,7 +283,7 @@ tabs:
               type: section
               display: "CTA's"
               icon: section
-              localizable: false
+              localizable: true
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -440,7 +440,7 @@ tabs:
               type: replicator
               display: CTAS
               icon: replicator
-              localizable: false
+              localizable: true
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -515,7 +515,7 @@ tabs:
               type: link
               display: 'Contact CTA Link 1'
               icon: link
-              localizable: false
+              localizable: true
               width: 50
               listable: hidden
               instructions_position: above
@@ -543,7 +543,7 @@ tabs:
               type: link
               display: 'Contact CTA Link 2'
               icon: link
-              localizable: false
+              localizable: true
               width: 50
               listable: hidden
               instructions_position: above

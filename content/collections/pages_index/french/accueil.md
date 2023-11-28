@@ -4,8 +4,8 @@ blueprint: homepage
 title: Accueil
 seo_title: 'Développeur Shopify Montréal | Philippe Pasquin'
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1700850655
-og_image: accueil-og-1700014133.png
+updated_at: 1701182745
+og_image: philippe_pasquin.png
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -15,8 +15,8 @@ announcement: true
 template: default
 related_date: '2023-12-01'
 announcement_text: "Nouveau prix pour nos banques d'heures"
-heading: 'Construisez, évoluez, excellez avec notre expertise Shopify'
-paragraph: 'En tant que partenaire Shopify et Shopify Plus, nous développons, optimisons et assurons la maintenance de solutions eCommerce sur Shopify.'
+heading: 'Construisez, évoluez, excellez avec mon expertise Shopify'
+paragraph: 'En tant que partenaire Shopify et Shopify Plus, je développe, optimise et assure la maintenance de solutions eCommerce sur Shopify.'
 button_link: 'entry::d9172796-78a7-4e6c-b716-53ba1946125e'
 button_text: 'Planifier une rencontre découverte'
 subheading: 'Support mensuel sur Shopify'
@@ -32,14 +32,14 @@ ctas:
   -
     id: lp03aree
     icon: philippe_pasquin.png
-    heading: 'Essayer nos services sans obligations'
+    heading: 'Optez pour mes services sans obligations'
     pragraph:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "Essayez-nous sur un projet unique avant de vous abonner ! C'est le moyen idéal pour nous faire un essai et vous assurer que notre service vous convient avant de vous engager."
+            text: "Planifions une rencontre découverte gratuite et sans obligations afin de discuter de vos besoins! C'est le moyen idéal pour faire un essai et vous assurer que mes services vous conviennent."
     link_text: Commencer
     modal: false
     link: 'entry::d9172796-78a7-4e6c-b716-53ba1946125e'

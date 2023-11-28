@@ -1,12 +1,12 @@
 ---
 id: 3470e282-800e-4eaf-9b6f-eb87d53ed8fb
 blueprint: service
-title: 'Refonte de thème Shopify'
+title: 'Refonte de thèmes Shopify'
 color1: '#8A2387'
 color2: '#E94057'
 color3: '#F27121'
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1700924295
+updated_at: 1701185634
 services_type: boutique-shopify-existante
 menu_description: "Stratégie, design et développement d'un nouveau thème Shopify."
 left_right:
@@ -19,7 +19,7 @@ left_right:
         content:
           -
             type: text
-            text: 'Stratégie de Refonte de Thème Shopify'
+            text: 'Stratégie de refonte de thème Shopify'
     paragraph:
       -
         type: paragraph
@@ -38,14 +38,14 @@ left_right:
         content:
           -
             type: text
-            text: 'Design Innovant et Personnalisé'
+            text: 'Design innovant et personnalisé'
     paragraph:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Je conçois un design moderne et sur mesure pour votre thème Shopify, en adéquation avec votre image de marque.'
+            text: 'Je conçois un design moderne et sur mesure pour votre thème Shopify, en symbiose avec votre image de marque.'
     type: left_right_block
     enabled: true
   -
@@ -57,14 +57,14 @@ left_right:
         content:
           -
             type: text
-            text: 'Développement Technique Avancé'
+            text: 'Développement technique avancé'
     paragraph:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Je développe des fonctionnalités avancées pour votre nouveau thème Shopify, garantissant performance et adaptabilité.'
+            text: 'Je développe des fonctionnalités avancées pour votre nouveau thème Shopify, garantissant performance et réactivité.'
     type: left_right_block
     enabled: true
   -
@@ -76,7 +76,7 @@ left_right:
         content:
           -
             type: text
-            text: "Optimisation de l'Expérience Utilisateur"
+            text: "Optimisation de l'expérience utilisateur"
     paragraph:
       -
         type: paragraph
@@ -94,14 +94,23 @@ left_right:
         content:
           -
             type: text
-            text: 'Responsive Design pour Tous les Appareils'
+            text: 'Design '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: responsive
+          -
+            type: text
+            text: ' pour tous les appareils'
     paragraph:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "Je m'assure que votre thème Shopify est entièrement responsive, offrant une expérience parfaite sur tous les appareils."
+            text: "Je m'assure que votre thème Shopify est entièrement réactif, offrant une expérience parfaite sur tous les appareils."
     type: left_right_block
     enabled: false
   -
@@ -112,7 +121,7 @@ left_right:
         content:
           -
             type: text
-            text: 'SEO et Performances Améliorées'
+            text: 'SEO et performances améliorées'
     paragraph:
       -
         type: paragraph
@@ -130,7 +139,7 @@ left_right:
         content:
           -
             type: text
-            text: 'Tests Rigoureux et Assurance Qualité'
+            text: 'Tests rigoureux et assurance qualité'
     paragraph:
       -
         type: paragraph
@@ -149,7 +158,7 @@ left_right:
         content:
           -
             type: text
-            text: 'Accompagnement et Formation'
+            text: 'Accompagnement et formation'
     paragraph:
       -
         type: paragraph

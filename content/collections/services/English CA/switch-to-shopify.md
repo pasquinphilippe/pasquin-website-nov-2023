@@ -1,15 +1,9 @@
 ---
-id: 8099e21b-3b32-49c9-9704-885e21894c5d
-blueprint: service
-title: 'Migration vers Shopify'
-updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1701185412
-services_type: nouvelle-boutique-shopify
-color1: '#D16BA5'
-color2: '#86A8E7'
-color3: '#5FFBF1'
-menu_description: 'Migrer ou changer de plateforme vers Shopify.'
-turnaround: 'Migration en moins de 6 semaines'
+id: 4e95c9a7-64cf-456a-a536-14464e8ec770
+origin: 8099e21b-3b32-49c9-9704-885e21894c5d
+title: 'Switch to Shopify'
+menu_description: 'Migrate or switch platforms to Shopify.'
+turnaround: 'Migration in less than 6 weeks'
 left_right:
   -
     id: lp7fzs1b
@@ -20,23 +14,23 @@ left_right:
         content:
           -
             type: text
-            text: 'Analyse préalable de votre site '
+            text: 'Preliminary analysis of your '
           -
             type: text
             marks:
               -
                 type: italic
-            text: actuel
+            text: current
           -
             type: text
-            text: .
+            text: ' site'
     paragraph:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "J'évalue votre site existant (Squarespace, WordPress, Wix, etc.) afin d'assurer une migration optimale."
+            text: 'I evaluate your existing site (Squarespace, WordPress, Wix, etc.) for optimal migration'
     type: left_right_block
     enabled: true
   -
@@ -48,23 +42,20 @@ left_right:
         content:
           -
             type: text
-            text: 'Transfert '
-          -
-            type: text
             marks:
               -
                 type: italic
-            text: sécurisé
+            text: Secure
           -
             type: text
-            text: ' des données.'
+            text: ' data transfer'
     paragraph:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "Je migre l'ensemble de vos données importantes vers Shopify, garantissant sécurité et intégrité."
+            text: 'I manually migrate all your important data to Shopify, ensuring security and integrity'
     type: left_right_block
     enabled: true
   -
@@ -76,23 +67,14 @@ left_right:
         content:
           -
             type: text
-            text: 'Structure de votre '
-          -
-            type: text
-            marks:
-              -
-                type: italic
-            text: catalogue
-          -
-            type: text
-            text: ' de produits.'
+            text: 'Structure of your product catalog'
     paragraph:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Je recrée votre catalogue de produits et de catégories sur Shopify, en préservant tous les détails de prix et spécifications techniques.'
+            text: 'I recreate your product and category catalog on Shopify, preserving all price details and technical specifications'
     type: left_right_block
     enabled: true
   -
@@ -104,14 +86,14 @@ left_right:
         content:
           -
             type: text
-            text: 'Migration des comptes clients.'
+            text: 'Migration of customer accounts'
     paragraph:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "Je transfère les comptes de vos clients pour maintenir l'historique et les informations essentielles."
+            text: "I transfer your customers' accounts to maintain their history and essential information"
     type: left_right_block
     enabled: true
   -
@@ -123,23 +105,14 @@ left_right:
         content:
           -
             type: text
-            text: 'Adaptation du thème et de votre '
-          -
-            type: text
-            marks:
-              -
-                type: italic
-            text: branding
-          -
-            type: text
-            text: .
+            text: 'Adaptation of the theme and your branding'
     paragraph:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "Je personnalise votre nouvelle boutique Shopify pour qu'elle reflète fidèlement votre identité de marque."
+            text: 'I customize your new Shopify store to faithfully reflect your brand identity'
     type: left_right_block
     enabled: true
   -
@@ -151,23 +124,14 @@ left_right:
         content:
           -
             type: text
-            text: 'Configuration des '
-          -
-            type: text
-            marks:
-              -
-                type: italic
-            text: paramètres
-          -
-            type: text
-            text: ' de ventes.'
+            text: 'Configuration of sales settings'
     paragraph:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Je paramètre vos options de vente, de taxes, et de livraisons sur Shopify, selon vos besoins spécifiques.'
+            text: 'I configure your sales, tax, and shipping options on Shopify according to your specific needs.'
     type: left_right_block
     enabled: true
   -
@@ -179,22 +143,22 @@ left_right:
         content:
           -
             type: text
-            text: 'Formation et support sur Shopify.'
+            text: 'Training and support on Shopify'
     paragraph:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "Je vous offre une formation sur l'utilisation de Shopify et reste disponible pour un support au besoin."
+            text: 'I train you on using Shopify and remain available for ongoing support'
     type: left_right_block
     enabled: true
 servicespricing:
   -
     id: lp7haawn
-    title: 'De base'
+    title: Basic
     price: '3 999$ CAD'
-    description: 'Pour les entreprises à petit budget qui recherchent un thème adapté aux besoins de leur entreprise et qui débute dans la vente en ligne.'
+    description: 'For businesses on a small budget looking for a theme tailored to their needs and just starting out in online sales.'
     includes:
       -
         id: lp7hmkj1
@@ -204,7 +168,7 @@ servicespricing:
             content:
               -
                 type: text
-                text: 'Thème Shopify professionnel'
+                text: 'Professional Shopify Theme'
         type: services
         enabled: true
       -
@@ -215,7 +179,7 @@ servicespricing:
             content:
               -
                 type: text
-                text: "Pages d'accueil et contact"
+                text: 'Home and contact pages'
         type: services
         enabled: true
       -
@@ -226,7 +190,7 @@ servicespricing:
             content:
               -
                 type: text
-                text: '2 pages additionnelles'
+                text: '2 additional pages'
         type: services
         enabled: true
       -
@@ -237,16 +201,7 @@ servicespricing:
             content:
               -
                 type: text
-                text: 'Site web '
-              -
-                type: text
-                marks:
-                  -
-                    type: italic
-                text: 'responsive '
-              -
-                type: text
-                text: '(mobile et ordinateur)'
+                text: 'Responsive website (mobile and desktop)'
         type: services
         enabled: true
       -
@@ -284,7 +239,7 @@ servicespricing:
         enabled: true
     type: pricing_monthly
     enabled: true
-    Turnaround: 'Mise en ligne en moins de 4 semaines'
+    Turnaround: 'Launch in less than 4 weeks'
   -
     id: lp7hp7i9
     title: Professionnel
@@ -299,7 +254,7 @@ servicespricing:
             content:
               -
                 type: text
-                text: 'Thème Shopify personnalisé à votre marque'
+                text: 'Thème Shopify personnalisée à votre marque'
         type: services
         enabled: true
       -
@@ -363,7 +318,7 @@ servicespricing:
             content:
               -
                 type: text
-                text: 'Site web multi-langues (traduction non-incluse)'
+                text: 'Site web multi-langues'
         type: services
         enabled: true
       -
@@ -374,7 +329,7 @@ servicespricing:
             content:
               -
                 type: text
-                text: "Installation d'applications ou de fonctionnalités avancées"
+                text: "Installation d'applications ou de logique avancé."
         type: services
         enabled: true
       -
@@ -416,8 +371,8 @@ servicespricing:
   -
     id: lp7i6qs4
     title: 'Sur mesure'
-    price: Contactez-nous
-    description: 'Pour les entreprises qui désirent une solution "Clé en mains" avec des requêtes personnalisées.'
+    price: 'Contacter nous'
+    description: 'Pour les entreprises qui désirent une solution "Clé en mains" et ayant des besoins plus importants et nécessitant des modifications avancées.'
     includes:
       -
         id: lp7hmkj1
@@ -449,7 +404,7 @@ servicespricing:
             content:
               -
                 type: text
-                text: 'Formulaires avec logiques avancées'
+                text: 'Formulaire avec logique avancé'
         type: services
         enabled: true
       -
@@ -460,7 +415,7 @@ servicespricing:
             content:
               -
                 type: text
-                text: 'Fonctionnalités B2B'
+                text: 'Fonctionnalité B2B'
         type: services
         enabled: true
       -
@@ -482,7 +437,7 @@ servicespricing:
             content:
               -
                 type: text
-                text: 'Personnalisation de prix par pays'
+                text: 'Logique de prix pour plusieurs pays.'
         type: services
         enabled: true
       -
@@ -493,7 +448,7 @@ servicespricing:
             content:
               -
                 type: text
-                text: "Gestion de l'inventaire avec ERP"
+                text: "Gestion d'inventaire avec ERP."
         type: services
         enabled: true
       -
@@ -504,17 +459,12 @@ servicespricing:
             content:
               -
                 type: text
-                text: Automatisation
+                text: 'Soutien continue'
         type: services
         enabled: true
     type: pricing_monthly
     enabled: true
     Turnaround: 'À discuter'
-seo_title: 'Services Professionnels de Migration vers Shopify'
-seo_description: 'Simplifiez votre transition vers Shopify avec notre expertise. Nous assurons une migration fluide et sécurisée de votre boutique en ligne vers la plateforme Shopify.'
-seo_noindex: false
-seo_nofollow: false
-seo_canonical_type: entry
-sitemap_change_frequency: weekly
-sitemap_priority: 0.5
+updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
+updated_at: 1701127686
 ---

@@ -1,13 +1,13 @@
 ---
 id: 9a3dd9e8-069c-4161-b0da-8a2496d017fb
 blueprint: service
-title: 'Configuration de Boutique Shopify'
+title: 'Configuration de boutique Shopify'
 services_type: nouvelle-boutique-shopify
 color1: '#305A72'
 color2: '#5D8AA8'
 color3: '#D9E4EC'
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1700924186
+updated_at: 1701184792
 menu_description: 'Mise en place des paramètres pour une mise en ligne facile.'
 left_right:
   -
@@ -73,7 +73,7 @@ left_right:
         content:
           -
             type: text
-            text: 'Je vais créer une page collection, une page produit, vos pages légales. et mettre en place votre panier.'
+            text: 'Je vais créer une page collection, une page produit, vos pages légales et harmoniser votre boutique.'
     type: left_right_block
     enabled: true
   -
@@ -85,14 +85,14 @@ left_right:
         content:
           -
             type: text
-            text: 'Configuration des taxes et vos profiles de livraisons.'
+            text: 'Configuration des taxes et de vos profils de livraisons.'
     paragraph:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Je vais configurer les taxes et profils de livraison '
+            text: 'Je configure les taxes et profils de livraison '
           -
             type: text
             marks:
@@ -140,19 +140,17 @@ servicespricing:
     price: '699$ CAD'
     type: pricing_monthly
     enabled: true
-    description: 'Laissez moi vous aidez à lancer votre site Shopify! Ce service inclus:'
+    description: 'Lançons votre site Shopify ensemble! Ce service inclus:'
     includes:
       -
         id: lp7drp8u
         title:
           -
             type: paragraph
-            attrs:
-              textAlign: left
             content:
               -
                 type: text
-                text: 'Sélection et installation de thème Shopify'
+                text: 'Sélection et installation de votre thème Shopify'
         type: services
         enabled: true
       -
@@ -174,7 +172,7 @@ servicespricing:
             content:
               -
                 type: text
-                text: 'Création de contenu légal et de pages essentielles'
+                text: 'Création du contenu légal et des pages essentielles'
         type: services
         enabled: true
       -
@@ -233,7 +231,7 @@ servicespricing:
                     type: superscript
                 text: '*'
         type: services
-        enabled: true
+        enabled: false
     payment_type:
       -
         type: paragraph

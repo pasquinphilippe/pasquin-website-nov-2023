@@ -187,7 +187,7 @@ fields:
       type: replicator
       display: Pricing
       icon: replicator
-      localizable: false
+      localizable: true
       listable: hidden
       instructions_position: above
       visibility: visible

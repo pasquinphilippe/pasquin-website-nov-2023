@@ -1,10 +1,10 @@
-discutons: Discutons!
-message_book: "Je vais faire suite à votre demande d'ici la prochaine heure."
+discutons: 'Discutons! 👋'
+message_book: 'Je répondrai dans la prochaine heure ouvrable.'
 ctas:
   -
     id: lp05o4w9
     icon: chat
-    cta_text: 'Envoyez moi un message'
+    cta_text: 'Envoyez-moi un message'
     modal: false
     cta_link: 'entry::d9172796-78a7-4e6c-b716-53ba1946125e'
     type: call_to_action
@@ -34,6 +34,5 @@ ctas:
     type: call_to_action
     enabled: true
 video_salutation: 'Enchanté 👋'
-video_description: 'Par ici, afin de voir comment nos services fonctionnent!'
+video_description: 'Par ici, laissez-moi vous parler de mes services!'
 video_link: 'https://www.loom.com/embed/cbbcf8187c954ceb9d67c761315a47c1?sid=77e5686f-055d-4759-930c-ff55a85ba426'
-

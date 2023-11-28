@@ -1,14 +1,14 @@
 ---
 id: c883b4a8-c9b1-4a1a-a8f0-294af524533b
 blueprint: service
-title: 'Développement de thème Shopify sur mesure'
+title: 'Développement de thèmes Shopify sur mesure'
 services_type: nouvelle-boutique-shopify
 color1: '#FF6B6B'
 color2: '#FD9668'
 color3: '#FDBE51'
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1700924242
-menu_description: 'Design et développement de thème sur mesure.'
+updated_at: 1701184416
+menu_description: 'Design et développement de thèmes sur mesure.'
 turnaround: 'Quelques heures... à quelques mois...'
 left_right:
   -
@@ -20,14 +20,14 @@ left_right:
         content:
           -
             type: text
-            text: 'Design Responsive et Optimisé'
+            text: 'Design réactif et optimisé'
     paragraph:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "Je m'assure que votre thème Shopify est entièrement responsive et optimisé pour tous les appareils et plateformes."
+            text: "Je m'assure que votre thème Shopify est entièrement réactif et optimisé pour tous les appareils et plateformes."
     type: left_right_block
     enabled: true
   -
@@ -39,7 +39,7 @@ left_right:
         content:
           -
             type: text
-            text: 'Intégration Avancée de Fonctionnalités'
+            text: 'Intégration avancée de fonctionnalités'
     paragraph:
       -
         type: paragraph
@@ -58,7 +58,7 @@ left_right:
         content:
           -
             type: text
-            text: 'Modifications Personnalisées de Thèmes Existant'
+            text: 'Modifications personnalisées de thèmes existants'
     paragraph:
       -
         type: paragraph
@@ -77,7 +77,7 @@ left_right:
         content:
           -
             type: text
-            text: 'Conception de Thème Shopify Unique'
+            text: 'Conception de thèmes Shopify uniques'
     paragraph:
       -
         type: paragraph
@@ -90,7 +90,7 @@ left_right:
 servicespricing:
   -
     id: lpcw0ewp
-    title: 'Modification de thème existant'
+    title: 'Modification de thèmes existants'
     price: 'À partir de 95$/h'
     payment_type:
       -
@@ -99,7 +99,7 @@ servicespricing:
           -
             type: text
             text: "Banque d'heures à partir de 5 heures"
-    description: 'Éffectuer des modifications ou des ajouts à votre thème existant afin de personnaliser vos fonctionnalités.'
+    description: "J'apporte des modifications ou des ajouts à votre thème existant afin de personnaliser vos fonctionnalités."
     Turnaround: 'Début des travaux en moins de 48 heures'
     includes:
       -
@@ -141,7 +141,13 @@ servicespricing:
             content:
               -
                 type: text
-                text: 'Fonctionnalités spécifique comme un countdown'
+                text: 'Fonctionnalités spécifiques comme un '
+              -
+                type: text
+                marks:
+                  -
+                    type: italic
+                text: countdown
         type: services
         enabled: true
       -
@@ -152,7 +158,7 @@ servicespricing:
             content:
               -
                 type: text
-                text: 'Création de blocks spécifique'
+                text: 'Création de blocs spécifiques'
         type: services
         enabled: true
       -
@@ -163,14 +169,14 @@ servicespricing:
             content:
               -
                 type: text
-                text: 'Personnalisation de page'
+                text: 'Personnalisation de pages'
         type: services
         enabled: true
     type: pricing_monthly
     enabled: true
   -
     id: lpcw4g7y
-    title: 'Développement de thème sur mesure'
+    title: 'Développement de thèmes sur mesure'
     price: 'À discuter'
     payment_type:
       -
@@ -179,7 +185,7 @@ servicespricing:
           -
             type: text
             text: 'Projet spécifique demandant plusieurs ressources (Designer et développeur)'
-    description: 'Vous souhaitez avoir un thème 100% sur mesure avec des fonctionnalités avancé? Contacter nous pour discuter de votre projet.'
+    description: 'Vous souhaitez avoir un thème 100% sur mesure avec des fonctionnalités avancées? Contactez-nous pour discuter de votre projet.'
     Turnaround: '8 à 20 semaines'
     includes:
       -
@@ -190,7 +196,13 @@ servicespricing:
             content:
               -
                 type: text
-                text: 'Conception de site headless'
+                text: 'Conception de sites '
+              -
+                type: text
+                marks:
+                  -
+                    type: italic
+                text: headless
         type: services
         enabled: true
       -
@@ -212,7 +224,7 @@ servicespricing:
             content:
               -
                 type: text
-                text: 'Plusieurs pages de collection'
+                text: 'Plusieurs pages de collections'
         type: services
         enabled: true
       -
@@ -256,7 +268,7 @@ servicespricing:
             content:
               -
                 type: text
-                text: 'Tout ce dont vous pouvez penser'
+                text: 'Tout ce dont vous pouvez penser!'
         type: services
         enabled: true
     type: pricing_monthly
