@@ -128,7 +128,7 @@ tabs:
                             visibility: visible
                             replicator_preview: true
                             hide_display: false
-                            default: "Disponibilité pour {{ now format='F'}}"
+                            default: "Disponibilité pour {{ now | iso_format('MMMM')}}"
                         -
                           handle: includes
                           field:

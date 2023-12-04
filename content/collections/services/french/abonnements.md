@@ -42,7 +42,7 @@ pricing:
     description_paiement: |-
       paiement unique
       valide pour 3 mois.
-    availability: "Disponibilité pour {{ now format='F'}}"
+    availability: "Disponibilité pour {{ now | iso_format('MMMM')}}"
   -
     id: lp6cpnko
     price: '3 150$'
@@ -86,7 +86,7 @@ pricing:
     description_paiement: |-
       paiement unique
       valide pour 3 mois.
-    availability: "Disponibilité pour {{ now format='F'}}"
+    availability: "Disponibilité pour {{ now | iso_format('MMMM')}}"
   -
     id: lp6cqt2z
     price: '3 800$'
@@ -135,7 +135,7 @@ pricing:
     description_paiement: |-
       paiement unique
       valide pour 3 mois.
-    availability: "Disponibilité pour {{ now format='F'}}"
+    availability: "Disponibilité pour {{ now | iso_format('MMMM')}}"
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
 updated_at: 1700925402
 services_type: boutique-shopify-existante
