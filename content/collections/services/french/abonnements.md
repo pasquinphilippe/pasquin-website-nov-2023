@@ -6,7 +6,7 @@ title: 'Support et maintenance'
 pricing:
   -
     id: lor8xrel
-    price: '1 399$'
+    price: '1 299$'
     description: 'Banque de 10 heures'
     slots_available: 3
     includes:
@@ -45,7 +45,7 @@ pricing:
     availability: "Disponibilité pour {{ now | iso_format('MMMM')}}"
   -
     id: lp6cpnko
-    price: '3 150$'
+    price: '3 199$'
     description: 'Banque de 25 heures'
     slots_available: 3
     includes:
@@ -137,7 +137,7 @@ pricing:
       valide pour 3 mois.
     availability: "Disponibilité pour {{ now | iso_format('MMMM')}}"
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1700925402
+updated_at: 1701881032
 services_type: boutique-shopify-existante
 color1: '#00C9FF'
 color2: '#92FE9D'
