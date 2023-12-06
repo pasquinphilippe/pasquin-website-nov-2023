@@ -7,7 +7,7 @@ color1: '#FF6B6B'
 color2: '#FD9668'
 color3: '#FDBE51'
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1701184416
+updated_at: 1701881980
 menu_description: 'Design et développement de thèmes sur mesure.'
 turnaround: 'Quelques heures... à quelques mois...'
 left_right:
@@ -98,7 +98,7 @@ servicespricing:
         content:
           -
             type: text
-            text: "Banque d'heures à partir de 5 heures"
+            text: "Banque d'heures à partir de 10 heures"
     description: "J'apporte des modifications ou des ajouts à votre thème existant afin de personnaliser vos fonctionnalités."
     Turnaround: 'Début des travaux en moins de 48 heures'
     includes:
