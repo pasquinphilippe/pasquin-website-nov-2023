@@ -32,7 +32,7 @@ pricing:
         enabled: true
       -
         id: lor9609u
-        title: "Annulez à tout moment dans l'année"
+        title: 'Valide pour 3 mois'
         type: services
         enabled: true
     type: pricing_monthly
@@ -76,7 +76,7 @@ pricing:
         enabled: true
       -
         id: lor9609u
-        title: "Annulez à tout moment dans l'année"
+        title: 'Valide pour 3 mois'
         type: services
         enabled: true
     type: pricing_monthly
@@ -125,7 +125,7 @@ pricing:
         enabled: true
       -
         id: lor9609u
-        title: "Annulez à tout moment dans l'année"
+        title: 'Valide pour 3 mois'
         type: services
         enabled: true
     type: pricing_monthly
@@ -137,7 +137,7 @@ pricing:
       valide pour 3 mois.
     availability: "Disponibilité pour {{ now | iso_format('MMMM')}}"
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1701881405
+updated_at: 1701882036
 services_type: boutique-shopify-existante
 color1: '#00C9FF'
 color2: '#92FE9D'
