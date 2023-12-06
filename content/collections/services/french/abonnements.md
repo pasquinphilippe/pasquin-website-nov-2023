@@ -89,7 +89,7 @@ pricing:
     availability: "Disponibilité pour {{ now | iso_format('MMMM')}}"
   -
     id: lp6cqt2z
-    price: '3 800$'
+    price: '3 799$'
     description: 'Banque de 40 heures'
     slots_available: 2
     includes:
