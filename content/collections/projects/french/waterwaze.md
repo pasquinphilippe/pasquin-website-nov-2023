@@ -4,7 +4,7 @@ blueprint: project
 title: Waterwaze
 brand_logo: clients_logo/waterwazelogo.webp
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1699564866
+updated_at: 1702311973
 mockups:
   - projects/milistack_screenshot-2023-11-09-16.18.32.png
 website: 'https://waterwaze.ca'
