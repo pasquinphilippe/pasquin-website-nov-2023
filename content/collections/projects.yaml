@@ -1,7 +1,9 @@
 title: Projects
 sites:
   - french
-propagate: false
+  - 'English CA'
+  - 'English US'
+propagate: true
 template: default
 layout: layout
 taxonomies:
