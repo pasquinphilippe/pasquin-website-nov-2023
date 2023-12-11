@@ -175,3 +175,33 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+          -
+            handle: 'yes'
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Yes'
+              icon: text
+              localizable: true
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: non
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Non
+              icon: text
+              localizable: true
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

@@ -1,1 +1,5 @@
-{  }
+logo: untitled-design-(1)-1701986469.png
+availability: "Available for hired {{ now | iso_format('MMMM')}}"
+cta_text: 'Schedule a call'
+cta_link: 'entry::2b41dadd-ae6c-44ef-93e1-4ddde28e72d8'
+mobile_button_text: Menu

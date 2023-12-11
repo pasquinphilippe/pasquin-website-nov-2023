@@ -9,6 +9,7 @@ tabs:
             handle: title
             field:
               type: text
+              required: true
               localizable: true
               validate:
                 - required
@@ -171,7 +172,7 @@ tabs:
               type: replicator
               display: Pricing
               icon: replicator
-              localizable: false
+              localizable: true
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -187,6 +188,7 @@ tabs:
             field:
               type: slug
               localizable: true
+              validate: 'max:200'
           -
             handle: parent
             field:

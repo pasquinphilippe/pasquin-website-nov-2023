@@ -7,5 +7,5 @@ heading: 'Leading my small Shopify agency for two years, I leverage my six years
 meet_heading: 'Meet the team'
 meet_description: '"Currently, I run my business solo, ensuring the development and maintenance of services for my clients. I am honored by their daily trust in the realization of their projects.'
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1701126752
+updated_at: 1702313665
 ---

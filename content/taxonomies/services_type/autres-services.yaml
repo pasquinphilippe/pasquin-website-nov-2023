@@ -3,3 +3,14 @@ updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
 updated_at: 1699566855
 blueprint: services_type
 order: 3
+localizations:
+  'English CA':
+    title: 'Other services'
+    slug: autres-services
+    updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
+    updated_at: 1702314415
+  'English US':
+    title: 'Other services'
+    slug: autres-services
+    updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
+    updated_at: 1702314418

@@ -19,18 +19,18 @@
       {{ else }}
       <div class="nav mainnav headerhideonmob">
         {{ nav:main }}
-        <div class="navitem {{ unless entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" }} magnetic {{ /unless }}" {{ if
-          children || entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" }} 
+        <div class="navitem {{ unless entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" || entry_id=="d82072df-cb49-4f2e-9ff4-525fe7fcf657" }} magnetic {{ /unless }}" {{ if
+          children || entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" || entry_id=="d82072df-cb49-4f2e-9ff4-525fe7fcf657" }} 
           x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false" {{ endif }}>
           <a href="{{ url }}" {{ if
-            children || entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" }}  @click.prevent="open = !open" {{ endif }} class="navlink {{ if is_current || is_parent }} w--current {{ endif}}">
+            children || entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" || entry_id=="d82072df-cb49-4f2e-9ff4-525fe7fcf657" }}  @click.prevent="open = !open" {{ endif }} class="navlink {{ if is_current || is_parent }} w--current {{ endif}}">
             {{ title }}
-            {{ if children || entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" }}
+            {{ if children || entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" || entry_id=="d82072df-cb49-4f2e-9ff4-525fe7fcf657" }}
             <i x-show="!open" class="fa fa-caret-down"></i>
             <i x-show="open" class="fa fa-caret-up"></i>
             {{ /if }}
           </a>
-          {{ if children || entry_id == "d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" }}
+          {{ if children || entry_id == "d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" || entry_id=="d82072df-cb49-4f2e-9ff4-525fe7fcf657" }}
           <div class="main_dropdown" x-show="open">
             <div class="inner_dropdown">
               <div class="services-grid-3">

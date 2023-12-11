@@ -3,3 +3,14 @@ updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
 updated_at: 1699895579
 order: 0
 blueprint: services_type
+localizations:
+  'English CA':
+    title: 'New Shopify Store'
+    slug: nouvelle-boutique-shopify
+    updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
+    updated_at: 1702314383
+  'English US':
+    title: 'New Shopify Store'
+    slug: nouvelle-boutique-shopify
+    updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
+    updated_at: 1702314390
