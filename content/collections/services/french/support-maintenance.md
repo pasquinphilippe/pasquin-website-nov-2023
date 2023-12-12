@@ -37,7 +37,7 @@ pricing:
      type: pricing_monthly
      enabled: true
      hourly: 125
-     title: '10 o'clock'
+     title: '10 hours'
      payment_description: |-
        single payment
        valid for 3 months.

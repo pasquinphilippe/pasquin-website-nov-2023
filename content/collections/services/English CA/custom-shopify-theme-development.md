@@ -92,7 +92,7 @@ servicespricing:
         content:
           -
             type: text
-            text: "Bank of hours from 10 o'clock"
+            text: "Bank of hours from 10 hours"
     description: 'I make changes or additions to your existing theme to customize your functionality.'
     Turnaround: 'Start of work in less than 48 hours'
     includes:
