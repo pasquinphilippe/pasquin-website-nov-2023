@@ -1,6 +1,6 @@
 ---
 id: e785a253-1496-4e04-84e8-5162700ba43b
-blueprint: subscriptions
+blueprint: abonnements
 title: 'Support and maintenance'
 pricing:
    -
