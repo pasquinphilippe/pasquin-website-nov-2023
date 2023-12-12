@@ -1,0 +1,22 @@
+title: 'Référez un client'
+description: "Vous avez une connaissance qui cherche conseil?. Réfèrez-le, et s'il travaille avec nous, vous recevrez 200$ et 5% de commission*."
+get_started: Commencer
+no_obligations: 'Sans obligations de votre part'
+terms:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Certaines conditions s'appliquent, veuillez vous référez aux "
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'statamic://entry::be4c5691-d9cf-432b-b82c-2cd92ff7dc70'
+              rel: null
+              target: _blank
+              title: null
+        text: 'conditions de référencement.'

@@ -33,7 +33,7 @@ tabs:
               width: 50
               listable: hidden
               instructions_position: above
-              localizable: false
+              localizable: true
           -
             handle: copyright_since
             field:
@@ -204,6 +204,20 @@ tabs:
               antlers: false
               type: text
               display: 'Request price'
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: commencons
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: commencons
               icon: text
               localizable: true
               listable: hidden

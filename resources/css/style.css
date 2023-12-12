@@ -2167,6 +2167,10 @@ svg.pulse-svg .fourth-circle {
     background-color: #fff;
 }
 
+.modal.contact{
+    max-width: 990px;
+}
+
 .request-modal-inner {
     margin-bottom: 0;
     padding: 48px 54px;
@@ -2229,6 +2233,7 @@ svg.pulse-svg .fourth-circle {
 }
 
 .form-cta {
+   cursor: pointer;
     display: block;
     width: 100%;
     padding: 12px 21px 12px 12px;

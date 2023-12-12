@@ -86,6 +86,20 @@ tabs:
                             replicator_preview: true
                             hide_display: false
                         -
+                          handle: button_text
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: button_text
+                            icon: text
+                            localizable: true
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
                           handle: description
                           field:
                             antlers: false

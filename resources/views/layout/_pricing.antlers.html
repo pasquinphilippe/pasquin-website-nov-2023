@@ -17,7 +17,7 @@
     </div>
     <div class="content large">
         <div class="pricing-grid">
-            {{ get_content from='e785a253-1496-4e04-84e8-5162700ba43b'}}
+           {{ support_pricing }}
             {{ pricing }}
             <div class="desktoppricing">
                 <div class="card jumboshadow jumboshadowwithborder" style="height:100%">
@@ -36,7 +36,7 @@
                             </div>
                         </div>
                         <div class="gaps"></div>
-                        <div class="nav headerrightnav"><a href="/contact" class="btn dark magnetic">Commençons!</a>
+                        <div class="nav headerrightnav"><a href="/contact" class="btn dark magnetic">{{ configuration:commencons }}</a>
                         </div>
                         <div class="gapm"></div>
                         <div><span class="t-bold">{{ description }}</div>
@@ -72,7 +72,7 @@
                             </div>
                         </div>
                         <div class="gaps"></div>
-                        <div class="nav headerrightnav"><a href="/contact" class="btn dark w-button">Commençons</a>
+                        <div class="nav headerrightnav"><a href="/contact" class="btn dark w-button">{{ configuration:commencons }}</a>
                         </div>
                         <div class="gapm"></div>
                         <div><span class="t-bold">{{ description }}</div>
@@ -93,7 +93,7 @@
                 <div class="gapm"></div>
             </div>
             {{ /pricing }}
-            {{ /get_content }}
+            {{ /support_pricing }}
         </div>
     </div>
     <div class="content medium">

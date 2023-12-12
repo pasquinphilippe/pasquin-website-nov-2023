@@ -4,7 +4,7 @@ blueprint: homepage
 title: Accueil
 seo_title: 'Développeur Shopify Montréal | Philippe Pasquin'
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1701182745
+updated_at: 1702315090
 og_image: philippe_pasquin.png
 seo_noindex: false
 seo_nofollow: false
@@ -72,4 +72,5 @@ projects_heading: 'Mes derniers projets'
 btn_cacher: 'Masquer les projets'
 btn_plus: 'Voir plus de projets'
 announcement_link: '#pricing'
+support_pricing: e785a253-1496-4e04-84e8-5162700ba43b
 ---

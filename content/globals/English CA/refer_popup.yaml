@@ -1,0 +1,12 @@
+title: 'Refer a client'
+description: 'Do you have an acquaintance looking for advice? Refer him, and if he works with us, you will receive $200 and 5% commission*.'
+get_started: "Let's get started!"
+no_obligations: 'Without obligations on your part'
+terms:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Certain conditions apply, please refer to the referral conditions.'
+origin: french

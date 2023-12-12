@@ -9,6 +9,7 @@ tabs:
             handle: title
             field:
               type: text
+              required: true
               localizable: true
               validate:
                 - required
@@ -446,6 +447,23 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+          -
+            handle: support_pricing
+            field:
+              max_items: 1
+              mode: default
+              create: true
+              collections:
+                - services
+              type: entries
+              display: 'Support Pricing'
+              icon: entries
+              localizable: false
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
       -
         display: 'Services Section'
         fields:
@@ -593,6 +611,7 @@ tabs:
             field:
               type: slug
               localizable: true
+              validate: 'max:200'
           -
             handle: parent
             field:
