@@ -1,0 +1,270 @@
+<div class="content">
+    <div class="gapl"></div>
+    <div class="card jumboshadow jumboshadowwithborder">
+      <div class="paddm">
+        <div class="gapm"></div>
+        <div class="ctawrap">
+  
+          {{ if turnaround }}
+          <div class="availability">{{ svg src='availability' }}
+            <div>{{ turnaround }}</div>
+          </div>
+          {{ /endif }}
+          <div class="gaps"></div>
+          <h2 class="h2">{{ title }}</h2>
+          <div class="gapxs"></div>
+          <p class="services-description t-light">{{ menu_description }}</p>
+          <div class="gaps"></div>
+          <div class="btngrp centeronmob">
+            <span class="btn big dark" @click="contactModal = true" >{{ configuration:commencons }}</span>
+  
+            <a href="#pricing" class="btn big">
+              {{ if servicespricing:count > 1 }}
+              {{ configuration:voir_les_prix }}
+              {{ elseif servicespricing:count == 1 }}
+              {{ configuration:voir_le_prix }}
+              {{ else }}
+              {{ configuration:request_price }}
+              {{ /if }}
+            </a>
+  
+          </div>
+        </div>
+        <div class="gapm"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="content">
+    <div class="gapxl"></div>
+    {{ collection:services  }}
+    <div class="left-right {{ switch between=' right|left'}}">
+     <span style="background-image: linear-gradient(141deg,{{ color1 }}, {{ color2}} 50%, {{color3}}); width: 100%; min-height: 100%; border-radius: 8px"></span>
+      <div class="content-text">
+        <div class="methodtitlewrap alt">
+          <h2 class="h2 methodsectionheading small">{{ title }}</h2>
+          <div class="methodsectiondesc">
+            <div class="t-light">{{ menu_description }}</div>
+          </div>
+          {{ buttons }}
+  
+          <a href="{{ entry }}" {{ if target_blank }}target="_blank" {{ endif }}
+            class="btn magnetic dark headerhideonmob w-button">{{ label }}</a>
+  
+          {{ /buttons }}
+        </div>
+      </div>
+      <div class="gapl"></div>
+    </div>
+    <div class="gapl"></div>
+    {{ /collection:services }}
+  </div>
+  
+  {{ if servicespricing | count === 1 }}
+  <div class="pricingsection" id="pricing">
+  
+    <div class="content card jumboshadow jumboshadowwithborder">
+      <div class="gapxl"></div>
+      <div class="pricingwrap">
+        <div class="pricingleft">
+          <div>
+            <h2 class="h2">Un seul prix.</h2>
+            <div class="gapm"></div>
+  
+  
+            <div class="gapm"></div>
+          </div>
+          {{ servicespricing }}
+          <div class="mobilepricing">
+            <div class="card jumboshadow jumboshadowwithborder" style="height:100%">
+              <div class="paddm">
+                <div class="flexapart">
+                  <div class="t-xsmall t-bold t-light">{{ title }}</div>
+                  {{ if turnaround }}
+                  <div class="availability">{{ svg src='availability' }}
+                    <div>{{ turnaround }}</div>
+                  </div>
+                  {{ endif }}
+                </div>
+                <div class="gaps"></div>
+                <div class="inlinepricelabelwrap">
+                  <div class="h2 bigprice price">{{ price }}</div>
+                  <div class="priceperiod">
+                    <div class="t-xsmall t-bold">{{ payment_type }}</div>
+                  </div>
+                </div>
+                <div class="gaps"></div>
+                <div class="nav headerrightnav"> <span class="btn big dark" @click="contactModal = true" >{{ configuration:commencons }}</span>
+  
+                </div>
+                <div class="gapm"></div>
+                <div><span class="t-bold">{{ description }}</div>
+                <div class="gapm"></div>
+                <div class="pricefeatures smalltext">
+                  {{ includes }}
+                  <div class="pricefeat">{{ svg src='check'}}
+                    <div>{{ title }}</div>
+                  </div>
+                  {{ /includes }}
+  
+                </div>
+              </div>
+            </div>
+            <div class="gapm"></div>
+          </div>
+          {{ /servicespricing }}
+          <div>
+            {{ get_content from="79d0b6d3-6fd5-45df-99e3-191e85e8415b" }}
+            {{ ctas }}
+            {{ partial:layout/cta_cards }}
+            {{ /ctas }}
+            {{ /get_content }}
+          </div>
+        </div>
+        {{ servicespricing }}
+        <div class="desktoppricing">
+          <div class="card jumboshadow jumboshadowwithborder" style="height:100%">
+            <div class="paddm">
+              <div class="flexapart">
+                <div class="t-xsmall t-bold t-light">{{ title }}</div>
+                {{ if turnaround }}
+                <div class="availability">{{ svg src='availability' }}
+                  <div>{{ turnaround }}</div>
+                </div>
+                {{ endif }}
+              </div>
+              <div class="gaps"></div>
+              <div class="inlinepricelabelwrap">
+                <div class="h2 bigprice price">{{ price }}</div>
+                <div class="priceperiod">
+                  <div class="t-xsmall t-bold">{{ payment_type }}</div>
+                </div>
+              </div>
+              <div class="gaps"></div>
+              <div class="nav headerrightnav"> <span class="btn big dark" @click="contactModal = true" >{{ configuration:commencons }}</span>
+  
+              </div>
+              <div class="gapm"></div>
+              <div><span class="t-bold">{{ description }}</div>
+              <div class="gapm"></div>
+              <div class="pricefeatures smalltext">
+                {{ includes }}
+                <div class="pricefeat">{{ svg src='check'}}
+                  <div>{{ title }}</div>
+                </div>
+                {{ /includes }}
+  
+              </div>
+            </div>
+          </div>
+        </div>
+        {{ /servicespricing }}
+  
+      </div>
+      <div class="gapxl"></div>
+    </div>
+  
+  
+  </div>
+  {{ elseif servicespricing | count > 1 }}
+  <div class="pricingsection" id="pricing">
+    <div class="content large">
+      <div class="pricing-grid">
+  
+        {{ servicespricing }}
+        <div class="desktoppricing">
+          <div class="card jumboshadow jumboshadowwithborder" style="height:100%">
+            <div class="paddm">
+              <div class="flexapart">
+                <div class="t-xsmall t-bold t-light">{{ title }}</div>
+                {{ if turnaround }}
+                <div class="availability">{{ svg src='availability' }}
+                  <div>{{ turnaround }}</div>
+                </div>
+                {{ endif }}
+              </div>
+              <div class="gaps"></div>
+              <div class="inlinepricelabelwrap">
+                <div class="h2 bigprice price">{{ price }}</div>
+                <div class="priceperiod">
+                  <div class="t-xsmall t-bold">{{ payment_type }}</div>
+                </div>
+              </div>
+              <div class="gaps"></div>
+              <div class="nav headerrightnav"> <span class="btn big dark" @click="contactModal = true" >{{ configuration:commencons }}</span>
+  
+              </div>
+              <div class="gapm"></div>
+              <div><span class="t-bold">{{ description }}</div>
+              <div class="gapm"></div>
+              <div class="pricefeatures smalltext">
+                {{ includes }}
+                <div class="pricefeat">{{ svg src='check'}}
+                  <div>{{ title }}</div>
+                </div>
+                {{ /includes }}
+  
+              </div>
+            </div>
+          </div>
+        </div>
+        {{ /servicespricing }}
+        {{ servicespricing }}
+        <div class="mobilepricing">
+          <div class="card jumboshadow jumboshadowwithborder" style="height:100%">
+            <div class="paddm">
+              <div class="flexapart">
+                <div class="t-xsmall t-bold t-light">{{ title }}</div>
+                {{ if turnaround }}
+                <div class="availability">{{ svg src='availability' }}
+                  <div>{{ turnaround }}</div>
+                </div>
+                {{ endif }}
+              </div>
+              <div class="gaps"></div>
+              <div class="inlinepricelabelwrap">
+                <div class="h2 bigprice price">{{ price }}</div>
+                <div class="priceperiod">
+                  <div class="t-xsmall t-bold">{{ payment_type }}</div>
+                </div>
+              </div>
+              <div class="gaps"></div>
+              <div class="nav headerrightnav"> <span class="btn big dark" @click="contactModal = true" >{{ configuration:commencons }}</span>
+  
+              </div>
+              <div class="gapm"></div>
+              <div><span class="t-bold">{{ description }}</div>
+              <div class="gapm"></div>
+              <div class="pricefeatures smalltext">
+                {{ includes }}
+                <div class="pricefeat">{{ svg src='check'}}
+                  <div>{{ title }}</div>
+                </div>
+                {{ /includes }}
+  
+              </div>
+            </div>
+          </div>
+          <div class="gapm"></div>
+        </div>
+        {{ /servicespricing }}
+  
+      </div>
+  
+    </div>
+  </div>
+  <div class="content medium">
+    {{ get_content from="79d0b6d3-6fd5-45df-99e3-191e85e8415b" }}
+    {{ ctas }}
+    {{ partial:layout/cta_cards }}
+    {{ /ctas }}
+    {{ /get_content }}
+  </div>
+  {{ endif }}
+  <div class="content">
+    {{ partial:layout/other_services }}
+  </div>
+  {{ partial:home/projects }}
+  
+  
+  
