@@ -1,0 +1,28 @@
+<div class="gapl"></div>
+<div x-data="{ tab: 'plan' }" class="content narrow">
+    <div class="card jumboshadow jumboshadowwithborder">
+        <div class="paddm">
+            <div class="t-small t-bold t-light">{{ subheading }}</div>
+            <div class="gapxs"></div>
+            <h1 class="h3">{{ heading }}</h1>
+            <div class="gapxs"></div>
+            <div class="gapxxs"></div>
+           
+           
+            <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="w-tabs">
+                
+                <div class="w-tab-content">
+                    <div x-show="tab === 'plan'" class="tabpane w-tab-pane" role="tabpanel">
+
+                        <div class="callembed w-embed w-script">
+                            <div id="booking-page">{{ form }}
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
