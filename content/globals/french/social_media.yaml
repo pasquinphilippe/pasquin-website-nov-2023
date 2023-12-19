@@ -7,7 +7,7 @@ social_media:
     enabled: true
   -
     id: loq241m0
-    handle: ppasquin
+    handle: shopifypasquin
     prefix: 'https://www.facebook.com/'
     type: facebook
     enabled: true
@@ -19,7 +19,7 @@ social_media:
     enabled: true
   -
     id: loq24nma
-    handle: philpasquin
+    handle: pasquin.shopify
     prefix: 'https://www.instagram.com/'
     type: instagram
     enabled: true

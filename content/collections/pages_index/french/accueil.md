@@ -4,7 +4,7 @@ blueprint: homepage
 title: Accueil
 seo_title: 'Développeur Shopify Montréal | Philippe Pasquin'
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1702948326
+updated_at: 1702997152
 og_image: philippe_pasquin.png
 seo_noindex: false
 seo_nofollow: false
@@ -41,10 +41,10 @@ ctas:
             type: text
             text: "Planifions une rencontre découverte gratuite et sans obligations afin de discuter de vos besoins! C'est le moyen idéal pour faire un essai et vous assurer que mes services vous conviennent."
     link_text: Commencer
-    modal: false
-    link: 'entry::d9172796-78a7-4e6c-b716-53ba1946125e'
+    modal: true
     type: cta
     enabled: true
+    modal_alpine_name: contactModal
   -
     id: lp03c8mw
     icon: refer.svg

@@ -20,12 +20,13 @@
     {{ partial:statamic-peak-tools::snippets/live_preview }}
 </head>
 
-<body x-data="{ modalRefer: false, popupVisible: false, contactModal: false }">
+<body x-data="{ modalRefer: false, popupVisible: false, contactModal: false, {{ if get:services }} interestModal: true {{ else }} interestModal: false  {{ endif }}}">
  
     {{ stack:seo_body }}
     {{ partial:statamic-peak-tools::snippets/noscript }}
     {{ partial:layout/refer-modal }}
     {{ partial:layout/contact-modal }}
+    {{ partial:layout/interest-modal }}
     {{ partial:layout/header }}
     {{ template_content }}
     {{ partial:layout/footer }}

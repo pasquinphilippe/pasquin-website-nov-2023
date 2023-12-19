@@ -2209,6 +2209,20 @@ svg.pulse-svg .fourth-circle {
     text-align: center;
 }
 
+.contact-modal-start{
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    color: #9ba1a6;
+}
+
 .request-modal-img {
     width: 120px;
     height: 120px;
@@ -2257,6 +2271,22 @@ svg.pulse-svg .fourth-circle {
 .request-start-bottom {
     margin-top: auto;
     text-align: center;
+}
+.contact-start-bottom {
+    margin-top: auto;
+    text-align: center;
+}
+
+.contact-start-notice {
+    display: flex;
+    padding: 12px 14px;
+    align-items: center;
+    grid-column-gap: 8px;
+    border: 1px solid #e6e8eb;
+    border-radius: 8px;
+    background-color: #fbfcfd;
+    color: #687076;
+    font-size: 15px;
 }
 
 .request-start-notice {
@@ -2941,10 +2971,26 @@ body {
     position: relative; /* Ensures the dropdown positions itself relative to this element */
     display: inline-block; /* Or block, depending on your layout */
     cursor: pointer;
-    color: var(--text-3);
+
     font-size: 18px;
     font-weight: 500;
     line-height: 18px;
+    cursor: pointer;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    color: var(--text1);
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    border-radius: 30px;
+    align-items: center;
+    padding: 7px 16px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: flex;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
 .dropdown-locales {
@@ -3007,3 +3053,59 @@ body {
 .pages > ul > li > p{
     margin-bottom: 0;
 }
+
+/* Default styles for mobile menu (hidden) */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff; /* Or your preferred background */
+    z-index: 100; /* Ensure it's above other content */
+    overflow-y: auto; /* For scrollable menu */
+  }
+  
+  /* Show mobile menu when mobileMenuOpen is true */
+  .menu-open {
+    display: block;
+  }
+  
+  /* Styles for the toggle button */
+  .mobile-menu-toggle {
+    display: none; /* Hidden by default */
+  }
+
+  .mobileLogo{
+    display: block;
+  }
+
+  @media (min-width: 769px) {
+   .mobileLogo{
+       display: none;
+   }
+  }
+  
+  /* Media query for screens smaller than 768px */
+  @media (max-width: 768px) {
+    .mobile-menu-toggle {
+      display: block; /* Show toggle button */
+      /* Additional styling for the toggle button */
+    }
+
+    .desktopLogo{
+        display: none;
+    }
+
+    .mobileLogo{
+        display: block;
+    }
+  
+    /* Hide desktop menu items */
+    .headerhideonmob {
+      display: none;
+    }
+  }
+  
+
