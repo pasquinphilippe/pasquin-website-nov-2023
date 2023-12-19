@@ -73,14 +73,27 @@
       <div class="nav headerrightnav">
         <div class="headerhideontablet">
           <div class="availability">
-            {{ svg src='availability'}}
+        {{ svg src='availability'}}
             <div>{{ header:availability }}</div>
           </div>
         </div>
         <div class="headeravailspacer magnetic"></div>
+        
         <span @click="contactModal = true" 
           class="btn magnetic dark headerhideonmob w-button">{{ header:cta_text}}</span>
           <span class="btn dark headershowbtnonmobile w-button">{{ header:mobile_button_text }}</span>
+          <span class="navlink-locale"  x-data="{ open: false }" @click="open = !open">
+            {{ site:short_locale }}
+            <i x-show="!open" class="fa fa-caret-down"></i>
+    <i x-show="open" class="fa fa-caret-up"></i>
+    <ul class="dropdown-locales" x-show="open">
+        {{ locales self="false" }}
+            <li><a href="{{ permalink }}">
+              {{ locale:short }}
+            </a></li>
+        {{ /locales }}
+    </ul>
+            </span>
       </div>
     </div>
   </div>

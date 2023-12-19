@@ -2,77 +2,95 @@
 id: be4c5691-d9cf-432b-b82c-2cd92ff7dc70
 blueprint: legal
 title: 'Politique de confidentialité'
-seo_noindex: false
-seo_nofollow: false
+seo_noindex: true
+seo_nofollow: true
 seo_canonical_type: entry
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1700155428
+updated_at: 1702948969
 content:
   -
     type: heading
     attrs:
-      textAlign: start
-      level: 3
+      textAlign: left
+      level: 2
     content:
       -
         type: text
-        text: 'Politique de Confidentialité de Philippe Pasquin'
+        text: 'Politique de Confidentialité'
   -
     type: heading
     attrs:
-      textAlign: start
-      level: 4
+      textAlign: left
+      level: 3
     content:
       -
         type: text
         text: '1. Responsable de la Protection des Données'
   -
-    type: paragraph
-    attrs:
-      textAlign: start
+    type: bulletList
     content:
       -
-        type: text
-        marks:
+        type: listItem
+        content:
           -
-            type: bold
-        text: Responsable
-      -
-        type: text
-        text: ': Philippe Pasquin'
-      -
-        type: hardBreak
-      -
-        type: text
-        marks:
-          -
-            type: bold
-        text: Adresse
-      -
-        type: text
-        text: ': 1740 Rue Saint-Patrick #1206, Montréal, QC H3K 0B3'
-      -
-        type: hardBreak
-      -
-        type: text
-        marks:
-          -
-            type: bold
-        text: Contact
-      -
-        type: text
-        text: ': '
-      -
-        type: text
-        marks:
-          -
-            type: link
+            type: paragraph
             attrs:
-              href: 'mailto:loi25@pasquin.ca'
-              rel: null
-              target: _new
-              title: null
-        text: loi25@pasquin.ca
+              textAlign: left
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: Responsable
+              -
+                type: text
+                text: ': Philippe Pasquin'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            attrs:
+              textAlign: left
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: Adresse
+              -
+                type: text
+                text: ': 1740 Rue Saint-Patrick #1206, Montréal, QC H3K 0B3'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            attrs:
+              textAlign: left
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: Contact
+              -
+                type: text
+                text: ': '
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'mailto:loi25@pasquin.ca'
+                      rel: null
+                      target: _new
+                      title: null
+                text: loi25@pasquin.ca
   -
     type: paragraph
     attrs:
@@ -84,8 +102,8 @@ content:
   -
     type: heading
     attrs:
-      textAlign: start
-      level: 4
+      textAlign: left
+      level: 3
     content:
       -
         type: text
@@ -101,8 +119,8 @@ content:
   -
     type: heading
     attrs:
-      textAlign: start
-      level: 4
+      textAlign: left
+      level: 3
     content:
       -
         type: text
@@ -118,8 +136,8 @@ content:
   -
     type: heading
     attrs:
-      textAlign: start
-      level: 4
+      textAlign: left
+      level: 3
     content:
       -
         type: text
@@ -135,8 +153,8 @@ content:
   -
     type: heading
     attrs:
-      textAlign: start
-      level: 4
+      textAlign: left
+      level: 3
     content:
       -
         type: text
@@ -144,7 +162,7 @@ content:
   -
     type: paragraph
     attrs:
-      textAlign: start
+      textAlign: left
     content:
       -
         type: text
@@ -152,8 +170,8 @@ content:
   -
     type: heading
     attrs:
-      textAlign: start
-      level: 4
+      textAlign: left
+      level: 3
     content:
       -
         type: text
@@ -169,8 +187,8 @@ content:
   -
     type: heading
     attrs:
-      textAlign: start
-      level: 4
+      textAlign: left
+      level: 3
     content:
       -
         type: text
@@ -186,8 +204,8 @@ content:
   -
     type: heading
     attrs:
-      textAlign: start
-      level: 4
+      textAlign: left
+      level: 3
     content:
       -
         type: text
@@ -203,8 +221,8 @@ content:
   -
     type: heading
     attrs:
-      textAlign: start
-      level: 4
+      textAlign: left
+      level: 3
     content:
       -
         type: text

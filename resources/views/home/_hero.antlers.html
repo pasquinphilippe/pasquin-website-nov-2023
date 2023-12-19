@@ -21,8 +21,8 @@
             </div>
             <div class="gaps"></div>
             {{ if button_link }}
-            <a href="{{ button_link }}" class="btn magnetic dark margin-top">{{ if button_text }}{{ configuration:commencons }}{{
-                else }}{{ button_link:title }}{{ endif }}</a>
+            <span @click="contactModal = true" class="btn magnetic dark margin-top">{{ if button_text }}{{ configuration:commencons }}{{
+                else }}{{ button_link:title }}{{ endif }}</span>
             {{ endif }}
 
 

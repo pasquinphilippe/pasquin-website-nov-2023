@@ -8,7 +8,7 @@ ctas:
     modal: false
     cta_link: 'entry::d9172796-78a7-4e6c-b716-53ba1946125e'
     type: call_to_action
-    enabled: true
+    enabled: false
   -
     id: lp05opso
     icon: phone
@@ -34,5 +34,7 @@ ctas:
     type: call_to_action
     enabled: true
 video_salutation: 'Nice to meet you 👋'
-video_description: 'This way, let me tell you about my services!'
+video_description: 'Interested in taking a free 15 minutes discovery call with me?'
 video_link: 'https://www.loom.com/embed/cbbcf8187c954ceb9d67c761315a47c1?sid=77e5686f-055d-4759-930c-ff55a85ba426'
+'yes': Yes!
+non: 'No'

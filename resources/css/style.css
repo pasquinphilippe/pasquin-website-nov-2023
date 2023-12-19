@@ -503,6 +503,7 @@ ol {
 }
 
 .btn {
+    cursor: pointer;
     grid-column-gap: 8px;
     grid-row-gap: 8px;
     color: var(--text1);
@@ -2177,6 +2178,7 @@ svg.pulse-svg .fourth-circle {
 }
 
 .modal-close {
+    cursor: pointer;
     position: absolute;
     left: auto;
     top: 18px;
@@ -2933,4 +2935,75 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1rem;
     grid-row-gap: 8px;
+}
+
+.navlink-locale {
+    position: relative; /* Ensures the dropdown positions itself relative to this element */
+    display: inline-block; /* Or block, depending on your layout */
+    cursor: pointer;
+    color: var(--text-3);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.dropdown-locales {
+    position: absolute;
+    top: 100%; /* Positions the top of the dropdown right below the .navlink */
+    left: 0; /* Aligns the dropdown to the left edge of the .navlink */
+    z-index: 1000; /* Ensures the dropdown is above other content; adjust as necessary */
+
+    /* Additional styling */
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    padding: 8px 0; /* Spacing inside the dropdown */
+    display: none; /* Initially hidden */
+}
+
+.dropdown-locales > li {
+    padding: 8px 16px; /* Padding for each dropdown item */
+   color: var(--text-3)
+}
+
+.dropdown-locales > li:hover {
+    background-color: #f7f7f7; /* Hover effect for dropdown items */
+}
+
+/* Show the dropdown when `open` is true */
+.navlink-locale:hover .dropdown-locales,
+.navlink-locale:focus-within .dropdown-locales {
+    display: block;
+}
+
+.pages{
+    line-height: 1.5;
+}
+.pages h2{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.pages h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+.pages p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.pages ul{
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.pages > ul > li > p{
+    margin-bottom: 0;
 }
