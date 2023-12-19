@@ -1,22 +1,27 @@
 title: 'Débutons notre conversation'
-description: "Compléter le formulaire ci-dessous et je vous contacterais dans les plus brefs délais."
+description: 'Compléter le formulaire ci-dessous et je vous contacterais dans les plus brefs délais.'
 get_started: Commencer
 no_obligations: 'Sans obligations de votre part'
-terms:
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: "Certaines conditions s'appliquent, veuillez vous référez aux "
-      -
-        type: text
-        marks:
-          -
-            type: link
-            attrs:
-              href: 'statamic://entry::be4c5691-d9cf-432b-b82c-2cd92ff7dc70'
-              rel: null
-              target: _blank
-              title: null
-        text: 'conditions de référencement.'
+terms: "Certaines conditions s'appliquent"
+form:
+  code: |-
+    <iframe
+                        src="https://backend.pasquin.ca/widget/form/InfVT7UpWyrUbaWDVHAj"
+                        style="width:100%;height:100%;border:none;border-radius:3px"
+                        id="inline-InfVT7UpWyrUbaWDVHAj" 
+                        data-layout="{'id':'INLINE'}"
+                        data-trigger-type="alwaysShow"
+                        data-trigger-value=""
+                        data-activation-type="alwaysActivated"
+                        data-activation-value=""
+                        data-deactivation-type="neverDeactivate"
+                        data-deactivation-value=""
+                        data-form-name="Package Interest"
+                        data-height="854"
+                        data-layout-iframe-id="inline-InfVT7UpWyrUbaWDVHAj"
+                        data-form-id="InfVT7UpWyrUbaWDVHAj"
+                        title="Package Interest"
+                            >
+                      </iframe>
+                      <script src="https://backend.pasquin.ca/js/form_embed.js"></script>
+  mode: htmlmixed

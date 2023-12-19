@@ -1,0 +1,61 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Title
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: description
+            field:
+              type: text
+              localizable: true
+          -
+            handle: get_started
+            field:
+              type: text
+              localizable: true
+          -
+            handle: no_obligations
+            field:
+              type: text
+              localizable: true
+          -
+            handle: terms
+            field:
+              type: text
+              localizable: true
+          -
+            handle: form
+            field:
+              theme: material
+              mode: htmlmixed
+              mode_selectable: true
+              indent_type: tabs
+              indent_size: 4
+              key_map: default
+              line_numbers: true
+              line_wrapping: true
+              antlers: false
+              type: code
+              display: Form
+              icon: code
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

@@ -52,7 +52,7 @@ pricing:
       valide pour 3 mois.
   -
     id: lqbmhe7w
-    price: '3 199$'
+    price: '2 999$'
     description: 'Banque de 25 heures'
     slots_available: 3
     includes:
@@ -145,7 +145,7 @@ pricing:
       paiement unique
       valide pour 3 mois.
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1702947203
+updated_at: 1703002640
 services_type: existing-shopify-store
 color1: '#00C9FF'
 color2: '#92FE9D'

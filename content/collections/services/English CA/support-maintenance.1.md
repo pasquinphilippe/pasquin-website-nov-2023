@@ -42,10 +42,10 @@ pricing:
     description_paiement: |-
       single payment
       valid for 3 months.
-    availability: "Availability for {{ now | iso_format('MMMM')}}"
+    availability: '4 spots available for {{ now | modify_date("Next month") | iso_format(''MMMM'')}}'
   -
     id: lp6cpnko
-    price: '3 199$'
+    price: '2 999$'
     description: '25 hour bank'
     slots_available: 3
     includes:
@@ -86,7 +86,7 @@ pricing:
     description_paiement: |-
       single payment
       valid for 3 months.
-    availability: "Availability for {{ now | iso_format('MMMM')}}"
+    availability: '4 spots available for {{ now | modify_date("Next month") | iso_format(''MMMM'')}}'
   -
     id: lp6cqt2z
     price: '3 799$'
@@ -135,9 +135,9 @@ pricing:
     description_paiement: |-
       single payment
       valid for 3 months.
-    availability: "Availability for {{ now | iso_format('MMMM')}}"
+    availability: '4 spots available for {{ now | modify_date("Next month") | iso_format(''MMMM'')}}'
 seo_title: 'Shopify Support and Maintenance - Reliable Support'
 seo_description: 'Get technical support and proactive maintenance for your Shopify store. Our team ensures the continued performance of your eCommerce site.'
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1702313131
+updated_at: 1703003066
 ---
