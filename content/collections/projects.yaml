@@ -4,12 +4,12 @@ sites:
   - 'English CA'
   - 'English US'
 propagate: true
-template: default
+template: clients
 layout: layout
 taxonomies:
   - tags
 revisions: false
-slugs: false
+route: '/clients/{slug}'
 sort_dir: asc
 date_behavior:
   past: public

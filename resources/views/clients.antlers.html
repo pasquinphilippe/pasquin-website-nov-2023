@@ -1,0 +1,46 @@
+<div class="content mediumplus">
+    <div class="gapl"></div>
+    <div class="t-small t-bold t-light">{{ market }}</div>
+    <div class="gaps"></div>
+    <div class="w-embed">
+        <h1 class="h2">{{ title }} – {{ small_description }}</h1>
+    </div>
+    <div class="gapm"></div>
+    <div class="casestudyattributes">
+        <div class="casestudyattr primary">
+            <div class="t-semilight t-bold t-xsmall">Site web</div><a href="{{ website }}" target="_blank"
+                class="bluelink t-xsmall w-inline-block">
+                <div>{{
+                    website | replace('https://', '') }}</div><img
+                    src="https://assets-global.website-files.com/652484f7d01cda72fe7be6e0/6526b0cb9b5990da12921d1b_externalLink.svg"
+                    loading="lazy" alt="">
+            </a>
+        </div>
+        <div class="casestudyattr">
+            <div class="t-semilight t-bold t-xsmall">Mon rôle</div>
+            <div class="t-light t-xsmall">{{ tags }}{{ title }} {{ if last }}{{ else }}& {{ endif }}{{/tags}}</div>
+        </div>
+        <div class="casestudyattr">
+            <div class="t-semilight t-bold t-xsmall">Siège social</div>
+            <div class="t-light t-xsmall">{{ location }}</div>
+        </div>
+        <div class="casestudyattr">
+            <div class="t-semilight t-bold t-xsmall">Marché</div>
+            <div class="t-light t-xsmall">{{ market }}</div>
+        </div>
+    </div>
+    <div class="gapl"></div>
+    
+                                {{ mockups limit='1'}}
+    <img alt="" loading="lazy" alt="{{ alt }}"
+        src="{{ glide:url }}"
+        sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 92vw"
+        srcset="{{ glide:url width='500'}} 500w, {{ glide:url width='800'}} 800w, {{ glide:url width='1000'}} 1080w, {{ glide:url width='1600'}} 1600w"
+        class="imageframe">
+        {{ /mockups }}
+    <div class="gapl"></div>
+    <div class="rich casestudybody w-richtext">
+      {{ description }}
+    </div>
+    <div class="gapl"></div>
+</div>

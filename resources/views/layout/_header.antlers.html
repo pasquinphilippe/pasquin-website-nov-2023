@@ -3,7 +3,7 @@
   x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 0 })"
   :class="{ 'scroll': scrolled }"> <div id="top" class="header">
     <div class="gapm"></div>
-    <div class="content headercontent"><a href="/" aria-current="page" class="w-inline-block w--current">
+    <div class="content headercontent"><a href="{{ homepage }}" aria-current="page" class="w-inline-block w--current">
         {{ header:logo }}
         <img src="{{ glide:url }}" loading="lazy" width="150px" height="100px" class="desktopLogo" srcset="{{ glide:url }}" alt="{{ alt }}"
         class="" />
@@ -16,7 +16,7 @@
         {{ /collection:staff }}
       </a>
       {{ if template != "default" || isnt:404 }}
-      <div class="breadcrumb"><a href="/" class="breadcrumblink headerhideonmob w-inline-block">
+      <div class="breadcrumb"><a href="{{ homepage }}" class="breadcrumblink headerhideonmob w-inline-block">
           <div class="t-small">Philippe Pasquin</div>
         </a>
         <div class="t-small t-light headerhideonmob">/</div>
@@ -24,7 +24,7 @@
       </div>
       {{ else }}
       <div class="nav mainnav headerhideonmob">
-        {{ nav:main }}
+        {{ nav:main include_home="false" }}
         <div class="navitem {{ unless entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" || entry_id=="d82072df-cb49-4f2e-9ff4-525fe7fcf657" }} magnetic {{ /unless }}" {{ if
           children || entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" || entry_id=="d82072df-cb49-4f2e-9ff4-525fe7fcf657" }} 
           x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false" {{ endif }}>
