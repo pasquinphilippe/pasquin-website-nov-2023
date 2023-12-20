@@ -5,10 +5,8 @@
         <div class="footermain">
             <div class="footerleft">
                 {{ footer:logo }}
-                <img
-                    src="{{ glide:url }}"
-                    loading="lazy" alt="" class="avatar sm">
-                    {{ /footer:logo}}
+                <img src="{{ glide:url }}" loading="lazy" alt="" class="avatar sm">
+                {{ /footer:logo}}
                 <div class="footergap"></div>
                 <div>{{ footer:description }}</div>
             </div>
@@ -27,8 +25,7 @@
                             <div>Plus</div>
                         </div>
                         {{ nav:footer_more}}
-                        <a href="{{ url }}" target="_blank"
-                            class="footerlink">{{ title }}</a>
+                        <a href="{{ url }}" target="_blank" class="footerlink">{{ title }}</a>
                         {{ /nav:footer_more }}
                     </div>
                     <div id="w-node-_188010cf-21a4-55e5-72ac-87a4d81b2bba-62710574" class="footermenu">
@@ -36,9 +33,8 @@
                             <div>Contact</div>
                         </div>
                         {{ social_media:social_media }}
-                        <a href="{{prefix}}{{ handle }}" target="_blank"
-                            class="footerlink">{{ type }}</a>
-                            {{ /social_media:social_media}}
+                        <a href="{{prefix}}{{ handle }}" target="_blank" class="footerlink">{{ type }}</a>
+                        {{ /social_media:social_media}}
                     </div>
                 </div>
             </div>
@@ -51,55 +47,54 @@
                         <div class="footertitle minifootertitle">
                             <div>Services</div>
                         </div>
-                       
-                            <div role="list" class="footermenu ">
-                                {{ collection:services }}
-                                <div role="listitem" class="w-dyn-item"><a href="{{ url }}"
-                                        class="footerlink">{{ title }}</a></div>
-                                        {{ /collection:services }}
-                               
-                            </div>
-                        
+
+                        <div role="list" class="footermenu ">
+                            {{ collection:services }}
+                            <div role="listitem" class="w-dyn-item"><a href="{{ url }}" class="footerlink">{{ title
+                                    }}</a></div>
+                            {{ /collection:services }}
+
+                        </div>
+
                     </div>
                     <div id="w-node-_47eb533a-d822-653a-e3eb-0f0e7d6803af-62710574" class="footermenu">
                         <div class="footertitle minifootertitle">
                             <div>Clients</div>
                         </div>
-                      
-                            <div role="list" class="footermenu ">
-                                {{ collection:projects }}
-                                <div role="listitem" class="w-dyn-item"><a href="{{ url }}"
-                                        class="footerlink">{{ title }}</a></div>
-                                        {{ /collection:projects }}
-                            </div>
-                        
+
+                        <div role="list" class="footermenu ">
+                            {{ collection:projects }}
+                            <div role="listitem" class="w-dyn-item"><a href="{{ url }}" class="footerlink">{{ title
+                                    }}</a></div>
+                            {{ /collection:projects }}
+                        </div>
+
                     </div>
                     <div id="w-node-d5704cd8-eacb-141d-ce1a-7d477106ef31-62710574" class="footermenu">
                         <div class="footertitle minifootertitle">
                             <div>Expertises</div>
                         </div>
-                        
-                            <div role="list" class="footermenu ">
-                                {{ taxonomy:tags }}
-                                <div role="listitem" class="w-dyn-item"><a href="{{ url }}"
-                                        class="footerlink">{{ title }}</a></div>
-                                        {{ /taxonomy:tags }}
-                              
-                            </div>
-                           
-                        
+
+                        <div role="list" class="footermenu ">
+                            {{ taxonomy:tags }}
+                            <div role="listitem" class="w-dyn-item"><a href="{{ url }}" class="footerlink">{{ title
+                                    }}</a></div>
+                            {{ /taxonomy:tags }}
+
+                        </div>
+
+
                     </div>
                     <div id="w-node-_490c23b3-b26e-a6eb-b7ad-126ee3a6484b-62710574" class="footermenu">
                         <div class="footertitle minifootertitle">
                             <div>Locations</div>
                         </div>
-                            <div role="list" class="footermenu ">
-                                {{ collection:projects }}
-                                <div role="listitem" class="w-dyn-item"><a href="{{ url }}"
-                                        class="footerlink">{{ location}}</a></div>
-                                {{ /collection:projects  }}
-                               
-                            </div>
+                        <div role="list" class="footermenu ">
+                            {{ collection:projects }}
+                            <div role="listitem" class="w-dyn-item"><a href="{{ url }}" class="footerlink">{{
+                                    location}}</a></div>
+                            {{ /collection:projects }}
+
                         </div>
                     </div>
                 </div>
@@ -107,8 +102,11 @@
         </div>
         <div class="gapl"></div>
         <div class="copyrightcontainer">
-            <div class="t-xxsmall t-bold">© <span class="copyright">{{ now format='Y'}}</span> {{ configuration:copyright_name }}<br>NEQ: 2278022845</div>
+            <div class="t-xxsmall t-bold">© <span class="copyright">{{ now format='Y'}}</span> {{
+                configuration:copyright_name }}<br>NEQ: 2278022845</div>
         </div>
     </div>
-    <div class="gapl"></div>
+   
+</div>
+<div class="gapl"></div>
 </div>

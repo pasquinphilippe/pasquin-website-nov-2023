@@ -639,9 +639,7 @@ ol {
 .t-light {
     color: var(--text-3);
 }
-.footerrightinner, .footerrightinner.minifooter {
-    grid-template-columns: 1fr 1fr;
-}
+
 
 .nowrap {
     display: inline-block;
@@ -1295,6 +1293,12 @@ ol {
     line-height: 16px;
 }
 
+@media screen and (max-width: 767px){
+    .footerrightinner, .footerrightinner.minifooter {
+        grid-template-columns: 1fr 1fr;
+    }
+    }
+
 .footermain {
     grid-column-gap: 60px;
     grid-row-gap: 60px;
@@ -1361,6 +1365,10 @@ ol {
 
 .copyrightcontainer {
     text-align: center;
+}
+
+@media screen and (max-width: 991px){
+    text-align: left;
 }
 
 .footergap {
