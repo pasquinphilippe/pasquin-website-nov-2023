@@ -639,6 +639,9 @@ ol {
 .t-light {
     color: var(--text-3);
 }
+.footerrightinner, .footerrightinner.minifooter {
+    grid-template-columns: 1fr 1fr;
+}
 
 .nowrap {
     display: inline-block;
