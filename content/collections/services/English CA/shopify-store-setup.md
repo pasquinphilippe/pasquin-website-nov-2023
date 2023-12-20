@@ -180,6 +180,8 @@ servicespricing:
               -
                 type: bold
             text: '1 single payment'
+seo_title: 'Shopify store setup - Philippe Pasquin'
+seo_description: 'Optimize your online presence with my Shopify store setup service. Take advantage of easy and efficient uploading to maximize your eCommerce potential.'
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1702312552
+updated_at: 1703110392
 ---

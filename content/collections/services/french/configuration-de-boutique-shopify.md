@@ -7,7 +7,7 @@ color1: '#305A72'
 color2: '#5D8AA8'
 color3: '#D9E4EC'
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1701184792
+updated_at: 1703110373
 menu_description: 'Mise en place des paramètres pour une mise en ligne facile.'
 left_right:
   -
@@ -248,8 +248,8 @@ servicespricing:
               -
                 type: bold
             text: '1 seul versement'
-seo_title: 'Configuration Expert Shopify - Mise en Ligne Simplifiée'
-seo_description: "Optimisez votre présence en ligne avec notre service expert de configuration de boutique Shopify. Profitez d'une mise en ligne facile et efficace pour maximiser votre potentiel eCommerce."
+seo_title: 'Configuration de boutique Shopify - Philippe Pasquin'
+seo_description: "Optimisez votre présence en ligne avec mon service de configuration de boutique Shopify. Profitez d'une mise en ligne facile et efficace pour maximiser votre potentiel eCommerce."
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry

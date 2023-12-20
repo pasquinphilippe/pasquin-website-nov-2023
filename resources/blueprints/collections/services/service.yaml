@@ -8,6 +8,7 @@ tabs:
             handle: title
             field:
               type: text
+              required: true
               localizable: true
               validate:
                 - required
@@ -172,15 +173,7 @@ tabs:
         display: 'New Section'
         fields:
           -
-            import: 'statamic-peak-seo::seo_basic'
-          -
-            import: 'statamic-peak-seo::seo_advanced'
-          -
-            import: 'statamic-peak-seo::seo_jsonld'
-          -
-            import: 'statamic-peak-seo::seo_open_graph'
-          -
-            import: 'statamic-peak-seo::seo_sitemap'
+            import: seo_full
   sidebar:
     display: Sidebar
     sections:
@@ -191,6 +184,7 @@ tabs:
             field:
               type: slug
               localizable: true
+              validate: 'max:200'
           -
             handle: parent
             field:

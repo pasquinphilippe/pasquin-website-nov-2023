@@ -1,0 +1,77 @@
+title: 'SEO Full'
+fields:
+  -
+    handle: basic
+    field:
+      type: section
+      display: Basic
+      icon: section
+      instructions: 'Basic SEO settings.'
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    import: 'statamic-peak-seo::seo_basic'
+  -
+    handle: advanced
+    field:
+      type: section
+      display: Advanced
+      icon: section
+      instructions: 'Advanced SEO settings.'
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    import: 'statamic-peak-seo::seo_advanced'
+  -
+    handle: open_graph
+    field:
+      type: section
+      display: 'Open Graph'
+      icon: section
+      instructions: 'Open Graph meta tags for social sharing.'
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    import: 'statamic-peak-seo::seo_open_graph'
+  -
+    handle: sitemap
+    field:
+      type: section
+      display: Sitemap
+      icon: section
+      instructions: 'Sitemap configuration.'
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    import: 'statamic-peak-seo::seo_sitemap'
+  -
+    handle: jsonld_schema
+    field:
+      type: section
+      display: 'JSON-ld Schema'
+      icon: section
+      instructions: 'Custom JSON-ld schema objects.'
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    import: 'statamic-peak-seo::seo_jsonld'

@@ -113,7 +113,7 @@ fields:
                   handle: Turnaround
                   field:
                     input_type: text
-                    antlers: false
+                    antlers: true
                     type: text
                     display: Turnaround
                     icon: text

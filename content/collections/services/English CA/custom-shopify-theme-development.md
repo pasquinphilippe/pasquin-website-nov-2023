@@ -92,7 +92,7 @@ servicespricing:
         content:
           -
             type: text
-            text: "Bank of hours from 10 hours"
+            text: 'Bank of hours from 10 hours'
     description: 'I make changes or additions to your existing theme to customize your functionality.'
     Turnaround: 'Start of work in less than 48 hours'
     includes:
@@ -252,8 +252,10 @@ servicespricing:
         enabled: true
     type: pricing_monthly
     enabled: true
-seo_title: 'Creating Unique Shopify Themes - Design and Development'
+seo_title: 'Creating Unique Shopify Themes - Design and Development Shopify'
 seo_description: 'Transform your online store with exclusive Shopify themes. We combine creative design and technical development to create bespoke themes that capture attention.'
+og_title: 'Creating Unique Shopify Themes - Design and Development Shopify'
+og_description: 'Transform your online store with exclusive Shopify themes. We combine creative design and technical development to create bespoke themes that capture attention.'
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1702313427
+updated_at: 1703110246
 ---

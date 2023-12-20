@@ -18,7 +18,7 @@
     <div class="content large">
         <div class="pricing-grid">
            {{ support_pricing }}
-            {{ pricing }}
+            {{ servicespricing }}
             <div class="desktoppricing">
                 <div class="card jumboshadow jumboshadowwithborder" style="height:100%">
                     <div class="paddm">
@@ -43,18 +43,18 @@
                         <div><span class="t-bold">{{ description }}</div>
                         <div class="gapm"></div>
                         <div class="pricefeatures smalltext">
-                            {{ includes }}
+                            {{ left_right }}
                             <div class="pricefeat">{{ svg src='check'}}
-                                <div>{{ title }}</div>
+                                <div>{{ heading }}</div>
                             </div>
-                            {{ /includes }}
+                            {{ /left_right }}
 
                         </div>
                     </div>
                 </div>
             </div>
-            {{ /pricing }}
-            {{ pricing }}
+            {{ /servicespricing }}
+            {{ servicespricing }}
             <div class="mobilepricing">
                 <div
                     class="card jumboshadow jumboshadowwithborder">
@@ -79,21 +79,22 @@
                         <div><span class="t-bold">{{ description }}</div>
                         <div class="gapm"></div>
                         <div class="pricefeatures smalltext">
-                            {{ includes }}
+                            
+                            {{ left_right }}
                             <div class="pricefeat">{{ svg src='check'}}
-                                <div>{{ title }}</div>
+                                <div>{{ heading }}</div>
                             </div>
                             {{ unless last }}
                             <div class="divider"></div>
                             {{ /unless }}
-                            {{ /includes}}
+                            {{ /left_right}}
                         </div>
 
                     </div>
                 </div>
                 <div class="gapm"></div>
             </div>
-            {{ /pricing }}
+            {{ /servicespricing }}
             {{ /support_pricing }}
         </div>
     </div>

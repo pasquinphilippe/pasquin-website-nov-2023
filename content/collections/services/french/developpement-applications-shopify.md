@@ -5,7 +5,7 @@ blueprint: service
 title: "Développement d'applications Shopify."
 menu_description: 'Optimiser votre boutique avec des applications personnalisé.'
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1700924225
+updated_at: 1703109233
 services_type: autres-services
 color1: '#FF7E5F'
 color2: '#FFB88C'

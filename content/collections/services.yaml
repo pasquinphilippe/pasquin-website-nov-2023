@@ -10,7 +10,7 @@ taxonomies:
   - services_type
 revisions: false
 route:
-  french: '/solutions/{slug}'
+  french: '/services/{slug}'
   'English CA': '/services/{slug}'
   'English US': '/services/{slug}'
 sort_dir: asc

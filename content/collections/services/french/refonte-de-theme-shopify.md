@@ -6,7 +6,7 @@ color1: '#8A2387'
 color2: '#E94057'
 color3: '#F27121'
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1701185634
+updated_at: 1703110300
 services_type: boutique-shopify-existante
 menu_description: "Stratégie, design et développement d'un nouveau thème Shopify."
 left_right:
@@ -186,11 +186,13 @@ left_right:
             text: 'Je propose un support continu et des mises à jour régulières pour maintenir la performance de votre thème Shopify.'
     type: left_right_block
     enabled: false
-seo_title: 'Refonte Innovante de Thème Shopify pour Votre Boutique'
+seo_title: 'Refonte de thème Shopify pour votre boutique - Philippe Pasquin'
 seo_description: "Redéfinissez l'apparence de votre boutique Shopify avec notre service de refonte de thème. Nos solutions créatives et techniques donnent vie à votre vision eCommerce."
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
+og_title: 'Refonte de thème Shopify pour votre boutique - Philippe Pasquin'
+og_description: "Redéfinissez l'apparence de votre boutique Shopify avec notre service de refonte de thème. Nos solutions créatives et techniques donnent vie à votre vision eCommerce."
 ---

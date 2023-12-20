@@ -18,16 +18,21 @@
         <div class="btngrp centeronmob">
           <span class="btn big dark" @click="contactModal = true" >{{ configuration:commencons }}</span>
   
-
+          {{ if servicespricing | count > 1 }}
           <a href="#pricing" class="btn big">
-            {{ if servicespricing:count > 1 }}
             {{ configuration:voir_les_prix }}
-            {{ elseif servicespricing:count == 1 }}
-            {{ configuration:voir_le_prix }}
-            {{ else }}
-            {{ configuration:request_price }}
-            {{ /if }}
+            
           </a>
+          {{ elseif servicespricing | count === 1 }}
+          <a href="#pricing" class="btn big">
+           
+            {{ configuration:voir_le_prix }}
+          </a>
+          {{ else }}
+          <span class="btn big" @click="interestModal = true" >
+            {{ configuration:request_price }}
+            </span>
+            {{ /endif }}
 
         </div>
       </div>
@@ -151,7 +156,7 @@
               </div>
             </div>
             <div class="gaps"></div>
-            <div class="nav headerrightnav"> <span class="btn big dark" @click="contactModal = true" >{{ configuration:commencons }}</span>
+            <div class="nav headerrightnav"> <span class="btn big dark" @click="interestModal = true" >{{ configuration:commencons }}</span>
   
             </div>
             <div class="gapm"></div>
@@ -201,7 +206,7 @@
               </div>
             </div>
             <div class="gaps"></div>
-            <div class="nav headerrightnav"> <span class="btn big dark" @click="contactModal = true" >{{ configuration:commencons }}</span>
+            <div class="nav headerrightnav"> <span class="btn big dark" @click="interestModal = true" >{{ configuration:commencons }}</span>
   
             </div>
             <div class="gapm"></div>

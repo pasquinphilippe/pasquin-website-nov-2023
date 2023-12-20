@@ -177,6 +177,10 @@ left_right:
             text: 'I offer ongoing support and regular updates to maintain the performance of your Shopify theme.'
     type: left_right_block
     enabled: false
+seo_title: 'Shopify theme redesign for your store - Philippe Pasquin'
+seo_description: 'Redefine the look of your Shopify store with our theme redesign service. Our creative and technical solutions bring your eCommerce vision to life.'
+og_title: 'Shopify theme redesign for your store - Philippe Pasquin'
+og_description: 'Redefine the look of your Shopify store with our theme redesign service. Our creative and technical solutions bring your eCommerce vision to life.'
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1702313585
+updated_at: 1703110324
 ---

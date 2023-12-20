@@ -465,6 +465,10 @@ servicespricing:
     type: pricing_monthly
     enabled: true
     Turnaround: 'À discuter'
+seo_title: 'Professional Migration Services to Shopify - Philippe Pasquin'
+seo_description: 'Simplify your transition to Shopify with our expertise. We ensure a smooth and secure migration of your online store to the Shopify platform.'
+og_title: 'Professional Migration Services to Shopify - Philippe Pasquin'
+og_description: 'Simplify your transition to Shopify with our expertise. We ensure a smooth and secure migration of your online store to the Shopify platform.'
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1701127686
+updated_at: 1703110111
 ---

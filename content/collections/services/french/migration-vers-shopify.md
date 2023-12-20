@@ -3,7 +3,7 @@ id: 8099e21b-3b32-49c9-9704-885e21894c5d
 blueprint: service
 title: 'Migration vers Shopify'
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1701185412
+updated_at: 1703110050
 services_type: nouvelle-boutique-shopify
 color1: '#D16BA5'
 color2: '#86A8E7'
@@ -510,11 +510,13 @@ servicespricing:
     type: pricing_monthly
     enabled: true
     Turnaround: 'À discuter'
-seo_title: 'Services Professionnels de Migration vers Shopify'
+seo_title: 'Services Professionnels de Migration vers Shopify - Philippe Pasquin'
 seo_description: 'Simplifiez votre transition vers Shopify avec notre expertise. Nous assurons une migration fluide et sécurisée de votre boutique en ligne vers la plateforme Shopify.'
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
+og_title: 'Services Professionnels de Migration vers Shopify - Philippe Pasquin'
+og_description: 'Simplifiez votre transition vers Shopify avec notre expertise. Nous assurons une migration fluide et sécurisée de votre boutique en ligne vers la plateforme Shopify.'
 ---
