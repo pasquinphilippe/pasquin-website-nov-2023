@@ -88,7 +88,7 @@
         <span @click="contactModal = true" 
           class="btn magnetic dark headerhideonmob w-button">{{ header:cta_text}}</span>
           <span class="btn dark headershowbtnonmobile w-button" @click="mobileMenuOpen = !mobileMenuOpen">{{ header:mobile_button_text }}</span>
-          <span class="navlink-locale"  x-data="{ open: false }" @click="open = !open">
+          <span class="navlink-locale headerhideonmob"  x-data="{ open: false }" @click="open = !open">
             {{ site:short_locale }}
             <i x-show="!open" class="fa fa-caret-down"></i>
     <i x-show="open" class="fa fa-caret-up"></i>
