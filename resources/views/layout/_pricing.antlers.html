@@ -4,20 +4,20 @@
         <div class="gapxl"></div>
         <div class="ctawrap">
             <div class="availability">
-                <div>{{ subheading }}</div>
+                <div>{{ configuration:subheading }}</div>
             </div>
             <div class="gaps"></div>
 
-            <h2 class="h2">{{ support_heading }}</h2>
+            <h2 class="h2">{{ configuration:heading }}</h2>
             <div class="gapxs"></div>
-            <div class="t-light">{{ support_pragraph }}</div>
+            <div class="t-light">{{ configuration:description }}</div>
             <div class="gapl"></div>
         </div>
 
     </div>
     <div class="content large">
         <div class="pricing-grid">
-           {{ support_pricing }}
+           {{ configuration:pricing_page }}
             {{ servicespricing }}
             <div class="desktoppricing">
                 <div class="card jumboshadow jumboshadowwithborder" style="height:100%">
@@ -95,7 +95,7 @@
                 <div class="gapm"></div>
             </div>
             {{ /servicespricing }}
-            {{ /support_pricing }}
+            {{ /configuration:pricing_page }}
         </div>
     </div>
     <div class="content medium">

@@ -225,3 +225,65 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+          -
+            handle: pricing_page
+            field:
+              max_items: 1
+              mode: default
+              create: true
+              collections:
+                - services
+              type: entries
+              display: 'Pricing page'
+              icon: entries
+              localizable: false
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: Support
+        fields:
+          -
+            handle: subheading
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Subheading
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: heading
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Heading
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: description
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: description
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

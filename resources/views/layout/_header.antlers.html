@@ -40,7 +40,7 @@
           <div class="main_dropdown" x-show="open">
             <div class="inner_dropdown">
               <div class="services-grid-3">
-                {{ collection:services as="entries" sort="services_type:order" }}
+                {{ collection:services as="entries" }}
                 {{ entries group_by="services_type:title" }}
                 {{ groups }}
                 <div class="dropdown_column">
