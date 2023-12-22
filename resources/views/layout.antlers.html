@@ -18,6 +18,15 @@
     {{ partial:statamic-peak-seo::snippets/seo }}
     {{ partial:statamic-peak-browser-appearance::snippets/browser_appearance }}
     {{ partial:statamic-peak-tools::snippets/live_preview }}
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YX3T3C5585"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YX3T3C5585');
+</script>
 </head>
 
 <body x-data="{ modalRefer: false, popupVisible: false, contactModal: false, {{ if get:services }} interestModal: true {{ else }} interestModal: false  {{ endif }}}">
