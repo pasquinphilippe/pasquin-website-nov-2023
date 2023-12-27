@@ -1,10 +1,14 @@
 tree:
   -
+    id: 9f9666dc-3014-409c-81a4-df7645fda5f8
+    entry: 99a64eeb-8a01-4565-8400-4cdce1197bd8
+  -
     id: a722ef01-4f1f-483a-a2e8-41234ae4ca65
     entry: d82072df-cb49-4f2e-9ff4-525fe7fcf657
   -
     id: 828b17df-5bd0-47b7-93f1-760a65557b21
     entry: 8637d639-c578-49b3-8caf-fe20d09bc15e
   -
-    id: c901da2b-2966-459f-89ee-fb208493e31a
-    entry: 982b015a-5962-4960-adc8-7f1274e00f45
+    id: ad9cba4a-1733-4c9d-93cc-b5612bcb9f65
+    title: Pricing
+    url: '/en/#pricing'

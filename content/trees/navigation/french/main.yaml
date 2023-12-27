@@ -8,3 +8,7 @@ tree:
   -
     id: d7bee916-77e2-42e1-a18c-43a5c80d62fe
     entry: d65d7b3d-11be-4aed-99c5-b564d40a1afb
+  -
+    id: c2975be8-5054-4db4-b9e0-bc1d662e04b6
+    title: Tarifs
+    url: '/#pricing'
