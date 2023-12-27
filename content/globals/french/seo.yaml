@@ -22,7 +22,5 @@ use_plausible: false
 use_cloudflare_web_analytics: false
 tracker_type: gtm
 google_tag_manager: GTM-5DKHDGM6
-use_cookie_banner: true
-embeds: false
-display_style: left
+use_cookie_banner: false
 cookie_revoke_before: '2023-11-27'
