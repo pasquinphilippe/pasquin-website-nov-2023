@@ -19,3 +19,5 @@ preview_targets:
     label: Entry
     url: '{permalink}'
     refresh: true
+structure:
+  root: false
