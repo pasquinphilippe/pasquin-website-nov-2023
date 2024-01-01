@@ -1,0 +1,129 @@
+<div id="pricing" class="pricingsection" x-in-viewport="popupVisible = true">
+
+    <div class="content medium">
+        <div class="gapxl"></div>
+        <div class="ctawrap">
+            <div class="availability">
+                <div>{{ configuration:subheading }}</div>
+            </div>
+            <div class="gaps"></div>
+
+            <h2 class="h2">{{ configuration:heading }}</h2>
+            <div class="gapxs"></div>
+            <div class="t-light">{{ configuration:description }}</div>
+            <div class="gapl"></div>
+        </div>
+
+    </div>
+    <div class="content large">
+
+<div class="pricingsection" id="pricing">
+  
+    <div class="content card jumboshadow jumboshadowwithborder">
+      <div class="gapxl"></div>
+      <div class="pricingwrap">
+        <div class="pricingleft">
+          <div>
+            <h2 class="h2">Tarif horaire</h2>
+            <div class="gapm"></div>
+  
+  
+            <div class="gapm"></div>
+          </div>
+         
+          <div class="mobilepricing">
+            <div class="card jumboshadow jumboshadowwithborder" style="height:100%">
+              <div class="paddm">
+                <div class="flexapart">
+                  <div class="t-xsmall t-bold t-light">{{ title }}</div>
+                  {{ if turnaround }}
+                  <div class="availability">{{ svg src='availability' }}
+                    <div>{{ turnaround }}</div>
+                  </div>
+                  {{ endif }}
+                </div>
+                <div class="gaps"></div>
+                <div class="inlinepricelabelwrap">
+                  <div class="h2 bigprice price">{{ price }}</div>
+                  <div class="priceperiod">
+                    <div class="t-xsmall t-bold">{{ payment_type }}</div>
+                  </div>
+                </div>
+                <div class="gaps"></div>
+                <div class="nav headerrightnav"> <span class="btn big dark" @click="contactModal = true" >{{ configuration:commencons }}</span>
+  
+                </div>
+                <div class="gapm"></div>
+                <div><span class="t-bold">{{ description }}</div>
+                <div class="gapm"></div>
+                <div class="pricefeatures smalltext">
+                  {{ includes }}
+                  <div class="pricefeat">{{ svg src='check'}}
+                    <div>{{ title }}</div>
+                  </div>
+                  {{ /includes }}
+  
+                </div>
+              </div>
+            </div>
+            <div class="gapm"></div>
+          </div>
+       
+          <div>
+            {{ get_content from="79d0b6d3-6fd5-45df-99e3-191e85e8415b" }}
+            {{ ctas }}
+            {{ partial:layout/cta_cards }}
+            {{ /ctas }}
+            {{ /get_content }}
+          </div>
+        </div>
+        
+        <div class="desktoppricing">
+          <div class="card jumboshadow jumboshadowwithborder" style="height:100%">
+            <div class="paddm">
+              <div class="flexapart">
+                <div class="t-xsmall t-bold t-light">Consultation et développement Shopify</div>
+               
+                <div class="availability">{{ svg src='availability' }}
+                  <div>Disponible à partir de Janvier</div>
+                </div>
+               
+              </div>
+              <div class="gaps"></div>
+              <div class="inlinepricelabelwrap">
+                <div class="h2 bigprice price">70$/h<sup>*</sup></div>
+                <div class="priceperiod">
+                  <div class="t-xsmall t-bold"><sup>*</sup>Tarif horaire pour une banque d'heure.</div>
+                </div>
+              </div>
+              <div class="gaps"></div>
+              <div class="nav headerrightnav"> <span class="btn big dark" @click="interestModal = true" >{{ configuration:commencons }}</span>
+  
+              </div>
+              <div class="gapm"></div>
+              <div><span class="t-bold">{{ description }}</div>
+              <div class="gapm"></div>
+              <div class="pricefeatures smalltext">
+                {{ includes }}
+                <div class="pricefeat">{{ svg src='check'}}
+                  <div>{{ title }}</div>
+                </div>
+                {{ /includes }}
+  
+              </div>
+            </div>
+          </div>
+        </div>
+       
+  
+      </div>
+      <div class="gapxl"></div>
+    </div>
+  
+  
+  </div>
+
+    
+</div>
+<div class="gapxl"></div>
+</div>

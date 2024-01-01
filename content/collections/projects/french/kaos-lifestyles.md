@@ -4,7 +4,7 @@ blueprint: project
 title: 'Kaos Lifestyles'
 brand_logo: clients_logo/kaos-waves_3.avif
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1699559331
+updated_at: 1703868481
 website: 'https://kaoslifestyle.com'
 color1: '#1a2293'
 color2: '#375067'
@@ -15,4 +15,5 @@ tags:
   - gestion
 mockups:
   - projects/milistack_screenshot-2023-11-09-14.48.14.png
+small_description: "Kaos Lifestyle est plus qu'une simple marque ; C'est une manière de vivre, elle offre des pièces et équipements de voile pour les athlètes."
 ---
