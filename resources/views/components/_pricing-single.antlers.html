@@ -25,9 +25,8 @@
                   <div class="flexapart">
                     <div class="t-xsmall t-bold t-light">{{ pricing:card_title }}</div>
                     <div class="availability">
-                      <img
-                        src="https://assets-global.website-files.com/652484f7d01cda72fe7be6e0/65816bb32dc33aef77422dfd_available.svg"
-                        loading="lazy" alt="">
+                      {{ svg src='availability' }}
+                    
                       <div>{{ pricing:accepting_clients }}</div>
                     </div>
                   </div>
@@ -53,7 +52,10 @@
                     <a href="{{ current_url }}/?services=Banque d'heures {{title }}" class="btn dark">{{ configuration:commencons }}</a>
                   </div>
                   {{ /pricing:new_deal }}
-                  {{ endif }}
+                  {{ else }}
+                  <div class="nav headerrightnav">
+                    <a href="{{ current_url }}/?services=Banque d'heures {{title }}" class="btn dark magnetic">{{ configuration:commencons }}</a>
+                </div> {{ endif }}
                   <div class="gaps"></div>
                   <div><span class="t-bold">{{ pricing:first_description }}</span><span class="t-semilight"> {{ pricing:second_description }}</span></div>
                   <div class="gapm"></div>
@@ -90,11 +92,9 @@
                 <div class="flexapart">
                   <div class="t-xsmall t-bold t-light">{{ pricing:card_title }}</div>
                   <div class="availability">
-                    <img
-                      src="https://assets-global.website-files.com/652484f7d01cda72fe7be6e0/65816bb32dc33aef77422dfd_available.svg"
-                      loading="lazy" alt="">
+                   {{ svg src='availability' }}
                     <div>{{ pricing:accepting_clients }}</div>
-                  </div>
+                  </div>x
                 </div>
                 <div class="gaps"></div>
                 <div class="inlinepricelabelwrap">
@@ -118,6 +118,11 @@
                   <a href="{{ current_url }}/?services=Banque d'heures {{title }}" class="btn dark">{{ configuration:commencons }}</a>
                 </div>
                 {{ /pricing:new_deal }}
+                {{ else }}
+                <div class="nav headerrightnav">
+                  <a href="{{ current_url }}/?services=Banque d'heures {{title }}" class="btn dark magnetic">{{ configuration:commencons }}</a>
+              </div>
+                
                 {{ endif }}
                 <div class="gaps"></div>
                 <div><span class="t-bold">{{ pricing:first_description }}</span><span class="t-semilight"> {{ pricing:second_description }}</span></div>
