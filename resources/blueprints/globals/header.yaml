@@ -20,7 +20,7 @@ tabs:
               type: assets
               display: Logo
               icon: assets
-              localizable: true
+              localizable: false
               listable: hidden
               instructions_position: above
               visibility: visible

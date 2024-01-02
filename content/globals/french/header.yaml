@@ -1,5 +1,5 @@
 logo: pasquin..png
-availability: "Disponible pour travailler en {{ now | iso_format('MMMM')}}"
+availability: 'Je prends désormais de nouveaux clients'
 cta_text: 'Planifier un appel'
 cta_link: 'entry::d9172796-78a7-4e6c-b716-53ba1946125e'
 mobile_button_text: Menu
