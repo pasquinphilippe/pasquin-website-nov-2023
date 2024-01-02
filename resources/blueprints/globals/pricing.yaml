@@ -1,0 +1,214 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Title
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: card_title
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Card Title'
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: accepting_clients
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Accepting clients'
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: first_description
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'First description'
+              icon: text
+              localizable: true
+              width: 33
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: second_description
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Second Description'
+              icon: text
+              localizable: true
+              width: 33
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: starting_at
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Starting at'
+              icon: text
+              localizable: true
+              width: 66
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: explanation
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Explanation
+              icon: text
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              width: 33
+          -
+            handle: deals
+            field:
+              type: section
+              display: Deals
+              icon: section
+              localizable: false
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: new_deal
+            field:
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    deal:
+                      display: Deal
+                      instructions: null
+                      icon: shopping-store-discount-percent
+                      fields:
+                        -
+                          handle: start_date
+                          field:
+                            mode: single
+                            inline: false
+                            full_width: false
+                            columns: 1
+                            rows: 1
+                            time_enabled: false
+                            time_seconds_enabled: false
+                            type: date
+                            display: 'Start Date'
+                            icon: date
+                            localizable: false
+                            width: 50
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: end_date
+                          field:
+                            mode: single
+                            inline: false
+                            full_width: false
+                            columns: 1
+                            rows: 1
+                            time_enabled: false
+                            time_seconds_enabled: false
+                            type: date
+                            display: 'End date'
+                            icon: date
+                            localizable: true
+                            width: 50
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: title
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: Title
+                            icon: text
+                            localizable: true
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: description
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: Description
+                            icon: text
+                            localizable: true
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+              type: replicator
+              display: 'New deal'
+              icon: replicator
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

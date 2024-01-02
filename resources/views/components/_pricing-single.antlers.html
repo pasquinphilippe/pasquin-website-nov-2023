@@ -1,129 +1,152 @@
+<div class="gapxl"></div>
 <div id="pricing" class="pricingsection" x-in-viewport="popupVisible = true">
 
-    <div class="content medium">
+
+  <div class="content large">
+
+    <div class="pricingsection" id="pricing">
+
+      <div class="content card jumboshadow jumboshadowwithborder">
         <div class="gapxl"></div>
-        <div class="ctawrap">
-            <div class="availability">
-                <div>{{ configuration:subheading }}</div>
+        <div class="pricingwrap">
+          <div class="pricingleft">
+            <div>
+              <h2 class="h2">{{ pricing:title }}</h2>
+              <div class="gapm"></div>
+
+
+              <div class="gapm"></div>
             </div>
-            <div class="gaps"></div>
 
-            <h2 class="h2">{{ configuration:heading }}</h2>
-            <div class="gapxs"></div>
-            <div class="t-light">{{ configuration:description }}</div>
-            <div class="gapl"></div>
-        </div>
+            <div class="mobilepricing">
+              <div id="w-node-_3a3337f5-7c2f-108b-f277-49dbd4df52f2-d4df52f2"
+                class="card jumboshadow jumboshadowwithborder">
+                <div class="paddm">
+                  <div class="flexapart">
+                    <div class="t-xsmall t-bold t-light">{{ pricing:card_title }}</div>
+                    <div class="availability">
+                      <img
+                        src="https://assets-global.website-files.com/652484f7d01cda72fe7be6e0/65816bb32dc33aef77422dfd_available.svg"
+                        loading="lazy" alt="">
+                      <div>{{ pricing:accepting_clients }}</div>
+                    </div>
+                  </div>
+                  <div class="gaps"></div>
+                  <div class="inlinepricelabelwrap">
+                    <div class="h2 bigprice price">{{ pricing:starting_at }}</div>
+                    <div class="priceperiod">
+                      <div class="t-xsmall t-bold">{{ pricing:explanation }}</div>
+                    </div>
+                  </div>
+                  <div class="gaps"></div>
+                  {{ if pricing:new_deal start_date:is_past='true' end_date:is_past='false' }}
+                  {{ pricing:new_deal limit='1' }}
+                  <div class="outlinecard trial">
+                    
+                    <div class="trialbanner">
+                      {{ svg src='bolt' class='trialbolt'}}
 
-    </div>
-    <div class="content large">
+                      <div class="t-xsmall t-bold yellow">{{ title }}</div>
+                    </div>
+                    <div class="t-bold t-xsmall">{{ description }}</div>
+                   
+                    <a href="{{ current_url }}/?services=Banque d'heures {{title }}" class="btn dark">{{ configuration:commencons }}</a>
+                  </div>
+                  {{ /pricing:new_deal }}
+                  {{ endif }}
+                  <div class="gaps"></div>
+                  <div><span class="t-bold">{{ pricing:first_description }}</span><span class="t-semilight"> {{ pricing:second_description }}</span></div>
+                  <div class="gapm"></div>
+                  <div class="pricefeatures smalltext">
+                    {{ collection:services }}
+                    <div class="pricefeat">
+                      {{ svg src='check' }}
+                    
+                      <div>{{ title }}</div>
+                    </div>
+                    {{ unless last }}
+                    <div class="divider"></div>
+                    {{ /unless }}
+                    {{ /collection:services }}
+                  </div>
+                </div>
+              </div>
+              <div class="gapm"></div>
+            </div>
 
-<div class="pricingsection" id="pricing">
-  
-    <div class="content card jumboshadow jumboshadowwithborder">
-      <div class="gapxl"></div>
-      <div class="pricingwrap">
-        <div class="pricingleft">
-          <div>
-            <h2 class="h2">Tarif horaire</h2>
-            <div class="gapm"></div>
-  
-  
-            <div class="gapm"></div>
+            <div>
+              {{ get_content from="79d0b6d3-6fd5-45df-99e3-191e85e8415b" }}
+              {{ ctas }}
+              {{ partial:layout/cta_cards }}
+              {{ /ctas }}
+              {{ /get_content }}
+            </div>
           </div>
-         
-          <div class="mobilepricing">
-            <div class="card jumboshadow jumboshadowwithborder" style="height:100%">
+
+          <div class="desktoppricing">
+            <div id="w-node-_3a3337f5-7c2f-108b-f277-49dbd4df52f2-d4df52f2"
+              class="card jumboshadow jumboshadowwithborder">
               <div class="paddm">
                 <div class="flexapart">
-                  <div class="t-xsmall t-bold t-light">{{ title }}</div>
-                  {{ if turnaround }}
-                  <div class="availability">{{ svg src='availability' }}
-                    <div>{{ turnaround }}</div>
+                  <div class="t-xsmall t-bold t-light">{{ pricing:card_title }}</div>
+                  <div class="availability">
+                    <img
+                      src="https://assets-global.website-files.com/652484f7d01cda72fe7be6e0/65816bb32dc33aef77422dfd_available.svg"
+                      loading="lazy" alt="">
+                    <div>{{ pricing:accepting_clients }}</div>
                   </div>
-                  {{ endif }}
                 </div>
                 <div class="gaps"></div>
                 <div class="inlinepricelabelwrap">
-                  <div class="h2 bigprice price">{{ price }}</div>
+                  <div class="h2 bigprice price">{{ pricing:starting_at }}</div>
                   <div class="priceperiod">
-                    <div class="t-xsmall t-bold">{{ payment_type }}</div>
+                    <div class="t-xsmall t-bold">{{ pricing:explanation }}</div>
                   </div>
                 </div>
                 <div class="gaps"></div>
-                <div class="nav headerrightnav"> <span class="btn big dark" @click="contactModal = true" >{{ configuration:commencons }}</span>
-  
+                {{ if pricing:new_deal start_date:is_past='true' end_date:is_past='false' }}
+                {{ pricing:new_deal limit='1' }}
+                <div class="outlinecard trial">
+                  
+                  <div class="trialbanner">
+                    {{ svg src='bolt' class='trialbolt'}}
+
+                    <div class="t-xsmall t-bold yellow">{{ title }}</div>
+                  </div>
+                  <div class="t-bold t-xsmall">{{ description }}</div>
+                 
+                  <a href="{{ current_url }}/?services=Banque d'heures {{title }}" class="btn dark">{{ configuration:commencons }}</a>
                 </div>
-                <div class="gapm"></div>
-                <div><span class="t-bold">{{ description }}</div>
+                {{ /pricing:new_deal }}
+                {{ endif }}
+                <div class="gaps"></div>
+                <div><span class="t-bold">{{ pricing:first_description }}</span><span class="t-semilight"> {{ pricing:second_description }}</span></div>
+                  
                 <div class="gapm"></div>
                 <div class="pricefeatures smalltext">
-                  {{ includes }}
+                  {{ collection:services }}
                   <div class="pricefeat">{{ svg src='check'}}
                     <div>{{ title }}</div>
                   </div>
-                  {{ /includes }}
-  
+                  {{ unless last }}
+                  <div class="divider"></div>
+                  {{ /unless }}
+                  {{ /collection:services }}
+                 
                 </div>
               </div>
             </div>
-            <div class="gapm"></div>
           </div>
-       
-          <div>
-            {{ get_content from="79d0b6d3-6fd5-45df-99e3-191e85e8415b" }}
-            {{ ctas }}
-            {{ partial:layout/cta_cards }}
-            {{ /ctas }}
-            {{ /get_content }}
-          </div>
-        </div>
-        
-        <div class="desktoppricing">
-          <div class="card jumboshadow jumboshadowwithborder" style="height:100%">
-            <div class="paddm">
-              <div class="flexapart">
-                <div class="t-xsmall t-bold t-light">Consultation et développement Shopify</div>
-               
-                <div class="availability">{{ svg src='availability' }}
-                  <div>Disponible à partir de Janvier</div>
-                </div>
-               
-              </div>
-              <div class="gaps"></div>
-              <div class="inlinepricelabelwrap">
-                <div class="h2 bigprice price">70$/h<sup>*</sup></div>
-                <div class="priceperiod">
-                  <div class="t-xsmall t-bold"><sup>*</sup>Tarif horaire pour une banque d'heure.</div>
-                </div>
-              </div>
-              <div class="gaps"></div>
-              <div class="nav headerrightnav"> <span class="btn big dark" @click="interestModal = true" >{{ configuration:commencons }}</span>
-  
-              </div>
-              <div class="gapm"></div>
-              <div><span class="t-bold">{{ description }}</div>
-              <div class="gapm"></div>
-              <div class="pricefeatures smalltext">
-                {{ includes }}
-                <div class="pricefeat">{{ svg src='check'}}
-                  <div>{{ title }}</div>
-                </div>
-                {{ /includes }}
-  
-              </div>
-            </div>
-          </div>
-        </div>
-       
-  
-      </div>
-      <div class="gapxl"></div>
-    </div>
-  
-  
-  </div>
 
-    
-</div>
-<div class="gapxl"></div>
+
+        </div>
+        <div class="gapxl"></div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+  <div class="gapxl"></div>
 </div>

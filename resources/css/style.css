@@ -3143,3 +3143,31 @@ gap: 1rem;
     color: #fff;
   }
   
+
+  .outlinecard.trial {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    border-width: 2px;
+    border-color: #ebb961;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+}
+
+
+.trialbolt {
+    width: 16px;
+}
+
+.t-xsmall.t-bold.yellow {
+    color: #ebb961;
+}
+
+.t-xsmall {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.t-bold {
+    font-weight: 500;
+}
