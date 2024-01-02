@@ -3171,3 +3171,12 @@ gap: 1rem;
 .t-bold {
     font-weight: 500;
 }
+
+.trialbanner {
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}

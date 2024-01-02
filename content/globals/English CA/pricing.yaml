@@ -1,1 +1,17 @@
+title: 'Dynamic pricing'
+card_title: 'Hourly rates'
+accepting_clients: 'Now accepting clients for 2024'
+first_description: 'I bill on an hourly basis'
+second_description: 'for all my consulting, development or support services'
+starting_at: 'From $65/hour'
+explanation: 'based on the volume'
+new_deal:
+  -
+    id: lqwn07eh
+    start_date: '2024-01-01'
+    end_date: '2024-01-31'
+    title: 'January Special'
+    description: 'I offer 25% off my bank of hours of 10 hours and more for all new clients.'
+    type: deal
+    enabled: true
 origin: french
