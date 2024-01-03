@@ -2,8 +2,8 @@ title: 'Tarification dynamique'
 card_title: 'Tarifs horaire'
 accepting_clients: "J'accepte des clients pour 2024."
 first_description: 'Je facture sur une base horaire'
-second_description: 'pour tout mes services de consultation, développement ou support'
-starting_at: 'À partir de 65$/h'
+second_description: 'pour mes services de consultation, développement et de support.'
+starting_at: Discutons
 explanation: 'Selon le volume'
 new_deal:
   -
@@ -11,6 +11,6 @@ new_deal:
     start_date: '2024-01-01'
     end_date: '2024-01-31'
     title: 'Spécial de Janvier'
-    description: "J'offre 25% de rabais sur mes banques d'heures de 10 heures et plus pour tout les nouveaux clients."
+    description: "J'offre 25% de rabais sur mes banques d'heures de 10 heures et plus pour les nouveaux clients."
     type: deal
     enabled: true
