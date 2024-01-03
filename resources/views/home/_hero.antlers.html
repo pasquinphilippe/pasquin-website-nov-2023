@@ -5,7 +5,7 @@
         <a href="{{ announcement_link }}" class="btn announcementbtn magnetic ">
             <div class="t-light">
                 <div class="daysago">
-                    {{ related_date format="d F Y"}}
+                    {{ related_date | iso_format('d MMMM')}}
                 </div>
             </div>
             <div>{{ announcement_text }}</div>{{ svg src='arrow-right' }}
