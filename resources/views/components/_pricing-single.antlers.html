@@ -49,13 +49,11 @@
                     </div>
                     <div class="t-bold t-xsmall">{{ description }}</div>
                    
-                    <a href="{{ current_url }}/?services=Banque d'heures {{title }}" class="btn dark">{{ configuration:commencons }}</a>
-                  </div>
+                    <span @click="interestModal = true" class="btn dark magnetic">{{ configuration:commencons }}</span>                  </div>
                   {{ /pricing:new_deal }}
                   {{ else }}
                   <div class="nav headerrightnav">
-                    <a href="{{ current_url }}/?services=Banque d'heures {{title }}" class="btn dark magnetic">{{ configuration:commencons }}</a>
-                </div> {{ endif }}
+                    <span @click="interestModal = true" class="btn dark magnetic">{{ configuration:commencons }}</span>                </div> {{ endif }}
                   <div class="gaps"></div>
                   <div><span class="t-bold">{{ pricing:first_description }}</span><span class="t-semilight"> {{ pricing:second_description }}</span></div>
                   <div class="gapm"></div>
@@ -115,12 +113,11 @@
                   </div>
                   <div class="t-bold t-xsmall">{{ description }}</div>
                  
-                  <a href="{{ current_url }}/?services=Banque d'heures {{title }}" class="btn dark">{{ configuration:commencons }}</a>
-                </div>
+                  <span @click="interestModal = true" class="btn dark magnetic">{{ configuration:commencons }}</span>                </div>
                 {{ /pricing:new_deal }}
                 {{ else }}
                 <div class="nav headerrightnav">
-                  <a href="{{ current_url }}/?services=Banque d'heures {{title }}" class="btn dark magnetic">{{ configuration:commencons }}</a>
+                  <span @click="interestModal = true" class="btn dark magnetic">{{ configuration:commencons }}</span>
               </div>
                 
                 {{ endif }}
