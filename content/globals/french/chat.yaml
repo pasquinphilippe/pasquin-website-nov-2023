@@ -34,7 +34,7 @@ ctas:
     type: call_to_action
     enabled: true
 video_salutation: 'Enchanté 👋'
-video_description: 'Intéressé par une rencontre découverte gratuite de 15 minutes?'
+video_description: "Je suis disponible d'ici la prochaine semaine"
 video_link: 'https://www.loom.com/embed/cbbcf8187c954ceb9d67c761315a47c1?sid=77e5686f-055d-4759-930c-ff55a85ba426'
-'yes': Oui!
-non: Non
+'yes': Rendez-vous
+non: Fermer
