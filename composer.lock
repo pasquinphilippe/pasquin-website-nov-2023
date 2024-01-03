@@ -5656,16 +5656,16 @@
         },
         {
             "name": "studio1902/statamic-peak-browser-appearance",
-            "version": "v3.3.3",
+            "version": "v3.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/studio1902/statamic-peak-browser-appearance.git",
-                "reference": "13de3ba93e69170e3a8b2cdc497376d078424335"
+                "reference": "4ba1b00a2d3498cad4719bb041209acf54b3cb84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/studio1902/statamic-peak-browser-appearance/zipball/13de3ba93e69170e3a8b2cdc497376d078424335",
-                "reference": "13de3ba93e69170e3a8b2cdc497376d078424335",
+                "url": "https://api.github.com/repos/studio1902/statamic-peak-browser-appearance/zipball/4ba1b00a2d3498cad4719bb041209acf54b3cb84",
+                "reference": "4ba1b00a2d3498cad4719bb041209acf54b3cb84",
                 "shasum": ""
             },
             "type": "library",
@@ -5688,7 +5688,7 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/studio1902/statamic-peak-browser-appearance/issues",
-                "source": "https://github.com/studio1902/statamic-peak-browser-appearance/tree/v3.3.3"
+                "source": "https://github.com/studio1902/statamic-peak-browser-appearance/tree/v3.3.4"
             },
             "funding": [
                 {
@@ -5696,7 +5696,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-12-09T15:02:17+00:00"
+            "time": "2023-12-21T13:31:52+00:00"
         },
         {
             "name": "studio1902/statamic-peak-commands",
