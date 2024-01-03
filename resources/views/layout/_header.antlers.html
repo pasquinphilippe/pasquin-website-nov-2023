@@ -20,12 +20,9 @@
       {{ else }}
       <div class="nav mainnav headerhideonmob">
         {{ nav:main include_home="false" }}
-        <div class="navitem {{ unless entry_id==" d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" ||
-          entry_id=="d82072df-cb49-4f2e-9ff4-525fe7fcf657" }} magnetic {{ /unless }}" {{ if children ||
-          entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" || entry_id=="d82072df-cb49-4f2e-9ff4-525fe7fcf657" }}
+        <div class="navitem {{ unless entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" || entry_id=="d82072df-cb49-4f2e-9ff4-525fe7fcf657" }} magnetic {{ /unless }}" {{ if children || entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" || entry_id=="d82072df-cb49-4f2e-9ff4-525fe7fcf657" }}
           x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false" {{ endif }}>
-          <a href="{{ url }}" {{ if children || entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" ||
-            entry_id=="d82072df-cb49-4f2e-9ff4-525fe7fcf657" }} @click.prevent="open = !open" {{ endif }}
+          <a href="{{ url }}" {{ if children || entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" || entry_id=="d82072df-cb49-4f2e-9ff4-525fe7fcf657" }} @click.prevent="open = !open" {{ endif }}
             class="navlink {{ if is_current || is_parent }} w--current {{ endif}}">
             {{ title }}
             {{ if children || entry_id=="d9ae2d4d-89cc-48a9-baf7-b73ce0ec5415" ||

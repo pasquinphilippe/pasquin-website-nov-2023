@@ -4,7 +4,7 @@ blueprint: homepage
 title: Accueil
 seo_title: 'Développeur Shopify Montréal | Philippe Pasquin'
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1702997152
+updated_at: 1704255079
 og_image: philippe_pasquin.png
 seo_noindex: false
 seo_nofollow: false
@@ -13,9 +13,9 @@ sitemap_change_frequency: weekly
 sitemap_priority: '1'
 announcement: true
 template: default
-related_date: '2023-12-01'
-announcement_text: "Nouveau prix pour nos banques d'heures"
-heading: 'Construisez, évoluez, excellez avec mon expertise Shopify'
+related_date: '2024-01-01'
+announcement_text: "25% jusqu'au 31 janvier 2024"
+heading: 'Je transforme votre boutique Shopify en succès – moins de tracas, plus de résultats, c’est garanti!'
 paragraph: 'En tant que partenaire Shopify et Shopify Plus, je développe, optimise et assure la maintenance de solutions eCommerce sur Shopify.'
 button_link: 'entry::d9172796-78a7-4e6c-b716-53ba1946125e'
 button_text: 'Planifier une rencontre découverte'
