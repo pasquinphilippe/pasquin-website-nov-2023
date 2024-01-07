@@ -12,11 +12,11 @@ ctas:
   -
     id: lp05opso
     icon: phone
-    cta_text: 'Planifier un appel'
+    cta_text: Discutons!
     modal: true
     type: call_to_action
     enabled: true
-    alpine_modal_name: contactModal
+    alpine_modal_name: interestModal
   -
     id: lp05pck0
     cta_text: 'Référez un client'
