@@ -9,6 +9,7 @@ organization_name: 'Philippe Pasquin - Développeur Shopify'
 organization_logo: philippe-(112-x-112-px).png
 breadcrumbs: true
 use_social_image_generation: false
+og_image: shopifypartnerssocial.png
 sitemap_collections:
   - services
   - pages_index
