@@ -4,7 +4,7 @@ blueprint: homepage
 title: Accueil
 seo_title: 'Développeur Shopify Montréal | Philippe Pasquin'
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1704937163
+updated_at: 1704937202
 og_image: shopifypartnerssocial.png
 seo_noindex: false
 seo_nofollow: false
@@ -73,4 +73,5 @@ btn_cacher: 'Masquer les projets'
 btn_plus: 'Voir plus de projets'
 announcement_link: '#pricing'
 support_pricing: e785a253-1496-4e04-84e8-5162700ba43b
+seo_description: 'En tant que partenaire Shopify et Shopify Plus, je développe, optimise et assure la maintenance de solutions eCommerce sur Shopify. Expert Shopify Montréal accrédité'
 ---
