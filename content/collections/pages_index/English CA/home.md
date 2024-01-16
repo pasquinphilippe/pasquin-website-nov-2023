@@ -3,7 +3,7 @@ id: 99a64eeb-8a01-4565-8400-4cdce1197bd8
 origin: 79d0b6d3-6fd5-45df-99e3-191e85e8415b
 title: Home
 announcement_text: 'New price for our retainers'
-heading: 'Build, evolve and maintain with our Shopify expertise'
+heading: 'I’ll turn your Shopify store into a success – less hassle, more results, guaranteed!'
 paragraph: 'As a Shopify and Shopify Plus partner, we develop, optimize, and maintain eCommerce solutions on Shopify.'
 button_text: 'Schedule a discovery call'
 projects_heading: 'My latest projects'
@@ -60,5 +60,5 @@ seo_title: 'Shopify Developer Montreal | Philippe Pasquin'
 seo_description: "Discover expert Shopify development services with Philippe Pasquin in Montreal. Specializing in crafting customized Shopify solutions, we offer a wide range of services including site creation, optimization, and maintenance tailored to your business needs. Whether you're launching a new online store or enhancing an existing one, we provide top-notch expertise in Shopify design and functionality."
 og_image: philippe_pasquin.png
 updated_by: cd3700e4-11c6-42b6-8dbb-6134449b1279
-updated_at: 1702948989
+updated_at: 1705440779
 ---
