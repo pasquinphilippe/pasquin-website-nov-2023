@@ -20,11 +20,11 @@ ctas:
   -
     id: lp05pck0
     cta_text: 'Référez un client'
-    modal: true
-    alpine_modal_name: modalRefer
+    modal: false
     type: call_to_action
     enabled: true
     icon: money-sign
+    cta_link: 'entry::e7d7efa2-34a9-4f37-8fcf-f1c62c93d4ec'
   -
     id: lp05qf66
     icon: book-call
