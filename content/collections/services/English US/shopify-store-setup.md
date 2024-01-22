@@ -1,6 +1,7 @@
 ---
 id: f5ca3513-7515-4ff1-bdf4-6a966d8be078
 origin: 9a3dd9e8-069c-4161-b0da-8a2496d017fb
+published: false
 title: 'Shopify Store Setup'
 menu_description: 'Setting up parameters for easy online deployment'
 turnaround: 'Delivery in 5 business days<sup>*</sup>'
