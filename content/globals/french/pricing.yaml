@@ -13,4 +13,4 @@ new_deal:
     title: 'Spécial de Janvier'
     description: "J'offre 25% de rabais sur mes banques d'heures de 10 heures et plus pour les nouveaux clients."
     type: deal
-    enabled: true
+    enabled: false
