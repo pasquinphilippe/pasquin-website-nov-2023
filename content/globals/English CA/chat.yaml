@@ -23,7 +23,7 @@ ctas:
     modal: true
     alpine_modal_name: modalRefer
     type: call_to_action
-    enabled: true
+    enabled: false
     icon: money-sign
   -
     id: lp05qf66

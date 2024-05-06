@@ -22,7 +22,7 @@ ctas:
     cta_text: 'Référez un client'
     modal: false
     type: call_to_action
-    enabled: true
+    enabled: false
     icon: money-sign
     cta_link: 'entry::e7d7efa2-34a9-4f37-8fcf-f1c62c93d4ec'
   -

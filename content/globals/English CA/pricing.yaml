@@ -3,7 +3,7 @@ card_title: 'Hourly rates'
 accepting_clients: 'Now accepting clients for 2024'
 first_description: 'I bill on an hourly basis'
 second_description: 'for all my consulting, development or support services'
-starting_at: "Let's discuss 👍"
+starting_at: 125$/h
 explanation: 'based on the volume'
 new_deal:
   -
@@ -13,5 +13,5 @@ new_deal:
     title: 'January Special'
     description: 'I offer 25% off my bank of hours of 10 hours and more for all new clients.'
     type: deal
-    enabled: true
+    enabled: false
 origin: french

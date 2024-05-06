@@ -12,59 +12,22 @@
             </div>
             <div class="gapm"></div>
             <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="w-tabs">
-                <div class="nav tabnav w-tab-menu" role="tablist">
-                    <a @click.prevent="tab = 'plan'" 
-                    :class="{ 'w--current': tab === 'plan' }" 
-                    class="navlink w-inline-block w-tab-link" 
-                    role="tab">
-                        <div>Planifier un appel</div>
-                    </a>
-                    <a @click.prevent="tab = 'message'" 
-                   :class="{ 'w--current': tab === 'message' }" 
-                   class="navlink w-inline-block w-tab-link" 
-                   role="tab">
-                        <div>Envoyez nous un message</div>
-                    </a></div>
-                <div class="w-tab-content">
-                    <div x-show="tab === 'plan'" class="tabpane w-tab-pane" role="tabpanel">
 
-                        <div class="callembed w-embed w-script">
-                            <div id="booking-page"><iframe
-                                    src="https://api.milistack.com/widget/booking/t7dafxvu1rHAsWsUrM87"
-                                    style="width: 100%;border:none;overflow: hidden;" scrolling="no"
-                                    id="t7dafxvu1rHAsWsUrM87_1699910933110"></iframe><br>
-                                <script src="https://api.milistack.com/js/form_embed.js"
-                                    type="text/javascript"></script>
-                            </div>
-                        </div>
-                    </div>
-                    <div x-show="tab === 'message'" class="tabpane w-tab-pane" role="tabpanel">
 
-                        <div class="padds">
-                            <iframe
-                            src="https://api.milistack.com/widget/form/gquKXHSdxXJ71wGRGqZo"
-                            style="width:100%;height:100%;border:none;border-radius:0px"
-                            id="inline-gquKXHSdxXJ71wGRGqZo" 
-                            data-layout="{'id':'INLINE'}"
-                            data-trigger-type="alwaysShow"
-                            data-trigger-value=""
-                            data-activation-type="alwaysActivated"
-                            data-activation-value=""
-                            data-deactivation-type="neverDeactivate"
-                            data-deactivation-value=""
-                            data-form-name="Rencontre découverte"
-                            data-height="714"
-                            data-layout-iframe-id="inline-gquKXHSdxXJ71wGRGqZo"
-                            data-form-id="gquKXHSdxXJ71wGRGqZo"
-                            title="Rencontre découverte"
-                                >
-                          </iframe>
-                          <script src="https://api.milistack.com/js/form_embed.js"></script>
-                        </div>
-                    </div>
-                </div>
+
+
+
+                <iframe src="https://backend.pasquin.ca/widget/booking/hZoFiicXJdzGsKOFDsHA"
+                    style="width: 100%;border:none;overflow: hidden;" scrolling="no"
+                    id="hZoFiicXJdzGsKOFDsHA_1706214669654"></iframe><br>
+                <script src="https://backend.pasquin.ca/js/form_embed.js" type="text/javascript"></script>
+
+
+
+
+
             </div>
         </div>
-       
+
     </div>
 </div>
