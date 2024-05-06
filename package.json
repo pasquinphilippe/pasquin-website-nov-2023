@@ -4,7 +4,8 @@
     "dev": "vite",
     "watch": "vite",
     "build": "vite build",
-    "production": "vite build"
+    "production": "vite build",
+    "ssg":  "npm run production && @php please ssg:generate"
   },
   "author": "Studio 1902",
   "license": "MIT",
